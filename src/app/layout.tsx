@@ -62,7 +62,7 @@ function SiteHeader() {
       <div className="mx-auto max-w-5xl px-4 h-16 flex items-center justify-between">
         <Link href="/" aria-label="PanduHukum" className="flex items-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo.png" alt="PanduHukum" width={841} height={205} style={{ height: 44, width: "auto" }} />
+          <img src="/logo.png?v=2" alt="PanduHukum" width={841} height={205} style={{ height: 44, width: "auto" }} />
         </Link>
         <nav className="hidden sm:flex items-center gap-6 text-sm text-ink-soft">
           <Link href="/#masalah" className="hover:text-brand-600">Cari Masalah</Link>
