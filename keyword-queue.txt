@@ -1,5 +1,5 @@
-# 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행)
-# 이미 수기로 작성해 발행한 글은 제거함. 아래는 파이프라인이 이어서 작업할 신규 키워드.
+# 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
+# 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
 cara negosiasi restrukturisasi kredit pinjol | cara-negosiasi-restrukturisasi-kredit | pinjol
 hutang orang meninggal siapa yang bayar | hutang-orang-meninggal-siapa-bayar | pinjol
 hutang suami tanggung jawab istri | hutang-suami-tanggung-jawab-istri | pinjol
@@ -8,3 +8,35 @@ penipuan online langkah lengkap lapor | penipuan-online-langkah-lengkap | pinjol
 investasi bodong ciri dan cara cek izin | investasi-bodong-ciri-cek-izin | pinjol
 leasing tarik motor di jalan apakah sah | leasing-tarik-motor-di-jalan-sah | pinjol
 kartu kredit tidak dibayar akibat dan solusi | kartu-kredit-tidak-dibayar | pinjol
+cara menghapus data di aplikasi pinjol | cara-menghapus-data-aplikasi-pinjol | pinjol
+hutang kartu kredit bisa dipidana | kartu-kredit-bisa-dipidana | pinjol
+motor ditarik leasing bisa diambil lagi | motor-ditarik-leasing-ambil-lagi | pinjol
+cara menagih hutang teman secara hukum | cara-menagih-hutang-teman | pinjol
+hutang tidak dibayar bisa lapor polisi | hutang-tidak-dibayar-lapor-polisi | pinjol
+cara cek rekening penipu di cekrekening | cara-pakai-cekrekening-id | pinjol
+cara cek pinjol legal terdaftar OJK | cara-cek-pinjol-legal-ojk | pinjol
+cara lapor ke Satgas PASTI | cara-lapor-satgas-pasti | pinjol
+cara lapor polisi online kasus penipuan | cara-lapor-polisi-online-penipuan | pinjol
+cara lapor ke OJK 157 lengkap | cara-lapor-ojk-157 | pinjol
+cara blokir rekening penipu lewat bank | cara-blokir-rekening-penipu | pinjol
+cara refund uang di marketplace | cara-refund-marketplace | pinjol
+kartu ATM tertelan mesin apa yang dilakukan | kartu-atm-tertelan | pinjol
+klaim asuransi ditolak cara banding | klaim-asuransi-ditolak-banding | pinjol
+bahaya gestun gesek tunai kartu kredit | gestun-bahaya-dan-hukum | pinjol
+utang sudah lunas tapi masih ditagih | utang-lunas-masih-ditagih | pinjol
+ditagih utang yang bukan milik saya | ditagih-utang-orang-lain | pinjol
+KTP disalahgunakan untuk pinjol cara lapor | ktp-disalahgunakan-pinjol | pinjol
+penipuan jual beli online cara uang kembali | penipuan-jual-beli-online-refund | pinjol
+modus penipuan arisan online | penipuan-arisan-online | pinjol
+penipuan lowongan kerja online tanpa modal | penipuan-lowongan-kerja-online | pinjol
+penipuan minta kode OTP cara mencegah | penipuan-minta-kode-otp | pinjol
+rekening diblokir karena terkait penipuan | rekening-diblokir-terkait-penipuan | pinjol
+cara membuka blokir rekening bank | cara-buka-blokir-rekening | pinjol
+penarikan kendaraan dan sertifikat fidusia | penarikan-kendaraan-fidusia | pinjol
+cara ajukan keringanan cicilan ke bank | cara-ajukan-keringanan-bank | pinjol
+gadai sertifikat rumah untuk pinjaman aman | gadai-sertifikat-rumah | pinjol
+cara membuat somasi untuk menagih utang | cara-membuat-somasi-utang | pinjol
+gugatan sederhana untuk menagih utang | gugatan-sederhana-utang | pinjol
+denda dan bunga berbunga pinjol legal | bunga-berbunga-pinjol | pinjol
+telat bayar pinjol 1 hari apa akibatnya | telat-bayar-pinjol-1-hari | pinjol
+tips aman meminjam di pinjol legal | tips-aman-pinjam-pinjol | pinjol
