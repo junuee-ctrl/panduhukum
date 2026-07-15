@@ -1,0 +1,46 @@
+name: Reverify Citations (Monthly)
+
+# Verifikasi ulang seluruh kutipan pada konten terbit setiap awal bulan.
+# Jika ada kutipan yang tidak lagi ditemukan (regulasi dicabut/diganti),
+# buat Issue otomatis agar bisa ditindaklanjuti.
+
+on:
+  schedule:
+    - cron: "0 1 1 * *" # tanggal 1 tiap bulan, 08:00 WIB
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  reverify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Reverify all citations
+        id: reverify
+        env:
+          PYTHONPATH: pipeline
+        run: |
+          set +e
+          python pipeline/verify_all.py | tee /tmp/reverify.log
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: "⚠ regression → buka Issue"
+        if: steps.reverify.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "⚠ Reverifikasi kutipan gagal ($(date +%Y-%m))" \
+            --label "citation-regression" \
+            --body "$(printf 'Beberapa kutipan tidak lagi ditemukan di sumber resmi. Kemungkinan regulasi diganti.\n\n```\n%s\n```' "$(cat /tmp/reverify.log)")"

@@ -1,0 +1,98 @@
+name: Auto Publish (Daily)
+
+# 완전 자동 발행: 매일 1편, keyword-queue.txt에서 맨 윗줄을 꺼내 생성.
+# 신호등: 🟢(1·2층 클린) → main 직접 커밋 = 즉시 배포
+#         🟡(WARN/검수필요) → PR 대기열 (사람 또는 추후 변호사 확인 후 머지)
+#         ✗(3회 실패)      → 이슈 생성, 큐 유지
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 매일 09:30 WIB — 하루 1편 (scaled-content 발자국 방지)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: auto-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+
+      - name: Install deps
+        run: pip install anthropic requests
+
+      - name: Pop next keyword from queue
+        id: queue
+        run: |
+          LINE=$(grep -v '^\s*#' keyword-queue.txt | grep -v '^\s*$' | head -1 || true)
+          if [ -z "$LINE" ]; then
+            echo "empty=true" >> "$GITHUB_OUTPUT"
+            echo "큐 비어있음 — 종료"
+            exit 0
+          fi
+          echo "empty=false" >> "$GITHUB_OUTPUT"
+          echo "keyword=$(echo "$LINE" | cut -d'|' -f1 | xargs)" >> "$GITHUB_OUTPUT"
+          echo "slug=$(echo "$LINE"    | cut -d'|' -f2 | xargs)" >> "$GITHUB_OUTPUT"
+          echo "pillar=$(echo "$LINE"  | cut -d'|' -f3 | xargs)" >> "$GITHUB_OUTPUT"
+
+      - name: Generate with 3-layer gate
+        if: steps.queue.outputs.empty == 'false'
+        id: gen
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PYTHONPATH: pipeline
+        run: |
+          set +e
+          python pipeline/generate_draft.py \
+            --keyword "${{ steps.queue.outputs.keyword }}" \
+            --slug "${{ steps.queue.outputs.slug }}" \
+            --outdir "content/${{ steps.queue.outputs.pillar }}" | tee /tmp/gen.log
+          echo "code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+
+      - name: Remove processed line from queue
+        if: steps.queue.outputs.empty == 'false' && steps.gen.outputs.code != '1'
+        run: |
+          LINE_NO=$(grep -nv '^\s*#' keyword-queue.txt | grep -v ':\s*$' | head -1 | cut -d: -f1)
+          sed -i "${LINE_NO}d" keyword-queue.txt
+
+      - name: "🟢 green → commit to main (즉시 배포)"
+        if: steps.gen.outputs.code == '0'
+        run: |
+          git config user.name "auto-publish-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add content/ keyword-queue.txt
+          git commit -m "publish: ${{ steps.queue.outputs.slug }} (gate 1·2 clean, auto)"
+          git push
+
+      - name: "🟡 yellow → PR 대기열"
+        if: steps.gen.outputs.code == '78'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: "yellow/${{ steps.queue.outputs.slug }}"
+          commit-message: "draft(yellow): ${{ steps.queue.outputs.slug }}"
+          title: "🟡 [확인필요] ${{ steps.queue.outputs.keyword }}"
+          body: |
+            게이트 1·2 통과했으나 WARN/검수필요 항목 존재 → 자동발행 보류.
+            생성 로그의 ⚠ 항목 확인 후 머지하세요. (변호사 검수 도입 시 여기부터)
+          labels: yellow-queue, needs-review
+
+      - name: "✗ fail → 이슈 생성 (큐 유지)"
+        if: steps.gen.outputs.code == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "✗ 자동생성 실패: ${{ steps.queue.outputs.keyword }}" \
+            --label "generation-failed" \
+            --body "3회 재시도 후에도 차단 인용/BLOCKER 잔존. 수동 작성 필요. 로

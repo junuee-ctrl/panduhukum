@@ -1,0 +1,11 @@
+# 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행)
+cara mengatasi teror dc pinjol | cara-mengatasi-teror-dc-pinjol | pinjol
+dc pinjol datang ke rumah apakah boleh | dc-pinjol-datang-ke-rumah | pinjol
+data disebar pinjol ilegal lapor kemana | data-disebar-pinjol-lapor-kemana | pinjol
+cara melaporkan pinjol ilegal | cara-melaporkan-pinjol-ilegal | pinjol
+galbay pinjol masuk blacklist berapa lama | galbay-pinjol-blacklist-berapa-lama | pinjol
+pinjol tidak dibayar apa akibatnya | pinjol-tidak-dibayar-akibatnya | pinjol
+bunga pinjol maksimal berapa menurut OJK | bunga-pinjol-maksimal-ojk | pinjol
+cara cek BI checking SLIK OJK online | cara-cek-slik-ojk-online | pinjol
+cara keluar dari blacklist SLIK | cara-keluar-blacklist-slik | pinjol
+cara memperbaiki skor kredit jelek | cara-memperbaiki-skor-kredit | pinjol
