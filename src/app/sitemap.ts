@@ -2,13 +2,16 @@ import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/lib/content";
 import { siteConfig } from "@/lib/siteConfig";
 
-// Dihasilkan otomatis menjadi /sitemap.xml saat build (spec req. 5).
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = siteConfig.url;
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${base}/`, changeFrequency: "weekly", priority: 1 },
+    { url: `${base}/pinjol/cek-legalitas/`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/pinjol/cek-ilegal/`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/kalkulator/bunga-harian/`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/kalkulator/simulasi-restrukturisasi/`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/tentang/`, changeFrequency: "monthly", priority: 0.5 },
     { url: `${base}/disclaimer/`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${base}/kontak/`, changeFrequency: "yearly", priority: 0.3 },
