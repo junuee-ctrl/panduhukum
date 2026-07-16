@@ -1,27 +1,22 @@
 # -*- coding: utf-8 -*-
-"""
-generate_draft.py — Claude API 초안 생성 + 3층 게이트 (v0.2)
+"""generate_draft.py — Claude API draft + 3-layer gate (v0.3).
 
-게이트 구조:
-  1층 citation_verify  — 인용 실존 검증 (기계적) → 실패 시 [NOT_FOUND] 재생성
-  2층 legal_review     — AI 법리 검토 (sonnet, 생성자와 분리) → BLOCKER 시 재생성
-  3층 (사후) 변호사 검수 — 발행 후 소급, frontmatter reviewer 서명
+Gate:
+  1 citation_verify  — eksistensi kutipan ke registry/sumber resmi
+  2 legal_review     — tinjauan penerapan hukum (model terpisah); tak tersedia -> WARN
+  3 (sesudah) tinjauan advokat — retroaktif via frontmatter reviewer
 
-신호등:
-  🟢 green  — 1·2층 클린 → 자동 발행 대상 (published: true 가능)
-  🟡 yellow — WARN 또는 검수필요(⚠) 존재 → PR 대기열, 사람 확인 후 머지
+Signal:
+  🟢 green  — layer 1&2 bersih -> published: true (boleh auto-publish)
+  🟡 yellow — ada WARN / kutipan belum terverifikasi -> published: false (antre tinjauan)
 
-요구: pip install anthropic / 환경변수 ANTHROPIC_API_KEY
-모델: 초안 claude-haiku-4-5, 검토 claude-sonnet-5
-API 문서: https://docs.claude.com/en/api/overview
+Dipakai standalone (CLI) atau via run_daily.py (fungsi generate_article).
 """
 import argparse
 import json
 import sys
 from datetime import date
 from pathlib import Path
-
-import anthropic
 
 from citation_extract import extract
 from citation_verify import verify, summarize
@@ -39,53 +34,51 @@ STRUKTUR WAJIB (template 5 langkah):
 ## STEP 3 — Ke Mana & Kapan (instansi, kanal, tenggat — pakai tabel)
 ## STEP 4 — Dokumen & Bukti yang Disiapkan
 ## STEP 5 — Jebakan yang Harus Dihindari
-## FAQ (3-5 tanya-jawab pendek)
+## FAQ (3-5 tanya-jawab pendek; tiap pertanyaan diawali '### ')
 ## Dasar Hukum (daftar peraturan yang dikutip)
 
 ATURAN KUTIPAN HUKUM (SANGAT PENTING):
-1. HANYA kutip peraturan yang kamu YAKIN 100% ada (nama, nomor, tahun tepat).
-2. Jika tidak yakin nomor pasal / angka / tarif terbaru → tulis marker:
-   [PERLU_VERIFIKASI: deskripsi yang perlu dicek]
+1. HANYA kutip peraturan yang kamu YAKIN 100% ada DAN MASIH BERLAKU (nama, nomor, tahun tepat).
+2. Utamakan peraturan terbaru: POJK 22/2023 (perlindungan konsumen/penagihan), SEOJK 19/2023
+   (bunga/denda), UU 27/2022 (PDP), UU 39/1999 (HAM), POJK 18/2017 jo POJK 11/2024 (SLIK),
+   UU 42/1999 (fidusia). JANGAN kutip aturan lama yang sudah dicabut.
+3. Jika tidak yakin nomor pasal / angka / tarif -> tulis marker [PERLU_VERIFIKASI: deskripsi].
    JANGAN mengarang nomor pasal atau angka.
-3. Format kutipan: "UU 27/2022", "POJK 22/2023 Pasal 62" (nomor/tahun).
+4. Format kutipan: "UU 27/2022", "POJK 22/2023 Pasal 62".
 
 ATURAN KONTEN (kepatuhan kebijakan iklan):
-- DILARANG menyarankan: tidak membayar utang, kabur dari penagih, trik menghindari
-  kewajiban. Frame selalu: hak hukum + prosedur resmi + solusi legal (restrukturisasi).
+- DILARANG menyarankan: tidak membayar utang, kabur dari penagih, trik menghindari kewajiban.
+  Frame selalu: hak hukum + prosedur resmi + solusi legal (restrukturisasi).
 - Sertakan keseimbangan: kewajiban melunasi pokok pinjaman tetap ada.
-- Bahasa Indonesia sehari-hari, kalimat pendek, tanpa jargon tanpa penjelasan.
-- Panjang 900-1300 kata.
+- Bahasa Indonesia sehari-hari, kalimat pendek. Panjang 900-1300 kata.
 """
 
 CITE_RETRY = """\
 
 [NOT_FOUND] Kutipan berikut TIDAK DITEMUKAN di database peraturan resmi:
 {failed}
-Tulis ulang artikel TANPA kutipan tersebut. JANGAN menebak atau membuat kutipan
-pengganti. Jika dasar hukum tidak pasti, gunakan marker [PERLU_VERIFIKASI: ...].
+Tulis ulang artikel TANPA kutipan tersebut. JANGAN menebak/membuat kutipan pengganti.
+Jika dasar hukum tidak pasti, gunakan marker [PERLU_VERIFIKASI: ...].
 """
 
 REVIEW_RETRY = """\
 
 [REVIEW_BLOCKER] Reviewer hukum menemukan kesalahan penerapan berikut:
 {issues}
-Tulis ulang artikel dengan memperbaiki SEMUA poin di atas. Jangan mengubah
-struktur 5 langkah. Jika tidak yakin, gunakan marker [PERLU_VERIFIKASI: ...].
+Tulis ulang artikel dengan memperbaiki SEMUA poin di atas. Jangan ubah struktur 5 langkah.
 """
 
 
-def generate(client, model: str, keyword: str, feedback: str = "") -> str:
+def generate(client, model, keyword, feedback=""):
     resp = client.messages.create(
-        model=model,
-        max_tokens=4000,
-        system=SYSTEM_PROMPT,
+        model=model, max_tokens=4000, system=SYSTEM_PROMPT,
         messages=[{"role": "user",
                    "content": f'Tulis artikel untuk target keyword: "{keyword}"' + feedback}],
     )
-    return "".join(b.text for b in resp.content if b.type == "text")
+    return "".join(b.text for b in resp.content if getattr(b, "type", None) == "text")
 
 
-def to_mdx(slug, keyword, body, verified_results, queue, warns) -> str:
+def to_mdx(slug, keyword, body, verified_results, queue, warns):
     cites = []
     for r in verified_results:
         if r["ref"] in ("UNKNOWN", "PERLU_VERIFIKASI"):
@@ -96,69 +89,69 @@ def to_mdx(slug, keyword, body, verified_results, queue, warns) -> str:
     fm = {
         "slug": slug, "pillar": "pinjol", "type": "action_plan",
         "target_keyword": keyword, "citations": cites,
-        "queue": queue,                      # green | yellow
-        "review_flags": warns,               # 2층 WARN 목록 (사후검수 참고)
-        "reviewer": None, "reviewed_at": None,   # 3층: 변호사 서명 (사후 소급)
+        "queue": queue, "review_flags": warns,
+        "reviewer": None, "reviewed_at": None,
         "changelog": [{"date": str(date.today()),
-                       "note": f"Draft otomatis — gate 1·2 lolos ({queue})"}],
-        "published": queue == "green",       # 🟢만 즉시 발행
+                       "note": f"Draft otomatis — gate 1·2 ({queue})"}],
+        "published": queue == "green",
     }
     return "---\n" + json.dumps(fm, ensure_ascii=False, indent=2) + "\n---\n\n" + body
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--keyword", required=True)
-    ap.add_argument("--slug", required=True)
-    ap.add_argument("--sonnet", action="store_true", help="초안도 sonnet으로")
-    ap.add_argument("--mock-verify", action="store_true", help="오프라인 (fixtures)")
-    ap.add_argument("--outdir", default="drafts")
-    args = ap.parse_args()
-
-    client = anthropic.Anthropic()
-    model = MODELS["sonnet" if args.sonnet else "haiku"]
-
+def generate_article(client, keyword, slug, outdir, model=None, mock=False, attempts=3):
+    """Kembalikan dict: {status: 'green'|'yellow'|'fail', path, warns}."""
+    model = model or MODELS["haiku"]
     feedback = ""
-    for attempt in range(1, 4):
-        print(f"[{attempt}/3] 초안 생성 ({model})...", file=sys.stderr)
-        body = generate(client, model, args.keyword, feedback)
-
-        # ── 1층: 인용 실존 검증 ──
-        results = verify(extract(body), mock=args.mock_verify)
+    for attempt in range(1, attempts + 1):
+        print(f"  [{attempt}/{attempts}] generate ({model}) :: {slug}", file=sys.stderr)
+        body = generate(client, model, keyword, feedback) if not mock else _MOCK_BODY
+        results = verify(extract(body), mock=mock)
         s = summarize(results)
-        print(f"    1층(인용): {s['counts']}", file=sys.stderr)
+        print(f"    L1 citations: {s['counts']}", file=sys.stderr)
         if s["blocking"]:
             failed = "\n".join(f"- {b['ref']} {b.get('pasal') or ''}" for b in s["blocking"])
             feedback = CITE_RETRY.format(failed=failed)
             continue
-
-        # ── 2층: AI 법리 검토 (별도 모델) ──
-        rv = legal_review.review(client, body, mock=args.mock_verify)
+        rv = legal_review.review(client, body, mock=mock)
         blockers, warns = legal_review.split_issues(rv)
-        print(f"    2층(법리): {rv['verdict']} (BLOCKER {len(blockers)} / WARN {len(warns)})",
+        print(f"    L2 review: {rv['verdict']} (BLOCKER {len(blockers)} / WARN {len(warns)})",
               file=sys.stderr)
         if blockers:
             issues = "\n".join(f"- [{b['type']}] {b['location']}: {b['description']}"
                                for b in blockers)
             feedback = REVIEW_RETRY.format(issues=issues)
             continue
-
-        # ── 신호등 판정 ──
         queue = "green" if (not warns and not s["needs_human_review"]) else "yellow"
-        outdir = Path(args.outdir); outdir.mkdir(parents=True, exist_ok=True)
-        path = outdir / f"{args.slug}.mdx"
-        path.write_text(to_mdx(args.slug, args.keyword, body, results, queue, warns),
-                        encoding="utf-8")
-        print(f"저장: {path} · 신호등: {'🟢 green (자동발행)' if queue == 'green' else '🟡 yellow (대기열)'}")
-        for w in warns:
-            print(f"  ⚠ [{w['type']}] {w['description']}")
-        for h in s["needs_human_review"]:
-            print(f"  ⚠ {h.get('context','')[:60]} → {h['status']}")
-        # exit 0=green, 78=yellow (워크플로우에서 분기용)
-        sys.exit(0 if queue == "green" else 78)
+        outdir_p = Path(outdir); outdir_p.mkdir(parents=True, exist_ok=True)
+        path = outdir_p / f"{slug}.mdx"
+        path.write_text(to_mdx(slug, keyword, body, results, queue, warns), encoding="utf-8")
+        return {"status": queue, "path": str(path), "warns": warns,
+                "needs_human": s["needs_human_review"]}
+    return {"status": "fail", "path": None, "warns": [], "needs_human": []}
 
-    print("✗ 3회 시도 후에도 차단 잔존 — 수동 작성 필요", file=sys.stderr)
-    sys.exit(1)
+
+_MOCK_BODY = (
+    "[RINGKASAN] Ringkasan singkat.\n\n## STEP 1 — Diagnosis Situasi\nIsi. POJK 22/2023 Pasal 62.\n"
+    "## STEP 2 — Hak Anda\nUU 27/2022.\n## FAQ\n### Apa ini?\nJawab.\n## Dasar Hukum\n- POJK 22/2023"
+)
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--keyword", required=True)
+    ap.add_argument("--slug", required=True)
+    ap.add_argument("--sonnet", action="store_true")
+    ap.add_argument("--mock-verify", action="store_true")
+    ap.add_argument("--outdir", default="drafts")
+    args = ap.parse_args()
+    client = None if args.mock_verify else __import__("anthropic").Anthropic()
+    model = MODELS["sonnet" if args.sonnet else "haiku"]
+    res = generate_article(client, args.keyword, args.slug, args.outdir,
+                           model=model, mock=args.mock_verify)
+    if res["status"] == "fail":
+        print("✗ gagal setelah retry", file=sys.stderr); sys.exit(1)
+    print(f"저장: {res['path']} · {res['status']}")
+    sys.exit(0 if res["status"] == "green" else 78)
 
 
 if __name__ == "__main__":

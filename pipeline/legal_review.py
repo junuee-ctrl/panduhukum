@@ -13,7 +13,7 @@ legal_review.py — 게이트 2층: AI 법리 검토 (v0.1)
 import json
 import re
 
-REVIEW_MODEL = "claude-sonnet-5"
+REVIEW_MODEL = "claude-haiku-4-5-20251001"
 
 REVIEW_PROMPT = """\
 Kamu adalah reviewer hukum senior untuk konten hukum konsumen Indonesia.

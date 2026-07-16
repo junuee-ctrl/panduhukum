@@ -1,0 +1,23 @@
+{
+  "_comment": "Regulasi Indonesia yang SUDAH diverifikasi ke sumber resmi (JDIH BPK/OJK) dan MASIH BERLAKU. Kutipan yang cocok di sini lolos verifikasi otomatis (layer 1). Regulasi lama/dicabut TIDAK dimasukkan agar tidak ikut auto-publish. Update saat ada perubahan.",
+  "_verified_at": "2026-07-16",
+  "regs": {
+    "UU 27/2022": "Pelindungan Data Pribadi",
+    "UU 39/1999": "Hak Asasi Manusia",
+    "UU 8/1999": "Perlindungan Konsumen",
+    "UU 21/2011": "Otoritas Jasa Keuangan",
+    "UU 4/2023": "Pengembangan dan Penguatan Sektor Keuangan (P2SK)",
+    "UU 11/2008": "Informasi dan Transaksi Elektronik (ITE)",
+    "UU 1/2024": "Perubahan Kedua UU ITE",
+    "UU 42/1999": "Jaminan Fidusia",
+    "UU 1/2023": "Kitab Undang-Undang Hukum Pidana (KUHP baru)",
+    "POJK 22/2023": "Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan",
+    "SEOJK 19/2023": "Batas Manfaat Ekonomi & Denda Fintech P2P Lending",
+    "POJK 18/2017": "Pelaporan & Permintaan Informasi Debitur melalui SLIK",
+    "POJK 64/2020": "Perubahan I POJK SLIK",
+    "POJK 11/2024": "Perubahan II POJK SLIK",
+    "POJK 10/2022": "Layanan Pendanaan Bersama Berbasis Teknologi Informasi (LPBBTI)",
+    "POJK 35/2018": "Penyelenggaraan Usaha Perusahaan Pembiayaan",
+    "POJK 7/2022": "Perubahan atas POJK 35/2018 (Perusahaan Pembiayaan)"
+  }
+}

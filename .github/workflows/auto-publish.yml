@@ -1,18 +1,17 @@
 name: Auto Publish (Daily)
 
-# 완전 자동 발행: 매일 1편, keyword-queue.txt에서 맨 윗줄을 꺼내 생성.
-# 신호등: 🟢(1·2층 클린) → main 직접 커밋 = 즉시 배포
-#         🟡(WARN/검수필요) → PR 대기열 (사람 또는 추후 변호사 확인 후 머지)
-#         ✗(3회 실패)      → 이슈 생성, 큐 유지
+# 매일: 큐 위에서부터 생성 → 검증 통과(🟢)하는 글이 나올 때까지 다음 주제로 시도.
+#  🟢 첫 통과 글 → published:true 로 main 커밋 = 즉시 배포.
+#  🟡 검증 미달 글 → published:false 초안으로 저장(사이트 비노출·빌드 안전) + 검토요청 이슈.
+#  전 과정 GitHub Actions (PC 불필요).
 
 on:
   schedule:
-    - cron: "30 2 * * *"   # 매일 09:30 WIB — 하루 1편 (scaled-content 발자국 방지)
+    - cron: "30 2 * * *"   # 매일 09:30 WIB
   workflow_dispatch: {}
 
 permissions:
   contents: write
-  pull-requests: write
   issues: write
 
 concurrency:
@@ -31,70 +30,70 @@ jobs:
       - name: Install deps
         run: pip install anthropic requests
 
-      - name: Pop next keyword from queue
-        id: queue
-        run: |
-          LINE=$(grep -v '^\s*#' keyword-queue.txt | grep -v '^\s*$' | head -1 || true)
-          if [ -z "$LINE" ]; then
-            echo "empty=true" >> "$GITHUB_OUTPUT"
-            echo "큐 비어있음 — 종료"
-            exit 0
-          fi
-          echo "empty=false" >> "$GITHUB_OUTPUT"
-          echo "keyword=$(echo "$LINE" | cut -d'|' -f1 | xargs)" >> "$GITHUB_OUTPUT"
-          echo "slug=$(echo "$LINE"    | cut -d'|' -f2 | xargs)" >> "$GITHUB_OUTPUT"
-          echo "pillar=$(echo "$LINE"  | cut -d'|' -f3 | xargs)" >> "$GITHUB_OUTPUT"
-
-      - name: Generate with 3-layer gate
-        if: steps.queue.outputs.empty == 'false'
+      - name: Run daily generation (loop until green)
         id: gen
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PYTHONPATH: pipeline
+          RUN_MAX_TRIES: "4"
         run: |
           set +e
-          python pipeline/generate_draft.py \
-            --keyword "${{ steps.queue.outputs.keyword }}" \
-            --slug "${{ steps.queue.outputs.slug }}" \
-            --outdir "content/${{ steps.queue.outputs.pillar }}" > /tmp/gen.log 2>&1
+          python pipeline/run_daily.py > /tmp/daily.log 2>&1
           code=$?
-          cat /tmp/gen.log
+          cat /tmp/daily.log
           set -e
           echo "code=$code" >> "$GITHUB_OUTPUT"
 
-      - name: Remove processed line from queue
-        if: steps.queue.outputs.empty == 'false' && steps.gen.outputs.code != '1'
-        run: |
-          LINE_NO=$(grep -nv '^\s*#' keyword-queue.txt | grep -v ':\s*$' | head -1 | cut -d: -f1)
-          sed -i "${LINE_NO}d" keyword-queue.txt
-
-      - name: "🟢 green → commit to main (즉시 배포)"
+      - name: Commit results to main
         if: steps.gen.outputs.code == '0'
         run: |
           git config user.name "auto-publish-bot"
           git config user.email "bot@users.noreply.github.com"
           git add content/ keyword-queue.txt
-          git commit -m "publish: ${{ steps.queue.outputs.slug }} (gate 1·2 clean, auto)"
-          git push
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan untuk di-commit."
+          else
+            PUB=$(python -c "import json;m=json.load(open('manifest.json'));print((m.get('published') or {}).get('slug',''))")
+            if [ -n "$PUB" ]; then
+              git commit -m "publish: $PUB (auto, gate 1·2 clean) + draft tinjauan"
+            else
+              git commit -m "draft: artikel perlu tinjauan manusia (auto, tidak ada yang lolos 🟢)"
+            fi
+            git push
+          fi
 
-      - name: "🟡 yellow → PR 대기열"
-        if: steps.gen.outputs.code == '78'
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: "yellow/${{ steps.queue.outputs.slug }}"
-          commit-message: "draft(yellow): ${{ steps.queue.outputs.slug }}"
-          title: "🟡 [확인필요] ${{ steps.queue.outputs.keyword }}"
-          body: |
-            게이트 1·2 통과했으나 WARN/검수필요 항목 존재 → 자동발행 보류.
-            생성 로그의 ⚠ 항목 확인 후 머지하세요. (변호사 검수 도입 시 여기부터)
-          labels: yellow-queue, needs-review
-
-      - name: "✗ fail → 이슈 생성 (큐 유지)"
-        if: steps.gen.outputs.code == '1'
+      - name: Open review-request issue for yellow drafts
+        if: steps.gen.outputs.code == '0'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh issue create \
-            --title "✗ 자동생성 실패: ${{ steps.queue.outputs.keyword }}" \
+          python - <<'PY' > /tmp/issue.md
+          import json
+          m = json.load(open("manifest.json"))
+          ys = m.get("yellows") or []
+          if ys:
+              print(f"Ada {len(ys)} draft yang **belum lolos verifikasi otomatis** dan perlu tinjauan Anda sebelum dipublikasikan.\n")
+              print("Untuk menerbitkan: buka file draft, verifikasi kutipan hukumnya, isi `reviewer`, lalu ubah `published` menjadi `true`.\n")
+              for y in ys:
+                  warns = "; ".join(w.get("type","") for w in y.get("warns", [])) or "kutipan belum terverifikasi"
+                  print(f"- [ ] `{y['path']}` — {y['keyword']}  \n      alasan: {warns}")
+          PY
+          if [ -s /tmp/issue.md ]; then
+            gh label create "needs-review" --color FBCA04 --description "Draft menunggu tinjauan" --force >/dev/null 2>&1 || true
+            gh issue create \
+              --title "🟡 Draft perlu tinjauan ($(date +%Y-%m-%d))" \
+              --label "needs-review" \
+              --body-file /tmp/issue.md || echo "gh issue create gagal (label mungkin belum ada) — lanjut."
+          else
+            echo "Tidak ada draft 🟡 hari ini."
+          fi
+
+      - name: "✗ run error → 이슈"
+        if: steps.gen.outputs.code != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "generation-failed" --color B60205 --force >/dev/null 2>&1 || true
+          gh issue create --title "✗ Auto-publish error ($(date +%Y-%m-%d))" \
             --label "generation-failed" \
-            --body "3회 재시도 후에도 차단 인용/BLOCKER 잔존. 수동 작성 필요. 로
+            --body "run_daily.py keluar dengan kode ${{ steps.gen.outputs.code }}. Lihat log Actions run #${{ github.run_id }}." || true

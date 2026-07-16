@@ -1,10 +1,19 @@
 # -*- coding: utf-8 -*-
-"""citation_verify.py — Gerbang 1b: verifikasi eksistensi kutipan (v0.2).
+"""citation_verify.py — Gerbang 1b: verifikasi eksistensi kutipan (v0.3).
 
-Marker PERLU_VERIFIKASI -> UNVERIFIABLE. Kegagalan jaringan -> UNVERIFIABLE
-(aman: memicu review manusia, bukan lolos diam-diam). Mode --mock pakai fixtures.
+Strategi (spec §5):
+1) Registry lokal (reg_registry.json): peraturan yang SUDAH diverifikasi manual ke
+   sumber resmi dan MASIH berlaku. Cocok -> FOUND. Cepat, offline, andal di CI.
+2) Fallback online best-effort ke peraturan.bpk.go.id untuk ref di luar registry.
+   Gagal jaringan / tak yakin -> UNVERIFIABLE (aman: memicu tinjauan manusia, bukan
+   lolos diam-diam). Marker PERLU_VERIFIKASI selalu -> UNVERIFIABLE.
+
+Regulasi lama/dicabut sengaja TIDAK ada di registry -> otomatis ke antrean tinjauan,
+supaya artikel yang mengutip aturan usang tidak ikut auto-publish.
 """
 from __future__ import annotations
+import json
+import os
 import re
 import time
 from urllib.parse import quote
@@ -14,16 +23,20 @@ try:
 except ImportError:  # pragma: no cover
     requests = None
 
-UA = "Mozilla/5.0 (compatible; PanduHukumBot/0.2; +https://panduhukum.com)"
+UA = "Mozilla/5.0 (compatible; PanduHukumBot/0.3; +https://panduhukum.com)"
 SEARCH_URL = "https://peraturan.bpk.go.id/Search?keywords={q}"
+_REGISTRY_PATH = os.path.join(os.path.dirname(__file__), "reg_registry.json")
 
-# Peraturan yang SUDAH dikonfirmasi manual ke sumber resmi (JDIH BPK / OJK).
-KNOWN_GOOD = {
-    "UU 27/2022", "UU 1/2024", "UU 11/2008", "UU 8/1999", "UU 4/2023",
-    "UU 21/2011", "UU 39/1999",
-    "POJK 22/2023", "SEOJK 19/2023", "POJK 40/2024",
-    "POJK 18/2017", "POJK 64/2020", "POJK 11/2024", "POJK 10/2022",
-}
+
+def _load_registry() -> set:
+    try:
+        with open(_REGISTRY_PATH, encoding="utf-8") as f:
+            return set(json.load(f).get("regs", {}).keys())
+    except Exception:
+        return set()
+
+
+KNOWN_GOOD = _load_registry()
 
 
 def _verify_one_online(ref, session):
@@ -32,7 +45,7 @@ def _verify_one_online(ref, session):
         return "UNVERIFIABLE"
     nomor, tahun = m.group(1), m.group(2)
     try:
-        resp = session.get(SEARCH_URL.format(q=quote(ref)), timeout=20)
+        resp = session.get(SEARCH_URL.format(q=quote(ref)), timeout=25)
         if resp.status_code != 200:
             return "UNVERIFIABLE"
         html = resp.text
@@ -80,7 +93,8 @@ def summarize(results):
 
 if __name__ == "__main__":
     from citation_extract import extract
-    res = verify(extract("POJK 22/2023 Pasal 62 dan UU 27/2022. UU 999/2099."), mock=True)
+    print("registry size:", len(KNOWN_GOOD))
+    res = verify(extract("POJK 22/2023 Pasal 62, UU 42/1999, POJK 1/2013. UU 999/2099."), mock=True)
     for r in res:
-        print(r["ref"], r.get("pasal"), "->", r["status"])
+        print(" ", r["ref"], "->", r["status"])
     print(summarize(res)["counts"])
