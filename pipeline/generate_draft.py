@@ -12,7 +12,7 @@ generate_draft.py — Claude API 초안 생성 + 3층 게이트 (v0.2)
   🟡 yellow — WARN 또는 검수필요(⚠) 존재 → PR 대기열, 사람 확인 후 머지
 
 요구: pip install anthropic / 환경변수 ANTHROPIC_API_KEY
-모델: 초안 claude-haiku-4-5, 검토 claude-sonnet-4-6
+모델: 초안 claude-haiku-4-5, 검토 claude-sonnet-5
 API 문서: https://docs.claude.com/en/api/overview
 """
 import argparse
@@ -27,7 +27,7 @@ from citation_extract import extract
 from citation_verify import verify, summarize
 import legal_review
 
-MODELS = {"haiku": "claude-haiku-4-5-20251001", "sonnet": "claude-sonnet-4-6"}
+MODELS = {"haiku": "claude-haiku-4-5-20251001", "sonnet": "claude-sonnet-5"}
 
 SYSTEM_PROMPT = """\
 Kamu adalah penulis konten hukum konsumen Indonesia untuk pembaca awam.
