@@ -1,5 +1,6 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
+cara negosiasi restrukturisasi kredit pinjol | cara-negosiasi-restrukturisasi-kredit | pinjol
 hutang orang meninggal siapa yang bayar | hutang-orang-meninggal-siapa-bayar | pinjol
 hutang suami tanggung jawab istri | hutang-suami-tanggung-jawab-istri | pinjol
 salah transfer uang bisa kembali | salah-transfer-uang-bisa-kembali | pinjol

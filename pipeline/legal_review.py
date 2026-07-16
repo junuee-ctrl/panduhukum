@@ -55,18 +55,31 @@ def _parse_json(text: str) -> dict:
     return json.loads(m.group(0))
 
 
+def _review_unavailable(reason: str) -> dict:
+    # Review tak bisa dijalankan/parse -> JANGAN crash & JANGAN auto-publish.
+    # Kembalikan WARN (bukan BLOCKER) supaya artikel tetap ditulis tapi masuk antrean 🟡 (tinjauan manusia).
+    return {"verdict": "PASS", "issues": [{
+        "severity": "WARN", "type": "REVIEW_UNAVAILABLE", "location": "-",
+        "description": f"Tinjauan AI tidak tersedia ({reason}); perlu tinjauan manusia sebelum publikasi.",
+    }]}
+
+
 def review(client, body: str, mock: bool = False) -> dict:
     if mock:
         return MOCK_RESULT
-    resp = client.messages.create(
-        model=REVIEW_MODEL,
-        max_tokens=2000,
-        system=REVIEW_PROMPT,
-        messages=[{"role": "user", "content": body}],
-    )
-    text = "".join(b.text for b in resp.content if b.type == "text")
-    result = _parse_json(text)
-    # 방어: verdict-issues 정합성 강제
+    try:
+        resp = client.messages.create(
+            model=REVIEW_MODEL,
+            max_tokens=2000,
+            system=REVIEW_PROMPT,
+            messages=[{"role": "user", "content": body}],
+        )
+        text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+        if not text:
+            return _review_unavailable("respons kosong")
+        result = _parse_json(text)
+    except Exception as e:  # API error / JSON tak valid / dll -> aman ke 🟡, tidak crash
+        return _review_unavailable(type(e).__name__)
     blockers = [i for i in result.get("issues", []) if i.get("severity") == "BLOCKER"]
     result["verdict"] = "FAIL" if blockers else "PASS"
     return result

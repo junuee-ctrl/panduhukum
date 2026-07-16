@@ -56,9 +56,11 @@ jobs:
           python pipeline/generate_draft.py \
             --keyword "${{ steps.queue.outputs.keyword }}" \
             --slug "${{ steps.queue.outputs.slug }}" \
-            --outdir "content/${{ steps.queue.outputs.pillar }}" | tee /tmp/gen.log
-          echo "code=$?" >> "$GITHUB_OUTPUT"
+            --outdir "content/${{ steps.queue.outputs.pillar }}" > /tmp/gen.log 2>&1
+          code=$?
+          cat /tmp/gen.log
           set -e
+          echo "code=$code" >> "$GITHUB_OUTPUT"
 
       - name: Remove processed line from queue
         if: steps.queue.outputs.empty == 'false' && steps.gen.outputs.code != '1'
