@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-penipuan online langkah lengkap lapor | penipuan-online-langkah-lengkap | pinjol
-investasi bodong ciri dan cara cek izin | investasi-bodong-ciri-cek-izin | pinjol
-leasing tarik motor di jalan apakah sah | leasing-tarik-motor-di-jalan-sah | pinjol
-kartu kredit tidak dibayar akibat dan solusi | kartu-kredit-tidak-dibayar | pinjol
 cara menghapus data di aplikasi pinjol | cara-menghapus-data-aplikasi-pinjol | pinjol
 hutang kartu kredit bisa dipidana | kartu-kredit-bisa-dipidana | pinjol
 motor ditarik leasing bisa diambil lagi | motor-ditarik-leasing-ambil-lagi | pinjol
