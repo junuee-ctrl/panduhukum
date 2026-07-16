@@ -9,6 +9,7 @@ import { ConsultationCTA } from "@/components/ConsultationCTA";
 import { Faq } from "@/components/Faq";
 import { CitationList } from "@/components/CitationList";
 import { ReviewerBadge } from "@/components/ReviewerBadge";
+import { LegalReviewNotice } from "@/components/LegalReviewNotice";
 import { Changelog } from "@/components/Changelog";
 import { Disclaimer } from "@/components/Disclaimer";
 import { JsonLd } from "@/components/JsonLd";
@@ -78,6 +79,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <div className="mt-4">
         <ReviewerBadge fm={article.frontmatter} />
       </div>
+
+      <LegalReviewNotice fm={article.frontmatter} />
 
       <SummaryBox summary={article.summary} />
 
