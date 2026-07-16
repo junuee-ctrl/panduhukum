@@ -15,6 +15,7 @@ Semua draft (green & yellow) ditulis ke content/<pillar>/. Yellow = published:fa
 tak tampil di situs & tak memblokir build; muncul di laporan sebagai "perlu tinjauan".
 """
 import json
+import time
 import os
 import sys
 
@@ -50,6 +51,7 @@ def main():
     idx, tries = 0, 0
 
     while idx < len(entries) and tries < MAX_TRIES:
+        if tries: time.sleep(4)
         e = entries[idx]; idx += 1; tries += 1
         print(f"[{tries}/{MAX_TRIES}] {e['slug']}", file=sys.stderr)
         res = gd.generate_article(client, e["keyword"], e["slug"],

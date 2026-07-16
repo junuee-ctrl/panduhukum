@@ -12,6 +12,7 @@ legal_review.py — 게이트 2층: AI 법리 검토 (v0.1)
 """
 import json
 import re
+import time
 
 REVIEW_MODEL = "claude-haiku-4-5-20251001"
 
@@ -67,18 +68,26 @@ def _review_unavailable(reason: str) -> dict:
 def review(client, body: str, mock: bool = False) -> dict:
     if mock:
         return MOCK_RESULT
+    text = ""
+    delay = 3
+    for attempt in range(4):
+        try:
+            resp = client.messages.create(
+                model=REVIEW_MODEL, max_tokens=2000, system=REVIEW_PROMPT,
+                messages=[{"role": "user", "content": body}],
+            )
+            text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
+            if text:
+                break
+        except Exception:
+            pass
+        if attempt < 3:
+            time.sleep(delay); delay = min(delay * 2, 30)
+    if not text:
+        return _review_unavailable("respons kosong/gagal setelah retry")
     try:
-        resp = client.messages.create(
-            model=REVIEW_MODEL,
-            max_tokens=2000,
-            system=REVIEW_PROMPT,
-            messages=[{"role": "user", "content": body}],
-        )
-        text = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
-        if not text:
-            return _review_unavailable("respons kosong")
         result = _parse_json(text)
-    except Exception as e:  # API error / JSON tak valid / dll -> aman ke 🟡, tidak crash
+    except Exception as e:
         return _review_unavailable(type(e).__name__)
     blockers = [i for i in result.get("issues", []) if i.get("severity") == "BLOCKER"]
     result["verdict"] = "FAIL" if blockers else "PASS"

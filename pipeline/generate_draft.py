@@ -15,8 +15,22 @@ Dipakai standalone (CLI) atau via run_daily.py (fungsi generate_article).
 import argparse
 import json
 import sys
+import time
 from datetime import date
 from pathlib import Path
+
+
+def create_with_retry(client, **kwargs):
+    """Panggil Claude API dengan backoff eksponensial untuk error transien (rate limit/overload)."""
+    delay = 3
+    for i in range(5):
+        try:
+            return client.messages.create(**kwargs)
+        except Exception:
+            if i == 4:
+                raise
+            time.sleep(delay)
+            delay = min(delay * 2, 30)
 
 from citation_extract import extract
 from citation_verify import verify, summarize
@@ -70,8 +84,8 @@ Tulis ulang artikel dengan memperbaiki SEMUA poin di atas. Jangan ubah struktur 
 
 
 def generate(client, model, keyword, feedback=""):
-    resp = client.messages.create(
-        model=model, max_tokens=4000, system=SYSTEM_PROMPT,
+    resp = create_with_retry(
+        client, model=model, max_tokens=4000, system=SYSTEM_PROMPT,
         messages=[{"role": "user",
                    "content": f'Tulis artikel untuk target keyword: "{keyword}"' + feedback}],
     )
