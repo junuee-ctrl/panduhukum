@@ -1,6 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-hutang tidak dibayar bisa lapor polisi | hutang-tidak-dibayar-lapor-polisi | pinjol
 cara cek rekening penipu di cekrekening | cara-pakai-cekrekening-id | pinjol
 cara cek pinjol legal terdaftar OJK | cara-cek-pinjol-legal-ojk | pinjol
 cara lapor ke Satgas PASTI | cara-lapor-satgas-pasti | pinjol
