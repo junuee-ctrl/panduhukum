@@ -135,7 +135,8 @@ def generate_article(client, keyword, slug, outdir, model=None, mock=False, atte
                                for b in blockers)
             feedback = REVIEW_RETRY.format(issues=issues)
             continue
-        queue = "green" if (not warns and not s["needs_human_review"]) else "yellow"
+        # KEBIJAKAN: bot TIDAK PERNAH auto-publish (situs hukum). Semua -> draft tinjauan manusia.
+        queue = "yellow"  # dulu: "green" jika bersih. Kini selalu draft; publikasi butuh verifikasi manusia.
         outdir_p = Path(outdir); outdir_p.mkdir(parents=True, exist_ok=True)
         path = outdir_p / f"{slug}.mdx"
         path.write_text(to_mdx(slug, keyword, body, results, queue, warns), encoding="utf-8")
