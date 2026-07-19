@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     images: [siteConfig.ogImage],
   },
   robots: { index: true, follow: true },
+  other: {
+    "google-adsense-account": siteConfig.adsense.client,
+  },
 };
 
 export const viewport: Viewport = { themeColor: "#2b2b33" };
