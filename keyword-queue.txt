@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara lapor ke Satgas PASTI | cara-lapor-satgas-pasti | pinjol
-cara lapor polisi online kasus penipuan | cara-lapor-polisi-online-penipuan | pinjol
-cara lapor ke OJK 157 lengkap | cara-lapor-ojk-157 | pinjol
-cara blokir rekening penipu lewat bank | cara-blokir-rekening-penipu | pinjol
 cara refund uang di marketplace | cara-refund-marketplace | pinjol
 kartu ATM tertelan mesin apa yang dilakukan | kartu-atm-tertelan | pinjol
 klaim asuransi ditolak cara banding | klaim-asuransi-ditolak-banding | pinjol
