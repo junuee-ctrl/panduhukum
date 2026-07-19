@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { siteConfig } from "@/lib/siteConfig";
 import "./globals.css";
 
@@ -48,6 +49,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang={siteConfig.lang}>
       <body className="min-h-screen flex flex-col">
+        <Script
+          id="adsbygoogle-init"
+          async
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${siteConfig.adsense.client}`}
+        />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />

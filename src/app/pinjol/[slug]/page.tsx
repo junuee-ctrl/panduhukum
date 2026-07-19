@@ -13,6 +13,7 @@ import { LegalReviewNotice } from "@/components/LegalReviewNotice";
 import { Changelog } from "@/components/Changelog";
 import { Disclaimer } from "@/components/Disclaimer";
 import { JsonLd } from "@/components/JsonLd";
+import { AdSlot } from "@/components/AdSlot";
 
 const PILLAR = "pinjol";
 
@@ -96,7 +97,11 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           </div>
         ))}
 
+      <AdSlot slot={siteConfig.adsense.slots.inArticleTop} />
+
       <Faq items={article.faq} />
+
+      <AdSlot slot={siteConfig.adsense.slots.inArticleBottom} />
 
       <CitationList citations={article.frontmatter.citations ?? []} />
 

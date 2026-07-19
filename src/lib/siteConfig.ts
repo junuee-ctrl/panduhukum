@@ -15,6 +15,15 @@ export const siteConfig = {
     name: "PanduHukum",
     email: "halo@panduhukum.com",
   },
+  adsense: {
+    // Akun AdSense. Auto Ads aktif hanya dengan skrip ini (aktifkan di dashboard).
+    client: "ca-pub-1581394816942984",
+    // Slot unit iklan manual. Isi ID slot dari AdSense (kosong = slot tidak dirender).
+    slots: {
+      inArticleTop: "",     // setelah bagian langkah
+      inArticleBottom: "",  // setelah FAQ
+    },
+  },
 } as const;
 
 export type SiteConfig = typeof siteConfig;
