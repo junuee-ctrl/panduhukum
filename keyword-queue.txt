@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara refund uang di marketplace | cara-refund-marketplace | pinjol
-kartu ATM tertelan mesin apa yang dilakukan | kartu-atm-tertelan | pinjol
-klaim asuransi ditolak cara banding | klaim-asuransi-ditolak-banding | pinjol
-bahaya gestun gesek tunai kartu kredit | gestun-bahaya-dan-hukum | pinjol
 utang sudah lunas tapi masih ditagih | utang-lunas-masih-ditagih | pinjol
 ditagih utang yang bukan milik saya | ditagih-utang-orang-lain | pinjol
 KTP disalahgunakan untuk pinjol cara lapor | ktp-disalahgunakan-pinjol | pinjol
@@ -21,3 +17,4 @@ gugatan sederhana untuk menagih utang | gugatan-sederhana-utang | pinjol
 denda dan bunga berbunga pinjol legal | bunga-berbunga-pinjol | pinjol
 telat bayar pinjol 1 hari apa akibatnya | telat-bayar-pinjol-1-hari | pinjol
 tips aman meminjam di pinjol legal | tips-aman-pinjam-pinjol | pinjol
+klaim asuransi ditolak cara banding | klaim-asuransi-ditolak-banding | pinjol
