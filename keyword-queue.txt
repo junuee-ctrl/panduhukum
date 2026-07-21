@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-utang sudah lunas tapi masih ditagih | utang-lunas-masih-ditagih | pinjol
-ditagih utang yang bukan milik saya | ditagih-utang-orang-lain | pinjol
-KTP disalahgunakan untuk pinjol cara lapor | ktp-disalahgunakan-pinjol | pinjol
-penipuan jual beli online cara uang kembali | penipuan-jual-beli-online-refund | pinjol
 modus penipuan arisan online | penipuan-arisan-online | pinjol
 penipuan lowongan kerja online tanpa modal | penipuan-lowongan-kerja-online | pinjol
 penipuan minta kode OTP cara mencegah | penipuan-minta-kode-otp | pinjol
