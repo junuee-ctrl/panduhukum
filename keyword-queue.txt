@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-modus penipuan arisan online | penipuan-arisan-online | pinjol
-penipuan lowongan kerja online tanpa modal | penipuan-lowongan-kerja-online | pinjol
-penipuan minta kode OTP cara mencegah | penipuan-minta-kode-otp | pinjol
-rekening diblokir karena terkait penipuan | rekening-diblokir-terkait-penipuan | pinjol
 cara membuka blokir rekening bank | cara-buka-blokir-rekening | pinjol
 penarikan kendaraan dan sertifikat fidusia | penarikan-kendaraan-fidusia | pinjol
 cara ajukan keringanan cicilan ke bank | cara-ajukan-keringanan-bank | pinjol
@@ -14,3 +10,4 @@ denda dan bunga berbunga pinjol legal | bunga-berbunga-pinjol | pinjol
 telat bayar pinjol 1 hari apa akibatnya | telat-bayar-pinjol-1-hari | pinjol
 tips aman meminjam di pinjol legal | tips-aman-pinjam-pinjol | pinjol
 klaim asuransi ditolak cara banding | klaim-asuransi-ditolak-banding | pinjol
+rekening diblokir karena terkait penipuan | rekening-diblokir-terkait-penipuan | pinjol
