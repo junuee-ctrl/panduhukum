@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara membuat somasi untuk menagih utang | cara-membuat-somasi-utang | pinjol
-gugatan sederhana untuk menagih utang | gugatan-sederhana-utang | pinjol
-denda dan bunga berbunga pinjol legal | bunga-berbunga-pinjol | pinjol
-telat bayar pinjol 1 hari apa akibatnya | telat-bayar-pinjol-1-hari | pinjol
 tips aman meminjam di pinjol legal | tips-aman-pinjam-pinjol | pinjol
 klaim asuransi ditolak cara banding | klaim-asuransi-ditolak-banding | pinjol
 rekening diblokir karena terkait penipuan | rekening-diblokir-terkait-penipuan | pinjol
