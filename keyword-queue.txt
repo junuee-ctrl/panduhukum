@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara membuka blokir rekening bank | cara-buka-blokir-rekening | pinjol
-penarikan kendaraan dan sertifikat fidusia | penarikan-kendaraan-fidusia | pinjol
-cara ajukan keringanan cicilan ke bank | cara-ajukan-keringanan-bank | pinjol
-gadai sertifikat rumah untuk pinjaman aman | gadai-sertifikat-rumah | pinjol
 cara membuat somasi untuk menagih utang | cara-membuat-somasi-utang | pinjol
 gugatan sederhana untuk menagih utang | gugatan-sederhana-utang | pinjol
 denda dan bunga berbunga pinjol legal | bunga-berbunga-pinjol | pinjol
