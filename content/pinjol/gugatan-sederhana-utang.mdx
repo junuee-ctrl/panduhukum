@@ -23,10 +23,16 @@
   "queue": "yellow",
   "review_flags": [
     {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
+      "severity": "ERROR",
+      "type": "CITATION_WRONG",
+      "location": "body + Dasar Hukum",
+      "description": "Masa upaya hukum salah: gugatan sederhana memakai KEBERATAN 7 hari (bukan 'perlawanan 14 hari'), dan TIDAK ada banding/kasasi/PK. Prosedur diatur PERMA 2/2015 jo. PERMA 4/2019, bukan 'Pasal 130-145 HIR' atau 'PERMA 1/2022'. 'Pasal 135 HIR = masa perlawanan 14 hari' adalah kutipan fabrikasi."
+    },
+    {
+      "severity": "ERROR",
+      "type": "CITATION_MISMATCH",
+      "location": "frontmatter.citations",
+      "description": "Pasal 1365 dilabeli sebagai 'POJK 22/2023'; seharusnya KUH Perdata. Perlu penulisan ulang bagian prosedur sebelum bisa diterbitkan."
     }
   ],
   "reviewer": null,
@@ -35,6 +41,10 @@
     {
       "date": "2026-07-23",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-07-25",
+      "note": "Ditinjau: kutipan dicek ke sumber resmi — perlu perbaikan besar (keberatan 7 hari vs klaim 14 hari; tanpa banding/kasasi; dasar PERMA 2/2015 jo 4/2019). Tetap draft (published: false)."
     }
   ],
   "published": false
