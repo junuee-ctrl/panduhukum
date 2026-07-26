@@ -77,20 +77,24 @@
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    }
-  ],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-07-26",
-      "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+      "note": "Draft otomatis — gate 1-2 (yellow)"
+    },
+    {
+      "date": "2026-07-26",
+      "note": "Ditinjau: kutipan dicek ke sumber resmi — PERLU PERBAIKAN. (1) 'Ombudsman Perbankan Indonesia' dan URL www.ombudsmanperbankan.id tidak ada; kanal yang benar adalah OJK (157/APPK) dan LAPS SJK, dan LAPS SJK hanya menangani sengketa perdata tanpa unsur pidana. (2) UU 19/2016 Pasal 28 (soal pelaporan palsu) tidak tepat/UNVERIFIABLE. (3) Nomor pasal POJK 22/2023 & UU 27/2022 belum terverifikasi. (4) Tenggat '5 hari/30 hari/60 hari' tanpa dasar. Tetap draft (published: false)."
+    }
+  ],
+  "review_flags": [
+    {
+      "severity": "ERROR",
+      "type": "CITATION_WRONG",
+      "location": "STEP 2, STEP 3, FAQ",
+      "description": "Lembaga 'Ombudsman Perbankan Indonesia' + URL fabrikasi; UU 19/2016 Pasal 28 tidak tepat; nomor pasal POJK 22/2023 belum terverifikasi. Perlu penulisan ulang kanal pengaduan (OJK 157/APPK, LAPS SJK) dan pemisahan jalur pidana vs perdata sebelum publikasi."
     }
   ],
   "published": false

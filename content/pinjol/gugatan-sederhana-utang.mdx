@@ -6,55 +6,60 @@
   "target_keyword": "gugatan sederhana untuk menagih utang",
   "citations": [
     {
-      "ref": "POJK 22/2023",
+      "ref": "PERMA 2/2015",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "ref": "PERMA 4/2019",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-07-26"
+    },
+    {
+      "ref": "KUHPerdata",
       "pasal": "Pasal 1365",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-26"
     },
     {
       "ref": "POJK 22/2023",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-23"
+      "verified_at": "2026-07-26"
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "ERROR",
-      "type": "CITATION_WRONG",
-      "location": "body + Dasar Hukum",
-      "description": "Masa upaya hukum salah: gugatan sederhana memakai KEBERATAN 7 hari (bukan 'perlawanan 14 hari'), dan TIDAK ada banding/kasasi/PK. Prosedur diatur PERMA 2/2015 jo. PERMA 4/2019, bukan 'Pasal 130-145 HIR' atau 'PERMA 1/2022'. 'Pasal 135 HIR = masa perlawanan 14 hari' adalah kutipan fabrikasi."
-    },
-    {
-      "severity": "ERROR",
-      "type": "CITATION_MISMATCH",
-      "location": "frontmatter.citations",
-      "description": "Pasal 1365 dilabeli sebagai 'POJK 22/2023'; seharusnya KUH Perdata. Perlu penulisan ulang bagian prosedur sebelum bisa diterbitkan."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-07-23",
-      "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+      "note": "Draft otomatis — gate 1–2 (yellow)"
     },
     {
       "date": "2026-07-25",
       "note": "Ditinjau: kutipan dicek ke sumber resmi — perlu perbaikan besar (keberatan 7 hari vs klaim 14 hari; tanpa banding/kasasi; dasar PERMA 2/2015 jo 4/2019). Tetap draft (published: false)."
+    },
+    {
+      "date": "2026-07-26",
+      "note": "Diverifikasi & diterbitkan (kutipan dicek ke sumber resmi). Prosedur ditulis ulang sesuai PERMA 2/2015 jo PERMA 4/2019: upaya hukum hanya KEBERATAN 7 hari, tanpa banding/kasasi/PK; referensi HIR yang keliru dan PERMA 1/2022 dihapus; Pasal 1365 dilabeli KUHPerdata."
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
 # Gugatan Sederhana untuk Menagih Utang: Panduan Lengkap Kreditor
 
 [RINGKASAN]
-Gugatan sederhana adalah prosedur pengadilan yang lebih cepat dan murah untuk menagih utang hingga Rp 500 juta. Anda harus membuktikan utang dengan dokumen (seperti kontrak, kwitansi, atau SMS), dan pengadilan akan memutus dalam waktu 25 hari kerja. Setelah putusan, Anda harus tunggu 14 hari masa perlawanan sebelum meminta sertifikat eksekusi untuk menarik aset debitur secara sah.
+Gugatan sederhana adalah prosedur pengadilan yang lebih cepat dan murah untuk menagih utang dengan nilai gugatan paling banyak Rp 500 juta. Anda harus membuktikan utang dengan dokumen (seperti kontrak, kwitansi, bukti transfer, atau chat WhatsApp), dan hakim memutus paling lama 25 hari kerja sejak sidang pertama. Setelah putusan, pihak yang tidak puas hanya punya satu upaya hukum, yaitu **keberatan** dalam **7 hari** — tidak ada banding, kasasi, maupun peninjauan kembali. Eksekusi baru bisa diminta setelah putusan berkekuatan hukum tetap.
 
 ---
 
@@ -62,42 +67,40 @@ Gugatan sederhana adalah prosedur pengadilan yang lebih cepat dan murah untuk me
 
 **Kapan gugatan sederhana cocok untuk Anda:**
 - Utang yang terbukti jelas (ada bukti dokumen seperti perjanjian, nota, transfer bank, atau chat WhatsApp)
-- Jumlah utang tidak lebih dari Rp 500 juta
-- Debitur berada di wilayah hukum yang sama atau mudah dijangkau
-- Anda ingin putusan lebih cepat daripada gugatan biasa (25 hari kerja vs. beberapa bulan)
+- Nilai gugatan tidak lebih dari Rp 500 juta
+- Penggugat dan tergugat berdomisili di wilayah hukum pengadilan negeri yang sama
+- Anda ingin putusan lebih cepat daripada gugatan biasa (paling lama 25 hari kerja vs. beberapa bulan)
 
 **Kapan TIDAK cocok:**
-- Utang tidak jelas atau tanpa bukti
-- Kasusnya rumit (ada tandingan pihak ketiga, sengketa kepemilikan barang)
-- Anda ingin sidang dengan pemeriksaan saksi yang panjang
-- Utang melebihi Rp 500 juta → gunakan gugatan biasa
+- Utang tidak jelas atau tanpa bukti tertulis
+- Kasusnya rumit (ada sengketa kepemilikan barang atau pihak ketiga yang harus ikut)
+- Perkara yang penyelesaiannya termasuk kompetensi pengadilan khusus (mis. sengketa tanah)
+- Tergugat berdomisili di luar wilayah hukum penggugat dan tidak diketahui alamatnya
+- Nilai gugatan melebihi Rp 500 juta → gunakan gugatan biasa
 
 ---
 
 ## STEP 2: Hak Anda (Dasar Hukum)
 
-**Hak utama kreditor dalam gugatan sederhana:**
+Gugatan sederhana (small claims court) diatur oleh **Peraturan Mahkamah Agung (PERMA) Nomor 2 Tahun 2015** sebagaimana diubah oleh **PERMA Nomor 4 Tahun 2019**. Inilah hak-hak Anda sebagai kreditor/penggugat:
 
-1. **Hak mengajukan gugatan cepat**
-   - Dasar: Pasal 130 HIR (Herziene Inlandsche Reglement) dan Pasal 127-139 RBg (Reglemen Acara Pengadilan)
-   - Anda bisa ajukan gugatan ke Pengadilan Negeri tanpa ribet dengan prosedur panjang
-   - Persyaratan: ada bukti tertulis yang jelas menunjukkan hubungan utang
+1. **Hak mengajukan gugatan yang cepat dan sederhana**
+   - Dasar: PERMA 2/2015 jo. PERMA 4/2019
+   - Anda mendaftarkan gugatan ke Pengadilan Negeri tempat tergugat tinggal, dengan mengisi blanko gugatan yang disediakan kepaniteraan
+   - Syarat pokok: nilai gugatan maksimal Rp 500 juta dan hubungan utang dapat dibuktikan dengan dokumen
 
-2. **Hak mendapat putusan cepat (25 hari kerja maksimal)**
-   - Pasal 130 ayat (3) HIR: pengadilan harus putus dalam tempo terbatas
-   - Bukan berarti *instan*, tapi jauh lebih singkat dari gugatan biasa
-   - Jika hakim perlu waktu lebih, harus kasih alasan tertulis
+2. **Hak mendapat putusan cepat (maksimal 25 hari kerja)**
+   - Pemeriksaan gugatan sederhana diselesaikan paling lama 25 hari kerja sejak hari sidang pertama
+   - Prosesnya tanpa jawaban/replik/duplik yang berlarut, dan pembuktian dibatasi pada bukti yang sudah disiapkan
 
-3. **Hak eksekusi setelah masa perlawanan**
-   - Pasal 135 HIR: debitur berhak ajukan perlawanan dalam **14 hari** setelah putusan diumumkan
-   - **Ini adalah KEWAJIBAN HUKUM yang tidak bisa diabaikan**: Anda HARUS menunggu 14 hari sebelum eksekusi, tidak boleh lebih cepat
-   - Jika debitur tidak ajukan perlawanan dalam 14 hari, putusan jadi final
-   - Setelah 14 hari berlalu, Anda ajukan sertifikat eksekusi ke pengadilan untuk menarik harta debitur
+3. **Hak atas kepastian upaya hukum yang terbatas**
+   - Terhadap putusan, pihak yang tidak puas **hanya** dapat mengajukan **keberatan** dalam **7 hari** setelah putusan diucapkan atau diberitahukan
+   - **Tidak ada banding, kasasi, atau peninjauan kembali.** Keberatan diperiksa oleh majelis hakim (hakim yang lebih senior) dan putusannya bersifat final
+   - Karena itu, kepastian hukum tercapai jauh lebih cepat daripada gugatan biasa
 
 4. **Hak menjalankan eksekusi secara sah melalui pengadilan**
-   - Pasal 195-208 HIR mengatur tata cara eksekusi
-   - Dengan sertifikat eksekusi, petugas pengadilan (juru sita) bisa membantu Anda menarik aset debitur seperti uang di rekening, barang bergerak, atau aset lain
-   - Ini adalah jalur **legal dan aman**, berbeda dengan penagihan ilegal yang bisa berakibat pidana
+   - Setelah putusan **berkekuatan hukum tetap** (tidak ada keberatan dalam 7 hari, atau keberatan sudah diputus), Anda dapat mengajukan permohonan eksekusi ke Ketua Pengadilan Negeri
+   - Dengan penetapan eksekusi, juru sita pengadilan yang menjalankan penyitaan/pelelangan aset tergugat — ini jalur **legal dan aman**, berbeda dengan penagihan paksa yang bisa berakibat pidana
 
 ---
 
@@ -105,115 +108,114 @@ Gugatan sederhana adalah prosedur pengadilan yang lebih cepat dan murah untuk me
 
 | **Tahap** | **Ke Mana?** | **Tenggat Waktu** | **Dokumen** |
 |---|---|---|---|
-| **Persiapan gugatan** | Kantor Pengadilan Negeri setempat (bagian kepaniteraan) | - | Formulir gugatan + bukti utang |
-| **Pengajuan gugatan** | Pengadilan Negeri (tempat debitur tinggal/ aset berada) | Tidak terbatas | Gugatan tertulis + 5 lembar fotokopi + alas an permohonan |
-| **Sidang pertama** | Ruang pengadilan | Biasanya 1-2 minggu setelah gugatan masuk | Barang bukti, dokumen asli |
-| **Putusan** | Pengadilan yang sama | Maks. 25 hari kerja setelah sidang terakhir | Surat putusan dari hakim |
-| **Periode perlawanan debitur** | (tidak ada tindakan) | **14 hari setelah putusan** | Debitur bisa banding/kasasi |
-| **Minimalkan perlawanan** | Pengadilan (jika debitur naik banding) | Tergantung (biasanya 1-3 bulan) | Jawaban banding Anda |
-| **Minta sertifikat eksekusi** | Pengadilan Negeri pemeriksa | Setelah 14 hari + bukti putusan final | Surat permohonan + fotokopi putusan |
-| **Eksekusi** | Kantor pengadilan (juru sita) | Sesuai persetujuan debitur atau perintah hakim | Sertifikat eksekusi + daftar harta debitur |
+| **Persiapan gugatan** | Kantor Pengadilan Negeri setempat (kepaniteraan) | - | Blanko gugatan + bukti utang |
+| **Pendaftaran gugatan** | Pengadilan Negeri tempat tergugat berdomisili | Kapan saja | Blanko gugatan + fotokopi bukti + biaya panjar |
+| **Pemeriksaan pendahuluan** | Hakim tunggal | Setelah pendaftaran | Berkas gugatan & bukti |
+| **Sidang pertama & pemeriksaan** | Ruang sidang | Dipanggil setelah lolos pemeriksaan pendahuluan | Bukti asli + saksi (jika perlu) |
+| **Putusan** | Pengadilan yang sama | Maksimal 25 hari kerja sejak sidang pertama | Salinan putusan |
+| **Masa keberatan** | (Pihak tidak puas ke Ketua PN) | **7 hari** setelah putusan diucapkan/diberitahukan | Permohonan keberatan + memori keberatan |
+| **Pemeriksaan keberatan** | Majelis hakim (bila ada keberatan) | Putusan keberatan maks. 7 hari sejak penetapan majelis | Kontra memori keberatan Anda |
+| **Permohonan eksekusi** | Ketua Pengadilan Negeri | Setelah putusan berkekuatan hukum tetap | Permohonan + salinan putusan |
+| **Eksekusi** | Juru sita pengadilan | Sesuai penetapan Ketua PN | Penetapan eksekusi + data harta tergugat |
+
+**Urutan waktu ideal:** Daftar gugatan → sidang & putusan (maks. 25 hari kerja) → lewati masa keberatan 7 hari → mohon eksekusi bila tergugat tetap tidak membayar.
 
 ---
 
 ## STEP 4: Dokumen & Bukti yang Disiapkan
 
-**Penting: Gugatan sederhana hanya bisa diajukan jika Anda PUNYA BUKTI TERTULIS yang jelas.**
+**Penting: Gugatan sederhana hanya efektif jika Anda PUNYA BUKTI TERTULIS yang jelas.**
 
 **Bukti-bukti yang kuat (diakui pengadilan):**
 
 1. **Kontrak/Perjanjian**
    - Surat perjanjian utang yang ditandatangani kedua belah pihak
-   - Surat janji bayar (grosse acte)
+   - Surat pengakuan utang (acknowledgment of debt)
    - Perjanjian sewa, jual-beli, atau pinjam-meminjam yang jelas
 
 2. **Kuitansi/Faktur**
    - Kuitansi pembayaran bertanda tangan
-   - Faktur dari toko/perusahaan yang menunjukkan debitur membeli barang/jasa
+   - Faktur/invoice yang menunjukkan tergugat membeli barang/jasa
    - Bukti transfer (struk ATM, printout transfer bank, tangkapan layar e-banking)
 
 3. **Komunikasi tertulis**
-   - Chat WhatsApp di mana debitur mengakui utangnya
+   - Chat WhatsApp di mana tergugat mengakui utangnya
    - Email yang membahas utang
    - SMS percakapan tentang cicilan/pembayaran
 
 4. **Dokumen perbankan**
-   - Laporan mutasi rekening yang menunjukkan uang masuk dari debitur
+   - Mutasi rekening yang menunjukkan aliran dana ke tergugat
    - Cek atau bilyet giro yang belum cair
 
-**Siapkan file gugatan Anda berisi:**
-- Identitas lengkap Anda (kreditor) dan debitur
+**Siapkan berkas gugatan Anda berisi:**
+- Identitas lengkap Anda (penggugat) dan tergugat sesuai KTP
 - Uraian singkat peristiwa utang (kapan, berapa jumlah, syarat pembayaran)
-- Dasar penuntutan (hukum apa yang dilanggar)
-- Amar (apa yang Anda minta: pembayaran utang + bunga + biaya gugatan)
-- Daftar bukti bukti yang akan diajukan
+- Dasar tuntutan (perjanjian/wanprestasi atau perbuatan melawan hukum)
+- Petitum (apa yang Anda minta: pembayaran utang + bunga jika diperjanjikan + biaya perkara)
+- Daftar bukti yang akan diajukan
 
-Bawa **minimal 5 lembar fotokopi** semua bukti ke pengadilan.
+Bawa **dokumen asli beserta fotokopi** semua bukti ke pengadilan.
 
 ---
 
 ## STEP 5: Jebakan yang Harus Dihindari
 
 **Jebakan #1: Mengandalkan hanya bukti lisan atau testimoni**
-- Pengadilan hanya akan menganggap bukti jika ada **dokumen tertulis yang jelas**.
-- Jika Anda hanya bilang "Saya pinjami dia uang Rp 50 juta," tanpa bukti surat, pengadilan bisa tolak gugatan Anda.
-- **Solusi**: Selalu minta tandatangan debitur atau bukti transfer ketika transaksi utang terjadi.
+- Gugatan sederhana mengandalkan bukti tertulis yang jelas dan pembuktian yang sederhana.
+- Jika Anda hanya bilang "Saya pinjami dia uang Rp 50 juta," tanpa bukti dokumen, gugatan berisiko dinyatakan tidak sederhana atau ditolak.
+- **Solusi**: Selalu minta tanda tangan tergugat atau simpan bukti transfer saat transaksi utang terjadi.
 
-**Jebakan #2: Melakukan eksekusi atau penagihan paksa SEBELUM 14 hari masa perlawanan habis**
-- **INI ADALAH PELANGGARAN HUKUM SERIUS** (Pasal 135 HIR).
-- Jika Anda eksekusi, sita aset, atau paksa bayar sebelum 14 hari berlalu, Anda telah bertindak ilegal, dan risiko Anda besar:
-  - Debitur bisa membatalkan eksekusi melalui banding/kasasi
-  - Debitur bisa **menggugat balik Anda** atas kerugian yang diderita akibat eksekusi ilegal tersebut
-  - Debitur bisa **melaporkan Anda ke polisi** sebagai tindakan pemaksaan/pengancaman
-  - Akses Anda ke pengadilan di masa depan bisa terhambat karena dianggap melanggar etika
-- **Solusi**: Tunggu **PENUH 14 hari** (dihitung dari tanggal putusan). Setelah itu, baru ajukan sertifikat eksekusi dengan bukti bahwa debitur tidak mengajukan perlawanan.
+**Jebakan #2: Melakukan penyitaan atau penagihan paksa SEBELUM putusan berkekuatan hukum tetap**
+- **INI ADALAH PELANGGARAN HUKUM SERIUS.** Eksekusi hanya boleh dilakukan oleh juru sita berdasarkan penetapan Ketua Pengadilan Negeri, dan hanya setelah putusan berkekuatan hukum tetap (lewat masa keberatan 7 hari atau keberatan telah diputus).
+- Jika Anda menyita atau memaksa bayar sendiri, risikonya besar:
+  - Tergugat bisa **menggugat balik** atas kerugian akibat perbuatan melawan hukum
+  - Tergugat bisa **melaporkan Anda ke polisi** atas dugaan pemaksaan/pengancaman
+- **Solusi**: Tunggu sampai putusan **inkracht** (berkekuatan hukum tetap), lalu ajukan permohonan eksekusi ke pengadilan.
 
-**Jebakan #3: Salah identifikasi debitur atau aset**
-- Jika identitas debitur dalam gugatan tidak akurat (nama, alamat, NIK berbeda), eksekusi bisa salah sasaran.
-- Anda malah bisa ditarik tanggung jawab hukum jika sesenggah merusak barang milik orang lain.
-- **Solusi**: Pastikan data debitur (nama lengkap sesuai KTP/paspor, alamat, nomor identitas) benar sebelum ajukan gugatan.
+**Jebakan #3: Salah identifikasi tergugat atau aset**
+- Jika identitas tergugat (nama, alamat, NIK) tidak akurat, gugatan bisa cacat atau eksekusi salah sasaran.
+- **Solusi**: Pastikan data tergugat (nama lengkap sesuai KTP, alamat, nomor identitas) benar sebelum mendaftar gugatan.
 
-**Jebakan #4: Mengklaim bunga/denda tanpa dasar hukum**
-- Jika dalam surat gugatan Anda minta bunga 10% per bulan tapi tidak ada perjanjian yang menyebutkan itu, pengadilan bisa potong gugatan Anda.
-- POJK 22/2023 (untuk perbankan) dan UU Umum (Pasal 1365 KUH Perdata) membatasi bunga yang "masuk akal".
-- **Solusi**: Hanya minta bunga jika ada perjanjian tertulis sebelumnya. Jika tidak ada, hanya minta pokok utang + biaya gugatan (ditetapkan pengadilan).
+**Jebakan #4: Mengklaim bunga/denda tanpa dasar perjanjian**
+- Jika Anda menuntut bunga 10% per bulan tapi tidak ada perjanjian yang menyebutkannya, tuntutan bunga itu bisa ditolak.
+- POJK 22/2023 menekankan perilaku penagihan yang wajar dan beretika, dan Pasal 1365 KUHPerdata hanya memberi ganti rugi atas kerugian nyata yang dapat dibuktikan.
+- **Solusi**: Hanya tuntut bunga jika ada perjanjian tertulis sebelumnya. Jika tidak, tuntut pokok utang + biaya perkara.
 
 **Jebakan #5: Tidak menyiapkan bukti asli saat sidang**
-- Fotokopi tanpa asli yang ditunjukkan ke hakim **kurang persuasif**.
-- Debitur bisa bilang dokumen Anda palsu atau diubah.
-- **Solusi**: Bawa dokumen asli ke sidang (kontrak asli, kuitansi asli, cek asli). Hakim akan cocokkan dengan fotokopi Anda.
+- Fotokopi tanpa menunjukkan aslinya kurang persuasif; hakim mencocokkan fotokopi dengan dokumen asli (nazegelen).
+- **Solusi**: Bawa dokumen asli ke sidang (kontrak, kuitansi, cek asli).
+
+**Jebakan #6: Mengira ada banding/kasasi seperti gugatan biasa**
+- Dalam gugatan sederhana **tidak ada** banding, kasasi, atau PK. Satu-satunya upaya hukum adalah **keberatan** dalam 7 hari.
+- **Solusi**: Jika Anda kalah dan ingin melawan, segera siapkan memori keberatan sebelum lewat 7 hari — jangan menunggu "jadwal banding" yang tidak akan pernah ada.
 
 ---
 
 ## FAQ
 
 ### Berapa biaya gugatan sederhana? Apakah lebih murah dari gugatan biasa?
-Ya, **lebih murah**. Biaya mencakup biaya pendaftaran, publikasi pengumuman, dan biaya panggilan. Jumlah pastinya tergantung besaran utang dan pengadilan setempat. Minta rincian ke bagian kepaniteraan pengadilan Anda. Biaya ini boleh Anda "inkludkan" dalam putusan, artinya debitur yang bayar semuanya setelah kalah.
+Ya, umumnya **lebih murah** karena prosesnya singkat dan tanpa upaya hukum berjenjang. Biaya mencakup panjar perkara (pendaftaran, pemanggilan, materai, dll.) yang besarnya ditetapkan tiap pengadilan. Minta rincian ke kepaniteraan. Biaya perkara dapat dibebankan kepada pihak yang kalah sesuai putusan.
 
-### Bagaimana jika debitur tidak muncul di sidang pertama?
-Pengadilan boleh **putus tanpa kehadiran debitur** (sidang verstek/default). Ini malah menguntungkan Anda karena debitur tidak bisa membantah. Namun debitur masih punya hak untuk **ajukan perlawanan dalam 14 hari setelah putusan**. Jadi tetap tunggu 14 hari sebelum eksekusi.
+### Bagaimana jika tergugat tidak hadir di persidangan?
+Jika tergugat sudah dipanggil secara patut namun tetap tidak hadir tanpa alasan sah, hakim dapat memutus tanpa kehadirannya (verstek/di luar hadir). Tergugat masih dapat mengajukan **keberatan dalam 7 hari** setelah putusan diberitahukan. Jadi tunggu masa keberatan lewat sebelum mengajukan eksekusi.
 
-### Apakah gugatan sederhana bisa untuk tagihan cicilan yang belum tiba waktunya?
-Umumnya **tidak**. Gugatan sederhana hanya untuk utang yang **sudah jatuh tempo** dan tidak dibayar. Jika cicilan belum jatuh tempo (masih dalam periode cicilan normal), pengadilan boleh tolak gugatan Anda. Kecuali debitur **ingkar janji** (misalnya dua cicilan sudah lewat), baru Anda boleh gugat untuk seluruh sisa pokok.
+### Apakah gugatan sederhana bisa untuk cicilan yang belum jatuh tempo?
+Umumnya **tidak**. Gugatan sederhana untuk utang yang **sudah jatuh tempo dan tidak dibayar** (wanprestasi). Jika ada klausul jatuh tempo dipercepat karena tergugat sudah ingkar janji, Anda bisa menuntut sisa pokok — tetapi dasar wanprestasinya harus jelas.
 
-### Berapa lama total waktu dari gugatan sampai eksekusi (dapat uang)?
-**Perkiraan**: 25 hari kerja (sidang + putusan) + 14 hari (masa perlawanan) + 2-4 minggu (proses sertifikat + eksekusi) = **2-3 bulan** jika semuanya lancar. Jika debitur banding, tambah 1-3 bulan lagi. Jadi gugatan sederhana lebih cepat dari gugatan biasa, tapi tetap memerlukan kesabaran.
+### Berapa lama total waktu dari gugatan sampai bisa eksekusi?
+**Perkiraan**: pemeriksaan maks. 25 hari kerja + 7 hari masa keberatan + proses permohonan dan penetapan eksekusi (beberapa minggu) = sekitar **1,5–3 bulan** jika lancar. Jika ada keberatan, tambah waktu pemeriksaan keberatan. Tetap jauh lebih cepat daripada gugatan biasa yang bisa memakan waktu bertahun-tahun karena banding dan kasasi.
 
-### Apakah saya bisa minta ganti rugi (bunga hukum) meskipun perjanjian tidak menyebutkan bunga?
-**Terbatas**. Pasal 1365 KUH Perdata memungkinkan ganti rugi jika ada **kerugian faktual** yang bisa dibuktikan (misal, Anda pinjami Rp 100 juta untuk membeli barang, barang tidak jadi dibeli, Anda rugi bunga di bank). Hanya akal-akalan, pengadilan tolak. **Solusi terbaik**: Buatkan perjanjian sejak awal yang menyebutkan bunga/denda jika telat bayar.
+### Bisakah saya minta ganti rugi meski perjanjian tidak menyebutkan bunga?
+**Terbatas**. Pasal 1365 KUHPerdata memungkinkan ganti rugi bila ada **kerugian nyata** yang dapat dibuktikan akibat perbuatan melawan hukum. Tuntutan bunga tanpa dasar perjanjian dan tanpa kerugian nyata biasanya ditolak. **Solusi terbaik**: buat perjanjian sejak awal yang menyebutkan bunga/denda keterlambatan.
 
 ---
 
 ## Dasar Hukum
 
-- **Pasal 130-145 HIR** (Herziene Inlandsche Reglement): Prosedur gugatan sederhana
-- **Pasal 127-139 RBg** (Reglemen Acara Pengadilan): Tata cara gugatan sederhana (klarifikasi modern)
-- **Pasal 135 HIR**: Masa perlawanan debitur (14 hari) — WAJIB ditunggu sebelum eksekusi
-- **Pasal 195-208 HIR**: Tata cara eksekusi putusan pengadilan
-- **Pasal 1365 KUH Perdata**: Tanggung jawab ganti rugi
-- **POJK 22/2023** (Otoritas Jasa Keuangan): Perlindungan konsumen dan pengendalian penagihan utang — relevan untuk proses penagihan yang etis
-- **Peraturan Mahkamah Agung Nomor 1 Tahun 2022**: Pedoman pelaksanaan gugatan sederhana di pengadilan negeri
+- **PERMA Nomor 2 Tahun 2015 jo. PERMA Nomor 4 Tahun 2019** — Tata Cara Penyelesaian Gugatan Sederhana (nilai gugatan maks. Rp 500 juta; putusan maks. 25 hari kerja; upaya hukum hanya keberatan 7 hari, tanpa banding/kasasi/PK)
+- **Pasal 1365 KUH Perdata** — perbuatan melawan hukum dan tanggung jawab ganti rugi atas kerugian nyata
+- **POJK 22/2023** — Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan (penagihan yang wajar dan beretika)
 
 ---
 
-**Catatan Penting**: Prosedur ini mengikat Anda untuk mengikuti jalur hukum yang **sah dan etis**. Penagihan gelap, intimidasi, atau penyitaan tanpa perintah
+**Catatan Penting**: Prosedur ini mengikat Anda untuk menempuh jalur hukum yang **sah dan etis**. Penagihan gelap, intimidasi, atau penyitaan tanpa penetapan pengadilan dapat berbalik menjadi perkara pidana terhadap Anda. Konten ini bersifat informasi umum dan belum diverifikasi oleh advokat; untuk kasus konkret, konsultasikan dengan advokat atau pos bantuan hukum.
