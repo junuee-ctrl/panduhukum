@@ -1,2 +1,42 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
-# 이미 발행한 10편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
+# 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
+paylater gagal bayar apa akibatnya | paylater-gagal-bayar-akibat | pinjol
+cara menutup akun paylater permanen | cara-menutup-akun-paylater | pinjol
+shopee paylater telat bayar didenda berapa | shopee-paylater-telat-bayar | pinjol
+galbay paylater masuk slik ojk | galbay-paylater-masuk-slik | pinjol
+cara restrukturisasi paylater | cara-restrukturisasi-paylater | pinjol
+utang pinjol ilegal wajib dibayar atau tidak | utang-pinjol-ilegal-wajib-bayar | pinjol
+pinjol ilegal ancam sebar foto langkah hukum | pinjol-ilegal-ancam-sebar-foto | pinjol
+bisakah pinjol ilegal dipidana | pinjol-ilegal-bisa-dipidana | pinjol
+cara negosiasi diskon pelunasan pinjol | cara-nego-diskon-pelunasan-pinjol | pinjol
+dc pinjol hubungi kontak darurat cara menghentikan | dc-pinjol-hubungi-kontak-darurat | pinjol
+hutang judi online apakah wajib dibayar | hutang-judi-online-wajib-bayar | pinjol
+jerat hukum pinjaman rentenir | pinjaman-rentenir-jerat-hukum | pinjol
+cara melunasi banyak pinjol sekaligus | cara-melunasi-banyak-pinjol | pinjol
+take over kredit motor cara dan risiko | take-over-kredit-motor | pinjol
+kredit motor macet cara mengatasi | kredit-motor-macet-solusi | pinjol
+kpr macet cara menyelamatkan rumah | kpr-macet-selamatkan-rumah | pinjol
+cara mencegah lelang rumah kpr | cara-mencegah-lelang-rumah-kpr | pinjol
+cara mengajukan pkpu perorangan | cara-mengajukan-pkpu-perorangan | pinjol
+somasi tidak digubris langkah selanjutnya | somasi-tidak-digubris-langkah | pinjol
+cara menggugat ke pengadilan tanpa pengacara | cara-menggugat-tanpa-pengacara | pinjol
+mediasi sengketa konsumen di bpsk | mediasi-sengketa-konsumen-bpsk | pinjol
+cara mengadu ke bpkn | cara-mengadu-ke-bpkn | pinjol
+cara lapor ylki barang cacat | cara-lapor-ylki | pinjol
+hak konsumen barang rusak dan garansi | hak-konsumen-garansi-barang-rusak | pinjol
+barang pesanan online tidak sampai cara refund | barang-online-tidak-sampai | pinjol
+saldo e-wallet hilang cara klaim | saldo-ewallet-hilang-klaim | pinjol
+dana nyangkut di e-wallet cara mengembalikan | dana-nyangkut-ewallet | pinjol
+cara refund tiket pesawat dibatalkan | refund-tiket-pesawat-batal | pinjol
+transaksi kartu kredit tidak dikenali cara sanggah | sanggah-transaksi-kartu-kredit | pinjol
+cara chargeback kartu kredit | cara-chargeback-kartu-kredit | pinjol
+skimming atm cara mencegah dan klaim ganti rugi | skimming-atm-cegah-klaim | pinjol
+kartu kredit hilang cara blokir cepat | kartu-kredit-hilang-cara-blokir | pinjol
+penipuan mengatasnamakan pihak bank | penipuan-mengatasnamakan-bank | pinjol
+penipuan link phishing cara antisipasi | penipuan-link-phishing | pinjol
+penipuan investasi crypto cara melapor | penipuan-investasi-crypto | pinjol
+penipuan undian berhadiah cara mengenali | penipuan-undian-berhadiah | pinjol
+penipuan pinjaman syarat transfer di awal | penipuan-pinjaman-transfer-awal | pinjol
+tunggakan bpjs kesehatan cara melunasi | tunggakan-bpjs-cara-melunasi | pinjol
+cara komplain tagihan pln membengkak | komplain-tagihan-pln-membengkak | pinjol
+konsolidasi utang cara dan syaratnya | konsolidasi-utang-cara | pinjol
