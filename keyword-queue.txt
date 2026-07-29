@@ -1,7 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-shopee paylater telat bayar didenda berapa | shopee-paylater-telat-bayar | pinjol
-galbay paylater masuk slik ojk | galbay-paylater-masuk-slik | pinjol
 cara restrukturisasi paylater | cara-restrukturisasi-paylater | pinjol
 utang pinjol ilegal wajib dibayar atau tidak | utang-pinjol-ilegal-wajib-bayar | pinjol
 pinjol ilegal ancam sebar foto langkah hukum | pinjol-ilegal-ancam-sebar-foto | pinjol
