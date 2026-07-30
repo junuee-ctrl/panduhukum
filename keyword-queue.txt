@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara restrukturisasi paylater | cara-restrukturisasi-paylater | pinjol
-utang pinjol ilegal wajib dibayar atau tidak | utang-pinjol-ilegal-wajib-bayar | pinjol
-pinjol ilegal ancam sebar foto langkah hukum | pinjol-ilegal-ancam-sebar-foto | pinjol
-bisakah pinjol ilegal dipidana | pinjol-ilegal-bisa-dipidana | pinjol
 cara negosiasi diskon pelunasan pinjol | cara-nego-diskon-pelunasan-pinjol | pinjol
 dc pinjol hubungi kontak darurat cara menghentikan | dc-pinjol-hubungi-kontak-darurat | pinjol
 hutang judi online apakah wajib dibayar | hutang-judi-online-wajib-bayar | pinjol
