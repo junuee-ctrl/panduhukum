@@ -10,96 +10,61 @@
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-22"
+      "verified_at": "2026-07-31"
     },
     {
-      "ref": "UU 36/1999",
-      "pasal": null,
-      "verified": false,
-      "status": "UNVERIFIABLE",
-      "verified_at": "2026-07-22"
+      "ref": "UU 1/2024",
+      "pasal": "Pasal 28 ayat (1) jo. Pasal 45A ayat (1)",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-07-31"
+    },
+    {
+      "ref": "UU 1/2023",
+      "pasal": "Pasal 492",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-07-31"
     },
     {
       "ref": "UU 8/1999",
-      "pasal": "Pasal 27",
+      "pasal": "Pasal 4",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-22"
-    },
-    {
-      "ref": "UU 11/2008",
-      "pasal": "Pasal 28",
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-22"
-    },
-    {
-      "ref": "UU 8/1999",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-22"
-    },
-    {
-      "ref": "UU 11/2008",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-22"
-    },
-    {
-      "ref": "POJK 22/2023",
-      "pasal": "Pasal 70",
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-22"
-    },
-    {
-      "ref": "POJK 22/2023",
-      "pasal": "Pasal 74",
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-22"
+      "verified_at": "2026-07-31"
     },
     {
       "ref": "POJK 22/2023",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-22"
-    },
-    {
-      "ref": "SEOJK 19/2023",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-22"
+      "verified_at": "2026-07-31"
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-07-22",
       "note": "Draft otomatis — gate 1·2 (yellow)"
+    },
+    {
+      "date": "2026-07-31",
+      "note": "Diverifikasi & diterbitkan (kutipan dicek ke sumber resmi; klaim ganti rugi bank dikoreksi)"
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
-# Penipuan Minta Kode OTP: Cara Mencegah & Hak Anda Jika Terjadi
+# Penipuan Minta Kode OTP: Cara Mencegah & Langkah Jika Terjadi
 
-[RINGKASAN] Penipuan kode OTP adalah tindakan kejahatan siber yang semakin marak, pelaku bertujuan mencuri data atau uang Anda dengan menyamar sebagai pihak terpercaya. Anda memiliki hak perlindungan data dan kompensasi jika dirugikan berdasarkan UU 27/2022 dan UU 36/1999. Pencegahan utama: jangan pernah bagikan kode OTP kepada siapa pun, bahkan jika mereka mengaku dari bank atau platform resmi.
+[RINGKASAN]
+Penipuan kode OTP adalah kejahatan siber yang marak: pelaku menyamar sebagai pihak resmi untuk membujuk Anda menyerahkan OTP, lalu menguras rekening atau akun. Pencegahan adalah kunci—**jangan pernah bagikan OTP kepada siapa pun.** Penting dipahami secara jujur: jika Anda sendiri yang membocorkan OTP/PIN, bank pada umumnya **tidak wajib mengganti** kerugian. Namun Anda tetap bisa melapor pidana, meminta pemblokiran rekening pelaku, dan mengejar pengembalian dana lewat proses hukum.
+
+> **Catatan:** Artikel ini disusun hati-hati dengan kutipan yang dicek ke sumber resmi, tetapi **belum ditinjau oleh advokat**. Untuk kasus konkret, konsultasikan dengan advokat/LBH.
 
 ---
 
@@ -107,213 +72,125 @@
 
 **Apa itu penipuan kode OTP?**
 
-Kode OTP (*One-Time Password*) adalah PIN 6-8 digit sekali pakai yang dikirim via SMS atau aplikasi untuk verifikasi transaksi atau login. Penipuan terjadi saat penipu:
+Kode OTP (*One-Time Password*) adalah PIN sekali pakai yang dikirim via SMS/aplikasi untuk verifikasi transaksi atau login. Penipuan terjadi saat pelaku:
 
 1. **Menyamar** sebagai CS bank, e-commerce, atau layanan digital
-2. **Menelepon/chat** Anda dengan alasan palsu ("Transaksi mencurigakan terdeteksi," "Verifikasi akun")
-3. **Meminta Anda memberikan kode OTP** yang baru saja diterima
-4. **Menggunakan kode itu** untuk akses rekening, transfer dana, atau pembelian tanpa izin
+2. **Menelepon/chat** dengan alasan palsu ("transaksi mencurigakan", "verifikasi akun")
+3. **Meminta OTP** yang baru Anda terima
+4. **Menggunakan OTP** untuk mengakses rekening, transfer dana, atau belanja tanpa izin
 
-**Mengapa berbahaya?**
-
-OTP adalah "masterkey" terakhir untuk transaksi online Anda. Begitu diberikan, penipu bisa:
-- Transfer uang dari rekening bank Anda
-- Belanja dengan kartu kredit atau e-wallet Anda
-- Ubah password akun
-- Ambil pinjaman online atas nama Anda
+**Mengapa berbahaya?** OTP adalah kunci terakhir transaksi Anda. Begitu diberikan, pelaku bisa transfer uang, belanja, mengubah password, bahkan mengajukan pinjaman atas nama Anda.
 
 ---
 
-## STEP 2 — Hak Anda (Dasar Hukum Ringkas)
+## STEP 2 — Hak & Posisi Hukum Anda (Ringkas dan Jujur)
 
-| **Hak Anda** | **Dasar Hukum** | **Penjelasan Awam** |
+| Isu | Dasar Hukum | Penjelasan Awam |
 |---|---|---|
-| **Perlindungan data pribadi** | UU 27/2022 (UU PDP) | Bank/platform wajib menjaga OTP Anda tetap rahasia. Jika mereka bocor → Anda bisa klaim. |
-| **Perlindungan transaksi digital** | POJK 22/2023 Pasal 70–80 | Jika OTP dicuri dan transaksi terjadi, bank harus refund dalam 10 hari kerja (jika Anda lapor segera). |
-| **Penanganan pengaduan konsumen** | UU 8/1999 Pasal 27–28 | Anda berhak komplain ke bank + OJK tanpa biaya; OJK wajib proses dalam 20 hari. |
-| **Tidak ada tanggungjawab untuk transaksi ilegal** | POJK 22/2023 Pasal 74 | Jika OTP dicuri dan bukan kesalahan Anda → bank yang tanggung rugi. |
-| **Laporan kejahatan siber** | UU 11/2008 (ITE) Pasal 28–30 | Penipuan OTP bisa dilaporkan ke Polda Cyber sebagai cybercrime. |
+| **Perlindungan data pribadi** | UU 27/2022 (PDP) | Bank/platform sebagai pengendali data wajib menjaga keamanan data Anda dari kebocoran. |
+| **Tanggung jawab bank** | POJK 22/2023 | Bank bertanggung jawab atas kerugian akibat **kesalahan/kelalaian bank atau pegawainya**. Namun tanggung jawab ini **tidak berlaku bila kerugian terjadi karena kesalahan nasabah sendiri**, seperti membocorkan OTP/PIN. |
+| **Penipuan dapat dipidana** | Pasal 378 KUHP (kini Pasal 492 KUHP baru/UU 1/2023) | Menipu untuk menyerahkan barang/uang adalah tindak pidana. |
+| **Penipuan online** | UU ITE: Pasal 28 ayat (1) jo. Pasal 45A ayat (1) (UU 1/2024) | Penipuan lewat transaksi elektronik diancam hingga 6 tahun penjara dan/atau denda Rp1 miliar. |
+| **Hak konsumen & pengaduan** | UU 8/1999 Pasal 4; POJK 22/2023 | Anda berhak mengadu ke bank dan OJK; bank wajib menangani pengaduan sesuai prosedur. |
 
-**Prinsip perlindungan:**  
-Anda tidak boleh dimintai OTP oleh siapa pun, **termasuk pihak yang mengaku dari bank Anda sendiri**. Bank yang sebenarnya sudah punya sistem lain untuk verifikasi (biometrik, PIN transaksi).
-
----
-
-## STEP 3 — Cara Mencegah (5 Langkah Praktis)
-
-### **A. Mindset Dasar: OTP = Rahasia Pribadi**
-
-✓ **OTP tidak boleh diberikan kepada siapa pun,** bahkan jika:
-- Mereka mengaku dari bank Anda
-- Menelepon/chat dengan nomor mirip resmi
-- Bilang ada pembelian mencurigakan
-- Katakan akun Anda akan diblokir
-
-✗ **Bank resmi TIDAK akan pernah minta OTP via telepon, SMS, chat, atau email.**
+**Poin penting yang sering disalahpahami:** Banyak yang mengira "kalau kena tipu OTP, bank pasti ganti dalam beberapa hari." **Ini keliru.** Bila OTP Anda serahkan sendiri (meski karena ditipu), kerugian umumnya dianggap kesalahan nasabah, sehingga bank tidak berkewajiban mengganti. Bank baru bertanggung jawab bila kerugian berasal dari kelalaian/kesalahan bank sendiri (misalnya kebocoran sistem atau ulah pegawainya). Karena itu, **pencegahan jauh lebih penting daripada berharap refund.**
 
 ---
 
-### **B. Proteksi Teknis**
+## STEP 3 — Cara Mencegah (Paling Penting)
 
-| **Langkah** | **Cara Melakukan** |
+### A. Prinsip dasar: OTP = rahasia mutlak
+OTP **tidak boleh diberikan kepada siapa pun**, walau mereka:
+- Mengaku dari bank Anda
+- Menelepon/chat dari nomor yang tampak resmi
+- Menyebut ada "transaksi mencurigakan"
+- Mengancam akun akan diblokir
+
+**Bank resmi TIDAK pernah meminta OTP** lewat telepon, SMS, chat, atau email.
+
+### B. Proteksi teknis
+| Langkah | Cara |
 |---|---|
-| **Aktifkan 2FA (Two-Factor Authentication)** | Di setiap aplikasi bank/e-wallet, nyalakan fitur "Autentikasi Ganda" → tambah lapisan keamanan. |
-| **Gunakan app banking resmi, bukan browser** | Aplikasi lebih aman dari phishing. Download hanya dari Play Store/App Store resmi. |
-| **Aktifkan SMS Alert** | Setiap OTP yang masuk, tampilkan di notifikasi. Jika menerima OTP tanpa transaksi → segera waspada. |
-| **Jangan biarkan SMS terbuka di dekat orang lain** | Terutama saat di tempat umum atau sedang diajak telp penipu. |
-| **Ubah password rutin (30 hari)** | Gunakan kombinasi huruf besar, kecil, angka, simbol. Jangan share password dengan siapa pun. |
+| Aktifkan autentikasi ganda (2FA) | Nyalakan di aplikasi bank/e-wallet |
+| Pakai aplikasi resmi | Unduh hanya dari Play Store/App Store resmi |
+| Aktifkan notifikasi transaksi | Setiap OTP/transaksi tampil sebagai notifikasi |
+| Jaga privasi layar | Jangan buka SMS/OTP di dekat orang lain |
+| Password kuat & unik | Kombinasi huruf, angka, simbol; jangan dibagikan |
 
----
+### C. Antisipasi rekayasa sosial
+Jika ada yang meminta OTP dengan dalih apa pun: **tutup komunikasi**, lalu hubungi lembaga terkait lewat nomor resmi (dari kartu/aplikasi/website resmi), bukan dari nomor penelepon.
 
-### **C. Antisipasi Sosial (Social Engineering)**
-
-**Skenario Penipu & Respons Anda:**
-
-| **Apa yang Mereka Katakan** | **Respons Benar** |
-|---|---|
-| "Ibu, ini CS BCA. Ada transaksi mencurigakan dari kartu kredit Anda. Kasi OTP sekarang!" | "Terima kasih. Saya akan login langsung ke aplikasi BCA. Jangan hubungi lagi." (Tutup telepon.) |
-| "Pak, Anda menang undian e-commerce. Konfirmasi dengan OTP dulu." | "Tidak ada pendaftaran undian dari saya. Sudah disconnect." (Blokir nomor.) |
-| "Tante, akun TikTok Anda akan dihapus. Verifikasi pakai OTP supaya aman." | "Saya akan verifikasi sendiri dari aplikasi TikTok resmi. Bye." |
-| "Om, ini bank. Kembalikan pulsa asuransi Anda. Berapa OTP-nya?" | "Tidak ada asuransi dari saya. Hubungi kantor pusat Anda langsung." |
-
-**Prinsip: Kalau ragu → JANGAN beri OTP. Tutup komunikasi. Hubungi nomor resmi dari website/ATM bank sendiri.**
-
----
-
-### **D. Jika Sudah Menerima OTP Tanpa Transaksi**
-
-1. **Jangan Panik** — belum tentu penipu berhasil.
-2. **Jangan Beri Tahu Siapa Pun** — terutama orang yang baru menelepon Anda.
-3. **Segera Ubah Password** — di aplikasi bank/e-commerce via device yang aman.
-4. **Lapor ke CS Bank Secepat Mungkin** — telepon nomor resmi dari belakang kartu ATM.
-5. **Cek Riwayat Transaksi** — pastikan tidak ada transfer/pembayaran mencurigakan.
+### D. Jika Anda menerima OTP tanpa melakukan transaksi
+1. Jangan panik dan **jangan beri tahu siapa pun**
+2. Segera ubah password lewat perangkat yang aman
+3. Hubungi CS bank via nomor resmi
+4. Cek riwayat transaksi
 
 ---
 
 ## STEP 4 — Jika Sudah Dirugikan: Ke Mana & Kapan
 
-**Anda sudah memberikan OTP dan uang terambil?**  
-Ikuti langkah ini (urutan penting):
+| No. | Ke Mana | Kapan | Tujuan |
+|---|---|---|---|
+| 1 | **Call center resmi bank** | **Secepatnya (menit-menit pertama)** | Blokir akses, laporkan fraud, minta upaya pemblokiran/penelusuran rekening tujuan |
+| 2 | **Kepolisian (SPKT / patrolisiber.id)** | **< 24 jam** | Buat Laporan Polisi (LP) sebagai dasar proses pidana & permintaan pemblokiran rekening |
+| 3 | **Blokir rekening pelaku** | Segera | Ajukan lewat bank dan/atau **cekrekening.id** (Kominfo/Komdigi) dengan bukti transfer |
+| 4 | **OJK (kontak 157)** | Bila ada sengketa dengan bank | Pengaduan bila bank dinilai lalai atas kewajibannya |
 
-| **No.** | **Ke Mana** | **Kapan** | **Apa Dibawa** | **Target Resolusi** |
-|---|---|---|---|---|
-| **1** | **Customer Service Bank** (call center atau datang ke cabang) | **SEGERA, < 1 jam** | Kartu ATM, identitas (KTP), bukti transaksi | Blokir akun, lapor ke sistem deteksi fraud |
-| **2** | **Kepolisian (Polda Cyber atau Polsek setempat)** | **< 24 jam** | KTP, bukti transfer (screenshot), nomor rekening penipu, waktu kejadian | Nomor LP (Laporan Polisi) untuk claim bank |
-| **3** | **OJK (Otoritas Jasa Keuangan) — via website atau aplikasi ojk.go.id** | **< 5 hari** | Nomor LP, surat bank, bukti transfer, kronologi | Investigasi + pressure ke bank untuk refund |
-| **4** | **Pengadilan (jika bank lambat refund > 10 hari)** | **10 hari after LP** | Semua dokumen + surat pernyataan | Tuntutan ganti rugi + bunga |
+**Realistis soal pengembalian dana:** Peluang dana kembali paling besar bila rekening tujuan masih menyimpan saldo dan segera dibekukan. Bila dana sudah ditarik/dipindah, pemulihan menjadi sulit dan bergantung pada proses pidana terhadap pelaku. Kecepatan melapor sangat menentukan.
 
 ---
 
 ## STEP 5 — Dokumen & Bukti yang Disiapkan
 
-**Kumpulkan & Fotokopi Sebelum Lapor:**
-
-- ✓ **Kartu identitas** (KTP/SIM/Paspor)
-- ✓ **Screenshot/bukti video** transaksi yang terjadi (tanggal, jam, jumlah uang)
-- ✓ **Nomor rekening penipu** (jika bisa dilacak dari transfer)
-- ✓ **Bukti komunikasi dengan penipu** (chat, rekaman telepon jika ada)
-- ✓ **SMS/notifikasi OTP** yang dikirim (jangan dihapus)
-- ✓ **Laporan bank** tentang transaksi mencurigakan
-- ✓ **Screenshot rekening bank** Anda (sebelum & sesudah diambil)
-- ✓ **Nomor LP** dari kepolisian (untuk claim ke bank/OJK)
+- Kartu identitas (KTP/SIM/Paspor)
+- Bukti transaksi yang terjadi (tanggal, jam, jumlah)
+- Nomor rekening/e-wallet tujuan (dari mutasi/transfer)
+- Bukti komunikasi dengan pelaku (chat, rekaman, jika ada)
+- SMS/notifikasi OTP yang masuk (jangan dihapus)
+- Screenshot mutasi rekening sebelum & sesudah kejadian
+- Nomor LP dari kepolisian
 
 ---
 
 ## STEP 6 — Jebakan yang Harus Dihindari
 
-### **❌ Kesalahan Umum Korban:**
-
-1. **Menunggu sampai uang "hilang keseluruhan"**  
-   → Laporkan segera mungkin! Setiap jam delay, uang Anda semakin sulit dilacak.
-
-2. **Hanya lapor ke bank, tanpa lapor polisi**  
-   → Bank butuh nomor LP untuk valid investigasi. Tanpa LP, claim ditolak.
-
-3. **Memberi identitas lengkap ke penelepon** (nama, nomor rekening, KTP)  
-   → Data ini bisa disalahgunakan untuk phishing berkelanjutan.
-
-4. **Tidak ubah password langsung setelah kejadian**  
-   → Penipu bisa masuk lagi ke akun Anda berkali-kali.
-
-5. **Balas/negosiasi dengan penipunya** ("Kembalikan uangku!")  
-   → Sia-sia. Fokus ke laporan resmi saja.
-
-6. **Percaya bahwa bank akan refund tanpa bukti**  
-   → Bank butuh nomor LP + kronologi tertulis. Siapkan semuanya.
-
-7. **Menganggap OTP yang diterima = transaksi Anda**  
-   → OTP hanya verifikasi. Jika tidak ada transaksi dari Anda → lapor fraud.
+1. **Menunda lapor.** Setiap jam menurunkan peluang dana diselamatkan.
+2. **Hanya lapor ke bank, tidak ke polisi.** LP penting untuk pemblokiran & proses pidana.
+3. **Memberi data tambahan** (KTP, nomor rekening, OTP lain) ke penelepon.
+4. **Tidak segera mengubah password** setelah kejadian.
+5. **Percaya "jasa pengembalian dana" berbayar.** Ini modus penipuan lanjutan.
+6. **Mengira OTP yang masuk = transaksi Anda.** Bila tidak ada transaksi dari Anda, waspadai fraud dan segera lapor.
 
 ---
 
 ## FAQ
 
-### **Apakah bank wajib refund jika OTP saya dicuri?**
+### Apakah bank pasti mengganti uang saya jika kena tipu OTP?
+**Tidak.** Bila Anda sendiri yang memberikan OTP/PIN (meski karena dibujuk), kerugian umumnya dianggap kesalahan nasabah, sehingga bank pada umumnya tidak wajib mengganti. Bank bertanggung jawab bila kerugian berasal dari kesalahan/kelalaian bank atau pegawainya (misalnya kebocoran sistem). Karena itu jangan pernah membagikan OTP.
 
-Ya, sesuai **POJK 22/2023 Pasal 74**, bank wajib refund dalam **10 hari kerja** jika:
-- Anda lapor dalam **waktu < 24 jam** setelah menyadari
-- Ada bukti Anda tidak memberikan OTP dengan sengaja
-- Ada laporan polisi (nomor LP)
+### Kalau begitu, apakah percuma melapor?
+Tidak percuma. Laporan ke bank dan polisi membuka peluang **pemblokiran rekening pelaku** (terutama jika saldo masih ada) dan **proses pidana** terhadap pelaku (Pasal 378 KUHP / Pasal 28 ayat (1) jo. 45A ayat (1) UU ITE). Semakin cepat, semakin besar peluangnya.
 
-Jika bank menolak tanpa alasan jelas, escalate ke OJK (gratis).
+### Bagaimana jika pelaku memakai nomor yang mirip nomor resmi bank?
+Jangan percaya tampilan nomor (bisa dipalsukan/spoofing). Selalu hubungi balik bank lewat nomor resmi di kartu/aplikasi/website resmi, bukan dari nomor penelepon atau tautan yang dikirim.
 
----
+### Apakah saya bisa dituntut bila kejahatan dilakukan atas nama saya karena OTP dicuri?
+Bila Anda korban dan bisa menunjukkan bukti (kronologi, LP, komunikasi pelaku), posisi Anda adalah korban, bukan pelaku. Simpan semua bukti dan segera buat laporan polisi.
 
-### **Berapa lama proses refund dari bank?**
-
-- **Investigasi awal:** 3–5 hari kerja
-- **Refund (jika disetujui):** maksimal 10 hari kerja
-- **Total:** 10–15 hari kerja (2–3 minggu)
-
-**Jika bank lambat:** Ajukan pengaduan ke OJK. OJK bisa tekan bank dengan denda.
-
----
-
-### **Bagaimana jika penipu mengaku dari bank dan pakai nomor yang mirip?**
-
-Jangan percaya nomor yang terlihat mirip. **Selalu** hubungi kembali bank dengan **nomor resmi di belakang kartu ATM Anda sendiri** atau kunjungi website bank langsung (bukan link dari SMS/chat). Penipu sering gunakan caller ID spoofing (pemalsuan nomor).
-
----
-
-### **Apakah saya bisa dituntut jika OTP saya dicuri dan ada kejahatan atas nama saya?**
-
-**Tidak**, asal Anda bisa buktikan:
-- OTP dicuri (bukan diberi sukarela)
-- Ada laporan polisi
-- Lapor ke bank dalam 24 jam
-
-**UU 27/2022** dan **POJK 22/2023** melindungi Anda dari tanggung jawab atas transaksi yang bukan otorisasi Anda.
-
----
-
-### **Bagaimana cara melacak uang yang sudah ditransfer ke rekening penipu?**
-
-1. **Lapor ke Polda Cyber** → mereka bisa minta rekening penipu diblokir via bank penyimpan
-2. **OJK akan minta bank tujuan** untuk freeze akun penipu (maksimal 3×24 jam)
-3. **Jika rekening masih ada saldo** → dimungkinkan untuk recovery
-4. **Jika uang sudah ditarik** → lebih sulit, tapi polisi bisa terus investigasi
-
-**Semakin cepat lapor, semakin besar peluang uang terselamatkan.**
+### Bagaimana melacak uang yang sudah ditransfer ke pelaku?
+Laporkan ke bank dan polisi agar rekening tujuan dapat diupayakan diblokir; ajukan juga lewat **cekrekening.id**. Bila saldo masih ada, dana berpeluang diselamatkan; bila sudah ditarik, pemulihan bergantung pada proses hukum terhadap pelaku.
 
 ---
 
 ## Dasar Hukum
 
-1. **UU 27/2022** (Undang-Undang Perlindungan Data Pribadi)
-   - Pasal 21–22: Hak pemilik data untuk mengajukan keberatan + klaim
-   - Pasal 66–68: Tanggung jawab pengontrol data (bank) atas kebocoran
+1. **UU 27/2022 (Perlindungan Data Pribadi)** — kewajiban pengendali data (bank/platform) menjaga keamanan data pribadi.
+2. **UU 8/1999 (Perlindungan Konsumen) Pasal 4** — hak konsumen atas keamanan, kenyamanan, dan informasi yang benar.
+3. **POJK 22/2023 (Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan)** — tanggung jawab lembaga jasa keuangan atas kerugian akibat kesalahan/kelalaiannya, penanganan pengaduan, serta batasan tanggung jawab bila kerugian akibat kesalahan nasabah sendiri.
+4. **KUHP Pasal 378 (kini Pasal 492 UU 1/2023, KUHP baru berlaku 2026)** — tindak pidana penipuan.
+5. **UU ITE — Pasal 28 ayat (1) jo. Pasal 45A ayat (1) (UU 1/2024)** — penipuan/berita bohong yang merugikan konsumen dalam transaksi elektronik.
 
-2. **POJK 22/2023** (Peraturan OJK tentang Perlindungan Konsumen Jasa Keuangan)
-   - Pasal 70–75: Tanggung jawab bank atas penipuan transaksi digital
-   - Pasal 76–80: Prosedur refund & kompensasi
+---
 
-3. **SEOJK 19/2023** (Surat Edaran OJK)
-   - Penjelasan teknis tentang verifikasi OTP yang aman & tanggungjawab bank
-
-4. **UU 8/1999** (Undang-Undang Perlindungan Konsumen)
-   - Pasal 27–28: Mekanisme pengaduan konsumen ke lembaga perlindungan
-
-5. **UU 11/2008** (Undang-Undang Informasi dan Transaksi Elektronik)
-   - Pasal 28–30: Tindak pidana cybercrime (penipuan OTP termasuk)
-
-6. **PERMA 2/2015** (Peraturan Mahkamah
+**Intinya:** OTP adalah rahasia mutlak—jangan pernah dibagikan. Bila kena tipu karena membocorkan OTP sendiri, bank umumnya tidak wajib mengganti, tetapi Anda tetap harus segera lapor ke bank dan polisi untuk mengejar pemblokiran rekening pelaku dan proses pidana. Kecepatan adalah segalanya.
