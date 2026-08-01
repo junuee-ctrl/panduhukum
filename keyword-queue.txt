@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara melunasi banyak pinjol sekaligus | cara-melunasi-banyak-pinjol | pinjol
-take over kredit motor cara dan risiko | take-over-kredit-motor | pinjol
-kredit motor macet cara mengatasi | kredit-motor-macet-solusi | pinjol
-kpr macet cara menyelamatkan rumah | kpr-macet-selamatkan-rumah | pinjol
 cara mencegah lelang rumah kpr | cara-mencegah-lelang-rumah-kpr | pinjol
 cara mengajukan pkpu perorangan | cara-mengajukan-pkpu-perorangan | pinjol
 somasi tidak digubris langkah selanjutnya | somasi-tidak-digubris-langkah | pinjol
