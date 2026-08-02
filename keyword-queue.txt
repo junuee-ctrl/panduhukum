@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-cara mencegah lelang rumah kpr | cara-mencegah-lelang-rumah-kpr | pinjol
-cara mengajukan pkpu perorangan | cara-mengajukan-pkpu-perorangan | pinjol
-somasi tidak digubris langkah selanjutnya | somasi-tidak-digubris-langkah | pinjol
-cara menggugat ke pengadilan tanpa pengacara | cara-menggugat-tanpa-pengacara | pinjol
 mediasi sengketa konsumen di bpsk | mediasi-sengketa-konsumen-bpsk | pinjol
 cara mengadu ke bpkn | cara-mengadu-ke-bpkn | pinjol
 cara lapor ylki barang cacat | cara-lapor-ylki | pinjol
