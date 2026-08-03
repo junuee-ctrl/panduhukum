@@ -1,8 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-mediasi sengketa konsumen di bpsk | mediasi-sengketa-konsumen-bpsk | pinjol
-cara mengadu ke bpkn | cara-mengadu-ke-bpkn | pinjol
-cara lapor ylki barang cacat | cara-lapor-ylki | pinjol
 hak konsumen barang rusak dan garansi | hak-konsumen-garansi-barang-rusak | pinjol
 barang pesanan online tidak sampai cara refund | barang-online-tidak-sampai | pinjol
 saldo e-wallet hilang cara klaim | saldo-ewallet-hilang-klaim | pinjol
