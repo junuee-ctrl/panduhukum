@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-barang pesanan online tidak sampai cara refund | barang-online-tidak-sampai | pinjol
-saldo e-wallet hilang cara klaim | saldo-ewallet-hilang-klaim | pinjol
-dana nyangkut di e-wallet cara mengembalikan | dana-nyangkut-ewallet | pinjol
-cara refund tiket pesawat dibatalkan | refund-tiket-pesawat-batal | pinjol
 transaksi kartu kredit tidak dikenali cara sanggah | sanggah-transaksi-kartu-kredit | pinjol
 cara chargeback kartu kredit | cara-chargeback-kartu-kredit | pinjol
 skimming atm cara mencegah dan klaim ganti rugi | skimming-atm-cegah-klaim | pinjol
@@ -17,3 +13,4 @@ tunggakan bpjs kesehatan cara melunasi | tunggakan-bpjs-cara-melunasi | pinjol
 cara komplain tagihan pln membengkak | komplain-tagihan-pln-membengkak | pinjol
 konsolidasi utang cara dan syaratnya | konsolidasi-utang-cara | pinjol
 paylater gagal bayar apa akibatnya | paylater-gagal-bayar-akibat | pinjol
+dana nyangkut di e-wallet cara mengembalikan | dana-nyangkut-ewallet | pinjol
