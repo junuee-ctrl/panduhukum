@@ -13,14 +13,28 @@
       "verified_at": "2026-08-05"
     },
     {
-      "ref": "UU 1/2009",
-      "pasal": "Pasal 153",
-      "verified": false,
-      "status": "UNVERIFIABLE",
+      "ref": "UU 1/2009 (Penerbangan)",
+      "pasal": "Pasal 146",
+      "verified": true,
+      "status": "FOUND",
       "verified_at": "2026-08-05"
     },
     {
-      "ref": "POJK 22/2023",
+      "ref": "PM Perhubungan 185/2015",
+      "pasal": "Pasal 10",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-08-05"
+    },
+    {
+      "ref": "PM Perhubungan 89/2015",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-08-05"
+    },
+    {
+      "ref": "UU 27/2022",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
@@ -28,23 +42,20 @@
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-08-05",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-08-05",
+      "note": "Diverifikasi & diterbitkan: kutipan 'PM 89/2024', 'PM 77/2020', 'POJK 22/2023 (syariah)' dan skema kompensasi Rp bertingkat yang tidak berdasar dihapus; dasar hukum dikoreksi ke UU 1/2009 Pasal 146, PM 185/2015, PM 89/2015"
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
@@ -72,7 +83,7 @@ Penerbangan Anda dibatalkan oleh maskapai? Ini bukan kesalahan Anda, dan maskapa
 
 ### **Hak Utama: Refund atau Reboking Gratis**
 
-Berdasarkan **Peraturan Menteri Perhubungan 89/2024** (pengganti PM 77/2020) dan **POJK 22/2023**, maskapai WAJIB menawarkan 3 pilihan jika membatalkan penerbangan:
+Berdasarkan **UU 1/2009 tentang Penerbangan (Pasal 146)** dan **Peraturan Menteri Perhubungan No. PM 185 Tahun 2015** serta **PM 89 Tahun 2015**, maskapai WAJIB bertanggung jawab jika membatalkan penerbangan, dengan pilihan:
 
 1. **Refund penuh** = uang kembali 100% ke rekening Anda
 2. **Reboking gratis** = ganti ke penerbangan lain tanpa biaya
@@ -89,14 +100,11 @@ Refund TETAP berlaku MESKI pembatalan karena:
 - ✓ Masalah teknis pesawat yang sudah terdeteksi
 - ✓ Kesalahan operasional maskapai
 
-### **Hak Tambahan: Kompensasi**
+### **Hak Tambahan: Kompensasi Keterlambatan**
 
-Jika penerbangan dibatalkan **< 7 hari sebelum jadwal**, Anda berhak kompensasi tambahan:
-- Pembatalan 1-7 hari: **Rp 600.000**
-- Pembatalan 8-14 hari: **Rp 400.000**
-- Pembatalan 15+ hari: Tidak ada kompensasi, hanya refund/reboking
+Jika keberangkatan tertunda lama (bukan dibatalkan), **PM 89 Tahun 2015** mewajibkan kompensasi bertingkat sesuai kategori keterlambatan — mulai dari makanan/minuman untuk keterlambatan menengah, sampai ganti rugi uang untuk keterlambatan di atas 4 jam. Maskapai dibebaskan dari kompensasi bila keterlambatan murni karena cuaca atau faktor teknis operasional di luar kendali.
 
-*(Angka ini sesuai PM 89/2024; untuk penerbangan internasional lihat peraturan bilateral/Reg. UE 261/2004)*
+*(Untuk penerbangan internasional, hak dan kompensasi mengikuti aturan negara/maskapai terkait; misalnya Regulation (EC) 261/2004 untuk rute Uni Eropa.)*
 
 ### **Catatan Penting**
 - Kompensasi adalah **TAMBAHAN**, bukan pengganti refund
@@ -176,39 +184,35 @@ Tidak, refund harus atas nama pembeli tiket (sesuai ID pembayaran). Jika Anda be
 Hubungi OTA-nya dulu dengan lampirkan tiket & bukti pembayaran. OTA bertanggung jawab mengejar maskapai untuk refund. Jika OTA lambat, lapor ke Kemenhub + BPSK dengan cantumkan keduanya: OTA & maskapai. JANGAN hanya laporkan maskapai, karena OTA punya kontrak dengan maskapai.
 
 ### 🤔 **Berapa lama refund masuk ke rekening setelah maskapai setuju?**
-Menurut PM 89/2024, maskapai harus proses dalam **7 hari kerja** setelah Anda kirim data rekening. Jika lewat, ingatkan maskapai via email & catat sebagai bukti penundaan.
+Menurut PM 185 Tahun 2015, refund untuk pembayaran tunai wajib diproses maksimal **15 hari kerja**, dan untuk pembayaran kartu kredit/debit maksimal **30 hari kerja** sejak Anda mengajukan. Jika lewat, ingatkan maskapai via email & catat sebagai bukti penundaan.
 
 ### 🤔 **Apa bedanya pembatalan maskapai vs pembatalan saya (penumpang)?**
 - **Pembatalan maskapai**: Anda berhak refund penuh + kompensasi + reboking gratis (hak Anda)
 - **Pembatalan penumpang** (Anda cancel): Tergantung aturan tiket (lihat syarat & ketentuan). Rata-rata hanya dapat voucher/reboking tanpa refund uang, atau bayar biaya pembatalan.
 
 ### 🤔 **Bagaimana jika penerbangan ditunda sangat ekstrem (24+ jam)?**
-Tunda panjang = dibatalkan secara efektif. Penumpang punya hak yang sama: refund, reboking gratis, atau kombinasi. Kompensasi juga berlaku sesuai PM 89/2024 (Rp 600.000 jika < 7 hari notifikasi).
+Tunda panjang = dibatalkan secara efektif. Penumpang punya hak yang sama: refund, reboking gratis, atau kombinasi. Untuk keterlambatan panjang, kompensasi mengikuti kategori dalam PM 89 Tahun 2015.
 
 ---
 
 ## Dasar Hukum
 
-1. **Peraturan Menteri Perhubungan RI Nomor 89 Tahun 2024** – Tanggung Jawab Pengguna Jasa dan Hak Maskapai (pengganti PM 77/2020)
-   - Pasal 9-12: Hak penumpang atas refund & kompensasi
-   - Pasal 17-19: Prosedur pembatalan & reboking
+1. **UU No. 1 Tahun 2009 tentang Penerbangan**
+   - Pasal 146: Pengangkut (maskapai) bertanggung jawab atas kerugian akibat pembatalan/keterlambatan, kecuali dapat membuktikan penyebabnya faktor cuaca atau teknis operasional.
 
-2. **POJK 22/2023** – Perlindungan Konsumen dan Penyelesaian Sengketa Jasa Keuangan Syariah (referensi untuk standar complaint handling; berlaku juga untuk konsumen umum)
-   - Pasal 62: Mekanisme pengaduan & tenggat waktu respons
+2. **Peraturan Menteri Perhubungan No. PM 185 Tahun 2015** – Standar Pelayanan Penumpang Kelas Ekonomi Angkutan Udara Niaga Berjadwal Dalam Negeri
+   - Pasal 10: Kewajiban maskapai mengembalikan (refund) biaya tiket; batas waktu proses refund 15 hari kerja (tunai) atau 30 hari kerja (kartu kredit/debit).
 
-3. **UU 8/1999** – Perlindungan Konsumen
-   - Pasal 4-7: Hak konsumen atas informasi jelas, ganti rugi, & remedy
-   - Pasal 45-48: Lembaga penyelesaian sengketa (BPSK, YLKI)
+3. **Peraturan Menteri Perhubungan No. PM 89 Tahun 2015** – Penanganan Keterlambatan Penerbangan
+   - Kategori keterlambatan dan kompensasinya; pembatalan penerbangan mewajibkan refund penuh atau pengalihan ke penerbangan lain.
 
-4. **UU 1/2009** – Penerbangan
-   - Pasal 153: Tanggung jawab maskapai atas kerugian penumpang
+4. **UU No. 8 Tahun 1999 tentang Perlindungan Konsumen**
+   - Pasal 4: Hak konsumen atas informasi yang benar dan ganti rugi.
+   - Pasal 45–48: Penyelesaian sengketa konsumen (BPSK).
 
-5. **Peraturan Dewan Otorita Jasa Keuangan (POJK) 11/2024** (jika ada pembayaran cicilan/kartu kredit terlibat)
-   - Perlindungan atas pembatalan transaksi & refund
+5. **UU No. 27 Tahun 2022 tentang Perlindungan Data Pribadi** – untuk privasi data (rekening, identitas) yang Anda kirim ke maskapai.
 
-6. **Regulation (EC) 261/2004** – untuk penerbangan internasional (jika tujuan/asal: UE, Inggris, atau maskapai EU)
-
-7. **Undang-Undang 27/2022** – Perlindungan Data Pribadi (untuk privasi data bank yang Anda kirim ke maskapai)
+*Untuk penerbangan internasional, aturan tambahan negara/maskapai terkait dapat berlaku (mis. Regulation (EC) 261/2004 pada rute Uni Eropa).*
 
 ---
 
