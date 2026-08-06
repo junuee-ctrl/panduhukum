@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-transaksi kartu kredit tidak dikenali cara sanggah | sanggah-transaksi-kartu-kredit | pinjol
-cara chargeback kartu kredit | cara-chargeback-kartu-kredit | pinjol
-skimming atm cara mencegah dan klaim ganti rugi | skimming-atm-cegah-klaim | pinjol
-kartu kredit hilang cara blokir cepat | kartu-kredit-hilang-cara-blokir | pinjol
 penipuan mengatasnamakan pihak bank | penipuan-mengatasnamakan-bank | pinjol
 penipuan link phishing cara antisipasi | penipuan-link-phishing | pinjol
 penipuan investasi crypto cara melapor | penipuan-investasi-crypto | pinjol
