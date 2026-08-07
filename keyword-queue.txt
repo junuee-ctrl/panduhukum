@@ -1,12 +1,9 @@
 # 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
 # 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
-penipuan mengatasnamakan pihak bank | penipuan-mengatasnamakan-bank | pinjol
-penipuan link phishing cara antisipasi | penipuan-link-phishing | pinjol
-penipuan investasi crypto cara melapor | penipuan-investasi-crypto | pinjol
-penipuan undian berhadiah cara mengenali | penipuan-undian-berhadiah | pinjol
 penipuan pinjaman syarat transfer di awal | penipuan-pinjaman-transfer-awal | pinjol
 tunggakan bpjs kesehatan cara melunasi | tunggakan-bpjs-cara-melunasi | pinjol
 cara komplain tagihan pln membengkak | komplain-tagihan-pln-membengkak | pinjol
 konsolidasi utang cara dan syaratnya | konsolidasi-utang-cara | pinjol
 paylater gagal bayar apa akibatnya | paylater-gagal-bayar-akibat | pinjol
 dana nyangkut di e-wallet cara mengembalikan | dana-nyangkut-ewallet | pinjol
+penipuan undian berhadiah cara mengenali | penipuan-undian-berhadiah | pinjol
