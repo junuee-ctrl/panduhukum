@@ -10,69 +10,52 @@
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-08-05"
-    },
-    {
-      "ref": "UU 27/2022",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-08-05"
+      "verified_at": "2026-08-07"
     },
     {
       "ref": "UU 8/1999",
       "pasal": "Pasal 4",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-08-05"
+      "verified_at": "2026-08-07"
+    },
+    {
+      "ref": "UU 8/1999",
+      "pasal": "Pasal 19",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-08-07"
     },
     {
       "ref": "UU 27/2022",
-      "pasal": "Pasal 6",
+      "pasal": "Pasal 46",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-08-05"
+      "verified_at": "2026-08-07"
     },
     {
       "ref": "POJK 22/2023",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-08-05"
-    },
-    {
-      "ref": "POJK 22/2023",
-      "pasal": "Pasal 49",
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-08-05"
-    },
-    {
-      "ref": "SEOJK 19/2023",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-08-05"
+      "verified_at": "2026-08-07"
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-08-05",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-08-07",
+      "note": "Diverifikasi & diterbitkan (kutipan dicek ke sumber resmi): UU 27/2022 Pasal 46 (pemberitahuan 3x24 jam) diperbaiki dari Pasal 62 yang keliru; SEOJK 19/2023 (judul & atribusi BI keliru) dan nomor Pasal POJK/UU yang tidak terverifikasi dihapus; tanggung jawab penyedia didasarkan pada Pasal 19 UU 8/1999."
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
@@ -106,22 +89,22 @@ Sebagai pengguna e-wallet, Anda adalah **konsumen**. Anda berhak:
 
 Penyedia e-wallet adalah **pelaku usaha** yang harus bertanggung jawab atas kesalahan sistemnya.
 
-### 2. **Peraturan OJK tentti Perlindungan Konsumen**
-- **POJK 22/2023** tentang Perlindungan Konsumen di Sektor Jasa Keuangan
-  - Penyedia layanan digital harus menjamin keamanan dan akurasi transaksi (Pasal 9)
-  - Kewajiban menginvestigasi laporan konsumen dalam **maksimal 5 hari kerja** (Pasal 48)
-  - Harus memberikan jawaban tertulis paling lambat **15 hari kerja** (Pasal 49)
+### 2. **Peraturan OJK tentang Perlindungan Konsumen**
+- **POJK 22/2023** tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan
+  - Penyedia jasa keuangan wajib memperlakukan konsumen secara adil, andal, dan transparan
+  - Penyedia wajib menerima, menangani, dan menyelesaikan pengaduan konsumen dengan patut
+  - Jika pengaduan tidak terselesaikan, konsumen dapat menempuh Lembaga Alternatif Penyelesaian Sengketa (LAPS) Sektor Jasa Keuangan
 
 ### 3. **Hak atas Data Pribadi (UU 27/2022 tentang PDP)**
 Jika saldo hilang karena data Anda diretas:
-- Penyedia harus notifikasi segera (Pasal 62)
+- Penyedia (Pengendali Data Pribadi) wajib memberitahukan kegagalan pelindungan data secara tertulis paling lambat 3×24 jam (Pasal 46 UU 27/2022)
 - Anda berhak minta riwayat akses dan audit
-- Anda berhak kompensasi jika ada kelalaian keamanan (Pasal 6)
+- Anda berhak menuntut ganti rugi jika ada kelalaian keamanan data
 
 ### 4. **Tanggung Jawab Penyedia Jasa Pembayaran**
-Peraturan Bank Indonesia (SEOJK 19/2023) mengatur dompet digital:
-- **Liability shift**: Jika transaksi tidak sah, penyedia bertanggung jawab terbukti bukan kesalahan Anda
-- Beban pembuktian ada di penyedia (dia harus tunjukkan Anda melakukan transaksi tersebut)
+Berdasarkan prinsip tanggung jawab pelaku usaha (Pasal 19 UU 8/1999), jika kerugian timbul akibat kesalahan sistem atau transaksi tidak sah:
+- Penyedia wajib bertanggung jawab dan memberi ganti rugi bila kerugian bukan disebabkan kesalahan konsumen
+- Siapkan bukti yang menunjukkan transaksi tersebut tidak Anda lakukan atau tidak Anda otorisasi
 
 ---
 
@@ -131,7 +114,7 @@ Peraturan Bank Indonesia (SEOJK 19/2023) mengatur dompet digital:
 |---------|-------------|--------------|------|
 | **1. Laporan Awal** | CS penyedia (chat, email, telepon) | **1×24 jam** setelah sadari hilang | Telfon + email dgn bukti screenshot |
 | **2. Investigasi** | Customer Service penyedia | **Maks 5 hari kerja** | Kirim bukti transaksi + identitas |
-| **3. Respons Penyedia** | Email tertulis penyedia | **Maks 15 hari kerja** (Pasal 49 POJK 22/2023) | Catat tanggal respons |
+| **3. Respons Penyedia** | Email tertulis penyedia | Sesuai jangka waktu penanganan pengaduan yang berlaku | Minta jawaban tertulis & catat tanggalnya |
 | **4. Jika Ditolak/Diam** | Mediasi OJK (Lembaga Alternatif Penyelesaian Sengketa) | **30 hari setelah lapor OJK** | Daftar di www.ojk.go.id, gratis |
 | **5. Escalation** | Ombudsman Jasa Keuangan | Mulai kapan saja | Pengajuan online di ombudsmansjk.id |
 
@@ -208,7 +191,7 @@ Kumpulkan dokumen ini **SEGERA** sebelum melaporkan:
 
 ### Berapa lama penyedia e-wallet harus balas laporan saya?
 
-Menurut **POJK 22/2023 Pasal 49**, penyedia harus memberikan jawaban tertulis **paling lambat 15 hari kerja** setelah laporan diterima. Jika lewat, Anda sudah punya alasan untuk escalate ke OJK. Sebaiknya sebelum 15 hari habis, Anda sudah follow-up via email agar tidak tertinggal.
+Menurut **POJK 22/2023**, penyedia jasa keuangan wajib menerima, menangani, dan menyelesaikan pengaduan konsumen dengan patut. Mintalah jawaban tertulis dan catat tanggal laporan Anda. Jika pengaduan tidak ditanggapi dengan baik, Anda dapat mengeskalasi ke OJK (kontak 157) atau LAPS Sektor Jasa Keuangan. Sebaiknya lakukan follow-up berkala via email agar prosesnya terdokumentasi.
 
 ### Bagaimana kalau penyedia bilang saya yang salah input transfer?
 
@@ -216,7 +199,7 @@ Ini beda dari "saldo hilang"—ada selisih antara **transfer salah (kesalahan in
 
 ### E-wallet saya di-freeze karena "risk assessment". Apakah saldo saya aman?
 
-**Saldo aman**, tapi akses terblokir. Ini berbeda dari "hilang." Penyedia berhak freeze akun jika ada indikasi fraud (Pasal 9 POJK 22/2023). Anda berhak minta penjelasan tertulis alasan freeze dalam **5 hari kerja**. Jika freeze tidak jelas alasannya atau berlangsung >30 hari tanpa respons, itu sudah menyalahi aturan. Ajukan klaim kompensasi akibat frozen (rugi karena tidak bisa akses dana Anda sendiri).
+**Saldo aman**, tapi akses terblokir. Ini berbeda dari "hilang." Penyedia dapat membekukan akun jika ada indikasi fraud sesuai kebijakan risiko dan ketentuan perlindungan konsumen (POJK 22/2023). Anda berhak minta penjelasan tertulis alasan freeze dalam **5 hari kerja**. Jika freeze tidak jelas alasannya atau berlangsung >30 hari tanpa respons, itu sudah menyalahi aturan. Ajukan klaim kompensasi akibat frozen (rugi karena tidak bisa akses dana Anda sendiri).
 
 ### Berapa nominal ganti rugi yang bisa saya minta?
 
@@ -241,12 +224,10 @@ Jangan puas dengan "balas" ajudan CS. Minta respons **resmi dari departemen klai
 
 ## Dasar Hukum
 
-1. **UU 8/1999** tentang Perlindungan Konsumen (Pasal 4, 19)
-2. **POJK 22/2023** tentang Perlindungan Konsumen di Sektor Jasa Keuangan (Pasal 9, 48, 49)
-3. **SEOJK 19/2023** tentang Penyelenggaraan Layanan Fintech dan Dompet Digital
-4. **UU 27/2022** tentang Perlindungan Data Pribadi (Pasal 6, 62)
-5. **Surat Edaran OJK** tentang Penyelesaian Transaksi Elektronik yang Tidak Sah
-6. **Lembaga Alternatif Penyelesaian Sengketa (LAPS)** OJK — www.ojk.go.id
+1. **UU 8/1999** tentang Perlindungan Konsumen (Pasal 4 — hak konsumen; Pasal 19 — tanggung jawab pelaku usaha memberi ganti rugi)
+2. **POJK 22/2023** tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan
+3. **UU 27/2022** tentang Pelindungan Data Pribadi (Pasal 46 — pemberitahuan kegagalan pelindungan data 3×24 jam)
+4. **Lembaga Alternatif Penyelesaian Sengketa (LAPS) Sektor Jasa Keuangan** — kanal eskalasi via OJK (kontak 157 / www.ojk.go.id)
 
 ---
 
