@@ -7,33 +7,39 @@
   "citations": [
     {
       "ref": "UU 39/1999",
-      "pasal": "Pasal 16",
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-08-02"
+      "pasal": "Pasal 17",
+      "verified": false,
+      "status": "PERLU_CEK",
+      "verified_at": "2026-08-13"
     },
     {
-      "ref": "UU 30/1997",
+      "ref": "UU 30/1999",
       "pasal": null,
       "verified": false,
-      "status": "UNVERIFIABLE",
-      "verified_at": "2026-08-02"
+      "status": "PERLU_CEK",
+      "verified_at": "2026-08-13"
     },
     {
       "ref": "POJK 22/2023",
-      "pasal": null,
+      "pasal": "Pasal 82",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-08-02"
+      "verified_at": "2026-08-13"
     }
   ],
   "queue": "yellow",
   "review_flags": [
     {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
+      "severity": "ERROR",
+      "type": "KUTIPAN_FIKTIF",
+      "location": "Dasar Hukum",
+      "description": "Draft memuat 'UU 50/2009 tentang Perubahan Kedua UU 30/1997' yang tidak ada (UU 50/2009 mengatur Peradilan Agama) dan menulis UU Arbitrase sebagai 'UU 30/1997' (seharusnya UU 30/1999). Keduanya sudah dihapus/dikoreksi. Masih perlu: verifikasi Pasal HIR untuk gugatan tanpa kuasa hukum, dan penambahan dasar gugatan sederhana (PERMA) sebelum publikasi."
+    },
+    {
+      "severity": "ERROR",
+      "type": "FORUM_KELIRU",
+      "location": "STEP 3",
+      "description": "Draft mengarahkan sengketa konsumen ke Pengadilan Niaga. Sudah dikoreksi: Pengadilan Niaga hanya untuk kepailitan/PKPU dan kekayaan intelektual; sengketa konsumen ke Pengadilan Negeri / BPSK / LAPS SJK."
     }
   ],
   "reviewer": null,
@@ -42,6 +48,10 @@
     {
       "date": "2026-08-02",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-08-13",
+      "note": "Ditinjau: kutipan fiktif UU 50/2009 dihapus, UU 30/1997 dikoreksi menjadi UU 30/1999, UU 39/1999 Pasal 16 dikoreksi menjadi Pasal 17, forum sengketa konsumen dikoreksi dari Pengadilan Niaga ke Pengadilan Negeri. Tetap DRAFT — masih perlu verifikasi dasar hukum acara sebelum publikasi."
     }
   ],
   "published": false
@@ -51,7 +61,7 @@
 # Cara Menggugat ke Pengadilan Tanpa Pengacara: Panduan Lengkap untuk Konsumen
 
 [RINGKASAN]
-Anda berhak menggugat ke pengadilan tanpa harus menyewa pengacara—ini diizinkan oleh hukum Indonesia asalkan kasus melibatkan nilai rendah atau Anda merasa mampu. Proses gugatan melibatkan pembuatan surat gugatan sederhana, pendaftaran di pengadilan negeri/tipikor, bayar biaya administrasi, dan hadiri persidangan. Persiapan dokumen bukti dan pemahaman dasar prosedur sangat krusial untuk meningkatkan peluang menang.
+Anda berhak menggugat ke pengadilan tanpa harus menyewa pengacara—ini diizinkan oleh hukum Indonesia asalkan kasus melibatkan nilai rendah atau Anda merasa mampu. Proses gugatan melibatkan pembuatan surat gugatan sederhana, pendaftaran di Pengadilan Negeri, bayar biaya administrasi, dan hadiri persidangan. Persiapan dokumen bukti dan pemahaman dasar prosedur sangat krusial untuk meningkatkan peluang menang.
 
 ---
 
@@ -80,10 +90,10 @@ Hukum Indonesia memungkinkan siapa saja menggugat tanpa pengacara, terutama dala
 
 **1. Hak untuk mengajukan gugatan sendiri**
 - **Hukum Acara Perdata (HIR/Rv)**: Setiap orang berhak mengajukan gugatan ke pengadilan tanpa wajib didampingi pengacara.
-- **Undang-Undang Nomor 30 Tahun 1997 tentang Arbitrase & Alternatif Penyelesaian Sengketa**: Memberi peluang penyelesaian tanpa jalur litigasi formal.
+- **Undang-Undang Nomor 30 Tahun 1999 tentang Arbitrase dan Alternatif Penyelesaian Sengketa**: Memberi peluang penyelesaian tanpa jalur litigasi formal.
 
 **2. Hak atas akses keadilan**
-- **UU 39/1999 tentang HAM Pasal 16**: Setiap orang berhak mengajukan gugatan ke pengadilan.
+- **UU 39/1999 tentang HAM Pasal 17**: Setiap orang berhak mengajukan gugatan ke pengadilan.
 - **POJK 22/2023 tentang Perlindungan Konsumen**: Konsumen berhak menggugat lembaga keuangan atas pelanggaran.
 
 **3. Hak untuk mendapat konsultasi gratis**
@@ -100,7 +110,7 @@ Hukum Indonesia memungkinkan siapa saja menggugat tanpa pengacara, terutama dala
 
 | **Aspek** | **Detail** |
 |-----------|-----------|
-| **Instansi** | Pengadilan Negeri di wilayah domisili tergugat atau tempat kejadian; untuk sengketa konsumen bisa ke Pengadilan Niaga (Mediation Center) |
+| **Instansi** | Pengadilan Negeri di wilayah domisili tergugat atau tempat kejadian; untuk sengketa konsumen: Pengadilan Negeri, BPSK, atau LAPS SJK untuk sektor jasa keuangan (Pengadilan Niaga TIDAK menangani sengketa konsumen) |
 | **Syarat formal** | Gugatan tulis atau lisan (tulis lebih direkomendasikan), bermeterai Rp 10.000 (untuk surat gugatan) |
 | **Biaya pendaftaran** | Rp 30.000–200.000 (tergantung nilai gugatan); tambah untuk biaya pemberitahuan |
 | **Waktu persiapan** | 2–4 minggu untuk riset dan menyiapkan dokumen |
@@ -228,11 +238,10 @@ Ya, bisa via **Sita Jaminan** (conservatoir beslag). Tapi harus ada alasan kuat 
 ## Dasar Hukum
 
 1. **Herziene Inlandsch Reglement (HIR)** – Hukum acara perdata; Anda berhak mengajukan gugatan tanpa pengacara (Pasal 118–120).
-2. **Undang-Undang Nomor 39 Tahun 1999 tentang Hak Asasi Manusia** – Pasal 16: setiap orang berhak mengajukan gugatan ke pengadilan.
+2. **Undang-Undang Nomor 39 Tahun 1999 tentang Hak Asasi Manusia** – Pasal 17: setiap orang berhak mengajukan gugatan ke pengadilan.
 3. **POJK 22/2023 tentang Perlindungan Konsumen di Sektor Jasa Keuangan** – Konsumen berhak menggugat lembaga keuangan atas pelanggaran perjanjian.
-4. **Undang-Undang Nomor 30 Tahun 1997 tentang Arbitrase dan Alternatif Penyelesaian Sengketa** – Alternatif penyelesaian sebelum/sesudah litigasi.
+4. **Undang-Undang Nomor 30 Tahun 1999 tentang Arbitrase dan Alternatif Penyelesaian Sengketa** – Alternatif penyelesaian sebelum/sesudah litigasi.
 5. **Peraturan Mahkamah Agung Nomor 3 Tahun 2018 tentang Administrasi Perkara di Pengadilan** – Prosedur pendaftaran dan administrasi pengadilan.
-6. **Undang-Undang Nomor 50 Tahun 2009 tentang Peubahan Kedua UU 30 Tahun 1997** – Ketentuan arbitrase modern.
 
 ---
 

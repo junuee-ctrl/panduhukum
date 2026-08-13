@@ -23,10 +23,22 @@
   "queue": "yellow",
   "review_flags": [
     {
+      "severity": "ERROR",
+      "type": "KLAIM_TANPA_DASAR",
+      "location": "RINGKASAN & STEP 1",
+      "description": "Draft menyatakan syarat PKPU adalah 'utang minimal Rp 1 miliar'. Tidak ada ambang nominal semacam itu dalam UU 37/2004; syaratnya adalah debitor punya lebih dari satu kreditor dan sedikitnya satu utang yang telah jatuh tempo dan dapat ditagih. Klaim ini harus dihapus sebelum publikasi."
+    },
+    {
+      "severity": "ERROR",
+      "type": "ISTILAH_KELIRU",
+      "location": "RINGKASAN",
+      "description": "Dalam PKPU pejabat yang ditunjuk adalah 'pengurus' (bersama hakim pengawas), bukan 'kurator' — kurator adalah pejabat dalam kepailitan."
+    },
+    {
       "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
+      "type": "PERLU_VERIFIKASI",
+      "location": "STEP 2-3",
+      "description": "Jangka waktu PKPU sementara/tetap dan biaya perkara di Pengadilan Niaga belum diverifikasi ke UU 37/2004."
     }
   ],
   "reviewer": null,
@@ -35,6 +47,10 @@
     {
       "date": "2026-08-02",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-08-13",
+      "note": "Ditinjau: tidak diterbitkan. Ditemukan klaim syarat 'utang minimal Rp 1 miliar' yang tidak berdasar dalam UU 37/2004 dan penggunaan istilah 'kurator' untuk PKPU. Perlu penulisan ulang bagian syarat & prosedur sebelum layak terbit."
     }
   ],
   "published": false
