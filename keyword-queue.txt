@@ -1,2 +1,27 @@
-# 형식: keyword | slug | pillar   (맨 윗줄부터 매일 1편 자동 발행 — 약 40일치)
-# 이미 발행한 50편은 제외됨. 파이프라인이 위에서부터 하루 1편씩 처리.
+# 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
+# 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
+ciri ciri pinjol ilegal yang harus diwaspadai | ciri-ciri-pinjol-ilegal | pinjol
+daftar pinjol legal terdaftar OJK terbaru cara cek | daftar-pinjol-legal-ojk | pinjol
+dana pinjol masuk tanpa mengajukan apa harus dilakukan | dana-pinjol-masuk-tanpa-daftar | pinjol
+pinjol nunggak lama tidak dibayar bertahun tahun | pinjol-nunggak-bertahun-tahun | pinjol
+cara cek pinjaman atas nama saya di SLIK | cek-pinjaman-atas-nama-sendiri-slik | pinjol
+digugat perdata karena utang pinjol | digugat-perdata-utang-pinjol | pinjol
+surat somasi dari pinjol cara menyikapi | somasi-dari-pinjol-cara-menyikapi | pinjol
+kol 5 di SLIK artinya dan cara memperbaiki | kol-5-slik-artinya | pinjol
+cara menonaktifkan akun pinjol setelah lunas | cara-nonaktifkan-akun-pinjol | pinjol
+paylater tidak dibayar apakah masuk SLIK | paylater-tidak-dibayar-slik | pinjol
+kredivo akulaku telat bayar akibat dan solusi | kredivo-akulaku-telat-bayar | pinjol
+dana gagal masuk tapi tercatat utang pinjol | dana-gagal-masuk-tercatat-utang | pinjol
+penipuan transfer QRIS cara uang kembali | penipuan-qris-uang-kembali | pinjol
+penipuan file APK undangan pencuri saldo | penipuan-file-apk-saldo | pinjol
+penipuan sniffing rekening cara mencegah | penipuan-sniffing-rekening | pinjol
+penipuan berkedok lowongan kerja tugas komisi | penipuan-lowongan-tugas-komisi | pinjol
+penipuan love scamming kenalan online | penipuan-love-scamming | pinjol
+cara lapor penipuan online agar uang kembali | lapor-penipuan-online-uang-kembali | pinjol
+rekening diblokir sepihak oleh bank cara membuka | rekening-diblokir-sepihak-bank | pinjol
+saldo terpotong sendiri di mobile banking klaim | saldo-terpotong-mobile-banking | pinjol
+utang lewat aplikasi teman tanggung jawab siapa | utang-aplikasi-atas-nama-teman | pinjol
+dikejar debt collector lapangan pinjol hak anda | dc-lapangan-pinjol-hak | pinjol
+cara ajukan keringanan pinjol saat kesulitan | keringanan-pinjol-saat-kesulitan | pinjol
+BI checking jelek apakah bisa KPR | bi-checking-jelek-bisa-kpr | pinjol
+asuransi pinjol wajib atau tidak | asuransi-pinjol-wajib-atau-tidak | pinjol
