@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-dana pinjol masuk tanpa mengajukan apa harus dilakukan | dana-pinjol-masuk-tanpa-daftar | pinjol
-pinjol nunggak lama tidak dibayar bertahun tahun | pinjol-nunggak-bertahun-tahun | pinjol
-cara cek pinjaman atas nama saya di SLIK | cek-pinjaman-atas-nama-sendiri-slik | pinjol
-digugat perdata karena utang pinjol | digugat-perdata-utang-pinjol | pinjol
 surat somasi dari pinjol cara menyikapi | somasi-dari-pinjol-cara-menyikapi | pinjol
 kol 5 di SLIK artinya dan cara memperbaiki | kol-5-slik-artinya | pinjol
 cara menonaktifkan akun pinjol setelah lunas | cara-nonaktifkan-akun-pinjol | pinjol
