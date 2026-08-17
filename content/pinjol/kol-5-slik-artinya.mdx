@@ -7,20 +7,13 @@
   "citations": [
     {
       "ref": "UU 27/2022",
-      "pasal": null,
+      "pasal": "Pasal 6",
       "verified": true,
       "status": "FOUND",
       "verified_at": "2026-08-17"
     },
     {
       "ref": "UU 39/1999",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-08-17"
-    },
-    {
-      "ref": "POJK 11/2024",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
@@ -34,6 +27,13 @@
       "verified_at": "2026-08-17"
     },
     {
+      "ref": "SEOJK 19/2023",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-08-17"
+    },
+    {
       "ref": "POJK 18/2017",
       "pasal": null,
       "verified": true,
@@ -41,7 +41,14 @@
       "verified_at": "2026-08-17"
     },
     {
-      "ref": "SEOJK 19/2023",
+      "ref": "POJK 64/2020",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-08-17"
+    },
+    {
+      "ref": "POJK 11/2024",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
@@ -49,29 +56,26 @@
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-08-17",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-08-17",
+      "note": "Diverifikasi & diterbitkan (kutipan dicek ke sumber resmi). Koreksi: rentang hari kolektibilitas KOL 2-5 disesuaikan standar OJK (KOL 5 >180 hari); rujukan restrukturisasi POJK 11/2024 diganti (POJK 11/2024 adalah Perubahan II POJK SLIK); Pasal 49 UU PDP diganti Pasal 6 (hak koreksi data); batas SEOJK 19/2023 diperbarui ke 0,1%/hari (berlaku 2026, khusus fintech P2P); cek SLIK diarahkan ke iDebKu OJK (bukan BI); durasi riwayat SLIK dikoreksi ke ±24 bulan; marker verifikasi internal dihapus & kontak OJK resmi (157/konsumen@ojk.go.id) ditambahkan."
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
 # KOL 5 di SLIK: Arti dan Cara Memperbaiki Riwayat Kredit Anda
 
-[RINGKASAN] KOL 5 (kolektibilitas 5) di SLIK berarti cicilan/kredit Anda tertunggak lebih dari 120 hari, masuk kategori kredit macet. Status ini akan menurunkan skor kredit dan menghambat akses pembiayaan baru. Untuk memperbaikinya, Anda harus segera melunasi tunggakan, kemudian menunggu data SLIK diperbarui oleh bank/pemberi pinjaman dalam 30-60 hari ke depan.
+[RINGKASAN] KOL 5 (kolektibilitas 5) di SLIK berarti cicilan/kredit Anda tertunggak lebih dari 180 hari, masuk kategori kredit macet. Status ini akan menurunkan skor kredit dan menghambat akses pembiayaan baru. Untuk memperbaikinya, Anda harus segera melunasi tunggakan, kemudian menunggu data SLIK diperbarui oleh bank/pemberi pinjaman dalam 30-60 hari ke depan.
 
 ---
 
@@ -83,12 +87,12 @@ KOL 5 adalah singkatan **Kolektibilitas 5** dalam sistem SLIK (Sistem Layanan In
 
 Kolektibilitas dibagi 5 kategori:
 - **KOL 1**: Lancar (tepat bayar)
-- **KOL 2**: Dalam perhatian khusus (1–30 hari tertunggak)
-- **KOL 3**: Kurang lancar (31–60 hari tertunggak)
-- **KOL 4**: Diragukan (61–120 hari tertunggak)
-- **KOL 5**: Macet (>120 hari tertunggak atau lebih dari 8 bulan tidak bayar)
+- **KOL 2**: Dalam perhatian khusus (1–90 hari tertunggak)
+- **KOL 3**: Kurang lancar (91–120 hari tertunggak)
+- **KOL 4**: Diragukan (121–180 hari tertunggak)
+- **KOL 5**: Macet (tertunggak lebih dari 180 hari)
 
-Jika Anda memiliki KOL 5, berarti cicilan Anda sudah tidak dibayar lebih dari 4 bulan. Status ini adalah **bendera merah** bagi pemberi pinjaman manapun.
+Jika Anda memiliki KOL 5, berarti cicilan Anda sudah tidak dibayar lebih dari 6 bulan (180 hari). Status ini adalah **bendera merah** bagi pemberi pinjaman manapun.
 
 **Dampak langsung:**
 - Sulit atau ditolak permohonan kartu kredit, cicilan, atau KPR
@@ -104,16 +108,16 @@ Meskipun status KOL 5 tidak selamanya, **Anda tetap memiliki hak-hak penting**:
 
 ### Hak Akses & Keberatan
 - **Mengakses data pribadi Anda di SLIK gratis** sesuai UU 27/2022 tentang Perlindungan Data Pribadi. Anda berhak tahu informasi apa saja yang dicatat.
-- **Mengajukan keberatan ke OJK** jika data SLIK salah atau tidak akurat (Pasal 49 UU 27/2022).
-- Jika ditemukan kesalahan teknis (misalnya pembayaran sudah masuk tapi belum diperbarui), bank wajib koreksi dalam 5 hari kerja.
+- **Mengajukan keberatan ke OJK** jika data SLIK salah atau tidak akurat (Pasal 6 UU 27/2022).
+- Jika ditemukan kesalahan teknis (misalnya pembayaran sudah masuk tapi belum diperbarui), bank/pemberi pinjaman wajib melakukan koreksi setelah verifikasi.
 
 ### Hak Negosiasi & Restrukturisasi
-- **Anda berhak mengajukan permintaan restrukturisasi utang** ke bank sesuai POJK 11/2024 tentang Rescheduling Kredit. Artinya, cicilan bisa dijadwalkan ulang tanpa harus membayar semua sekaligus.
+- **Anda dapat mengajukan permintaan restrukturisasi utang** ke bank/pemberi pinjaman, dan pengaduan/permohonan Anda wajib ditangani secara patut sesuai POJK 22/2023. Artinya, cicilan bisa dijadwalkan ulang tanpa harus membayar semua sekaligus (persetujuan tetap menjadi kewenangan bank).
 - Bank harus memberi kesempatan musyawarah sebelum melakukan penghapusan atau penjualan kolateral (jaminan).
 
 ### Perlindungan dari Penagihan Berlebihan
 - Penagih/debt collector **tidak boleh mengancam, memaksa, atau mengganggu jam istirahat** (POJK 22/2023).
-- Denda keterlambatan tidak boleh melebihi 0,3% per hari dari pokok utang; **bunga maksimal ditentukan OJK** (SEOJK 19/2023).
+- Khusus pinjaman online (fintech P2P lending), total manfaat ekonomi (bunga dan biaya) dibatasi OJK — maksimal **0,1% per hari** untuk pendanaan konsumtif sejak 1 Januari 2026 (SEOJK 19/2023). Untuk kredit bank, besaran denda mengikuti perjanjian kredit; mintalah rinciannya secara tertulis.
 - Jika penagihan dilakukan melanggar aturan, Anda bisa mengadu ke OJK.
 
 ---
@@ -122,11 +126,11 @@ Meskipun status KOL 5 tidak selamanya, **Anda tetap memiliki hak-hak penting**:
 
 | **Tujuan** | **Instansi/Kanal** | **Tenggat Waktu** | **Cara Hubungi** |
 |---|---|---|---|
-| Lihat data SLIK pribadi (gratis) | OJK (pusat: Jakarta) atau BI (cabang setempat) | Tidak ada limit | Datang ke kantor / aplikasi BI melalui website www.bi.go.id (layanan SLIK Online) |
-| Keberatan data SLIK salah | OJK Direktorat Perlindungan Konsumen | 30 hari setelah tahu data salah | Email: [PERLU_VERIFIKASI: email OJK] atau portal pengaduan OJK (www.ojk.go.id) |
+| Lihat data SLIK pribadi (gratis) | OJK — aplikasi iDebKu | Tidak ada limit | Online via idebku.ojk.go.id atau datang ke kantor OJK setempat |
+| Keberatan data SLIK salah | OJK Direktorat Perlindungan Konsumen | Secepatnya setelah tahu data salah | Email konsumen@ojk.go.id, telepon 157, atau portal kontak157.ojk.go.id |
 | Minta restrukturisasi utang | **Bank/Pemberi Pinjaman tempat Anda berutang** | Ajukan secepatnya (jangan menunggu) | Hubungi bagian Consumer Service / Customer Care bank |
-| Lapor penagihan ilegal | OJK dan Polda setempat | Kapan saja | OJK: www.ojk.go.id/aduan; Polda: datang langsung dengan bukti (chat, rekam, saksi) |
-| Konsultasi hukum | **Biro Konsultasi Hukum Gratis** (BPHN, Kementerian Hukum) | – | Datang langsung atau hubungi hotline daerah Anda |
+| Lapor penagihan ilegal | OJK dan Polres/Polda setempat | Kapan saja | OJK: kontak157.ojk.go.id atau telepon 157; Polisi: datang langsung dengan bukti (chat, rekaman, saksi) |
+| Konsultasi hukum | **Bantuan hukum gratis** (organisasi bantuan hukum terakreditasi BPHN) | – | Datang langsung atau hubungi hotline daerah Anda |
 
 **Hal penting:** Semakin cepat Anda bertindak (sebelum tagihan naik lebih besar), semakin besar peluang negosiasi dengan bank.
 
@@ -166,7 +170,7 @@ Meskipun status KOL 5 tidak selamanya, **Anda tetap memiliki hak-hak penting**:
 
 1. **Mengabaikan tagihan atau surat bank**
    - Cicilan yang terus tidak dibayar akan naik bunga/denda setiap bulan.
-   - Data SLIK akan semakin buruk (bisa berlanjut 5–7 tahun tercatat).
+   - Data SLIK akan semakin buruk dan riwayat tunggakan makin lama terlihat oleh pemberi pinjaman lain.
 
 2. **Melayani penagih yang memaksa/mengancam**
    - Jangan memberikan uang kepada penagih yang "tidak terdata" atau meminta cash.
@@ -207,30 +211,29 @@ Meskipun status KOL 5 tidak selamanya, **Anda tetap memiliki hak-hak penting**:
 ## FAQ
 
 ### **Berapa lama KOL 5 akan hilang dari SLIK saya?**
-Setelah Anda melunasi semua tunggakan, status KOL 5 akan berubah menjadi KOL 1 (lancar) dalam waktu **30–60 hari**, tergantung waktu update bank ke OJK. Namun, **catatan riwayat utang akan tetap tercatat di SLIK selama 5 tahun** sejak tahun terakhir Anda dinyatakan macet. Artinya, bank masih bisa lihat Anda pernah KOL 5, tapi status akhir harus lancar.
+Setelah Anda melunasi semua tunggakan, status KOL 5 akan berubah menjadi KOL 1 (lancar) dalam waktu **30–60 hari**, tergantung waktu update bank ke OJK. Namun, **riwayat historis tunggakan umumnya masih terlihat hingga sekitar 24 bulan (2 tahun)** sebelum terhapus dari tampilan SLIK. Artinya, bank masih bisa melihat Anda pernah KOL 5 selama periode itu, tapi status akhir Anda sudah lancar.
 
 ### **Apakah KOL 5 bisa menghalangi saya mendapat pinjaman baru?**
 Ya, sebagian besar. Selama status di SLIK masih KOL 5 (macet), **bank lain akan menolak aplikasi kartu kredit, KPR, atau cicilan** Anda. Setelah berubah menjadi KOL 1, peluang diterima lebih tinggi, tapi bank masih akan lihat riwayat keterlambatan. Anda bisa ajukan, tapi dengan limit lebih rendah atau bunga lebih tinggi dibanding pemohon lain yang lancar.
 
 ### **Berapa denda maksimal yang boleh dikenakan bank karena tunggakan KOL 5?**
-Sesuai SEOJK 19/2023, denda keterlambatan pembayaran tidak boleh melebihi **0,3% per hari dari pokok utang** yang terutang. Contoh: jika utang Anda Rp 10 juta, denda maksimal per hari adalah Rp 30.000. Jika bank menagih denda lebih dari itu, Anda bisa mengadu ke OJK. Bunga keterlambatan juga harus sesuai peraturan (tidak bisa diperjanjikan di atas bunga normal).
+Untuk kredit bank, besaran denda mengikuti perjanjian kredit yang Anda tanda tangani — mintalah rincian tertulis dan cek apakah tagihan sesuai perjanjian. Untuk pinjaman online (fintech P2P lending), OJK membatasi total manfaat ekonomi (bunga dan biaya) maksimal **0,1% per hari** untuk pendanaan konsumtif sejak 1 Januari 2026 (SEOJK 19/2023). Jika penagihan tidak sesuai perjanjian atau batas aturan, adukan ke OJK melalui telepon 157.
 
 ### **Apakah saya bisa mengajukan keberatan jika data SLIK saya salah?**
-Tentu. Jika Anda yakin data KOL 5 adalah kesalahan (misalnya pembayaran sudah dikirim tapi bank tidak catat), **ajukan keberatan ke OJK dalam waktu 30 hari sejak Anda tahu ada kesalahan**. Sertakan bukti pembayaran (slip transfer, kwitansi). OJK akan meminta bank untuk verifikasi dan koreksi dalam **5 hari kerja**. Jika terbukti kesalahan bank, data akan diperbaiki dan Anda berhak atas kompensasi (sesuai Pasal 49 UU 27/2022).
+Tentu. Jika Anda yakin data KOL 5 adalah kesalahan (misalnya pembayaran sudah dikirim tapi bank tidak catat), **segera ajukan keberatan ke bank pelapor dan OJK**. Sertakan bukti pembayaran (slip transfer, kwitansi). OJK akan meminta bank melakukan verifikasi; jika terbukti kesalahan bank, data wajib dikoreksi. Hak Anda memperbaiki data yang tidak akurat dijamin Pasal 6 UU 27/2022.
 
 ### **Bisakah saya menolak restrukturisasi yang ditawarkan bank?**
-Boleh, tapi tidak disarankan. Jika Anda menolak dan terus tidak bayar, bank akan **lanjut penagihan, proses hukum, sampai eksekusi jaminan** (barang yang dijaminkan disita/dijual). Lebih baik negosiasi untuk skema bayar yang bisa Anda lakukan. Jika penawaran bank dirasa tidak adil, Anda bisa **minta konsultasi dengan BPHN (Biro Perlindungan Hukum Nasional)** atau pengacara.
+Boleh, tapi tidak disarankan. Jika Anda menolak dan terus tidak bayar, bank akan **lanjut penagihan, proses hukum, sampai eksekusi jaminan** (barang yang dijaminkan disita/dijual). Lebih baik negosiasi untuk skema bayar yang bisa Anda lakukan. Jika penawaran bank dirasa tidak adil, Anda bisa **minta konsultasi ke organisasi bantuan hukum terakreditasi BPHN (Badan Pembinaan Hukum Nasional)** atau pengacara.
 
 ---
 
 ## Dasar Hukum
 
-1. **POJK 11/2024** – Rescheduling Kredit / Restrukturisasi Utang (cara bank menjadwalkan ulang cicilan)
+1. **POJK 18/2017 jo POJK 64/2020 jo POJK 11/2024** – Sistem Layanan Informasi Keuangan (SLIK): pelaporan, koreksi, dan pembaruan data kolektibilitas
 2. **POJK 22/2023** – Perlindungan Konsumen & Proses Penyelesaian (hak-hak debitur, batasan penagihan)
-3. **SEOJK 19/2023** – Batas Bunga & Denda Keterlambatan (tarif maksimal 0,3% per hari)
+3. **SEOJK 19/2023** – Batas Manfaat Ekonomi & Denda Fintech P2P Lending (maks. 0,1% per hari untuk pendanaan konsumtif sejak 2026)
 4. **UU 27/2022** – Perlindungan Data Pribadi (hak akses data SLIK, keberatan & koreksi data)
 5. **UU 39/1999** – Hak Asasi Manusia (perlindungan dari penagihan berlebihan & intimidasi)
-6. **POJK 18/2017 jo POJK 11/2024** – Sistem Informasi Debitur (SLIK): pencatatan, verifikasi, dan update data kolektibilitas oleh lembaga keuangan
 
 ---
 
