@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-kol 5 di SLIK artinya dan cara memperbaiki | kol-5-slik-artinya | pinjol
-cara menonaktifkan akun pinjol setelah lunas | cara-nonaktifkan-akun-pinjol | pinjol
-paylater tidak dibayar apakah masuk SLIK | paylater-tidak-dibayar-slik | pinjol
-kredivo akulaku telat bayar akibat dan solusi | kredivo-akulaku-telat-bayar | pinjol
 dana gagal masuk tapi tercatat utang pinjol | dana-gagal-masuk-tercatat-utang | pinjol
 penipuan transfer QRIS cara uang kembali | penipuan-qris-uang-kembali | pinjol
 penipuan file APK undangan pencuri saldo | penipuan-file-apk-saldo | pinjol
