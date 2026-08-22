@@ -1,3 +1,2 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-penipuan love scamming kenalan online | penipuan-love-scamming | pinjol
