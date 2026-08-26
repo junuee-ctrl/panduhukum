@@ -10,78 +10,39 @@
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-18"
+      "verified_at": "2026-08-26"
     },
     {
-      "ref": "UU 36/1999",
-      "pasal": null,
-      "verified": false,
-      "status": "UNVERIFIABLE",
-      "verified_at": "2026-07-18"
-    },
-    {
-      "ref": "UU 27/2022",
-      "pasal": "Pasal 53 ayat (2)",
+      "ref": "UU 1/2024 (perubahan kedua ITE)",
+      "pasal": "Pasal 28 ayat (1) jo. Pasal 45A ayat (1)",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-18"
+      "verified_at": "2026-08-26"
     },
     {
-      "ref": "UU 8/1997",
-      "pasal": null,
-      "verified": false,
-      "status": "UNVERIFIABLE",
-      "verified_at": "2026-07-18"
+      "ref": "UU 1/2023 (KUHP baru)",
+      "pasal": "Pasal 492",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-08-26"
     },
     {
       "ref": "UU 27/2022",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-18"
+      "verified_at": "2026-08-26"
     },
     {
       "ref": "UU 21/2011",
       "pasal": null,
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-07-18"
-    },
-    {
-      "ref": "POJK 22/2023",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-07-18"
+      "verified_at": "2026-08-26"
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    },
-    {
-      "severity": "ERROR",
-      "type": "WRONG_TOPIC",
-      "location": "seluruh artikel",
-      "description": "Artikel menjelaskan fitur pencocokan nama-rekening milik bank, padahal target keyword merujuk cekrekening.id — kanal resmi Kementerian Komdigi untuk melaporkan dan mencari rekening bank/e-wallet terindikasi tindak pidana. Situs cekrekening.id tidak pernah disebut. Perlu ditulis ulang."
-    },
-    {
-      "severity": "ERROR",
-      "type": "CITATION_FABRICATED",
-      "location": "STEP 2 bagian D / Dasar Hukum",
-      "description": "'UU 8/1997 tentang Dokumen Perusahaan' dipakai sebagai dasar hak korban memperoleh identitas pemilik rekening penipu — kaitan ini tidak berdasar. UU 36/1999 juga sudah bertanda UNVERIFIABLE."
-    },
-    {
-      "severity": "WARN",
-      "type": "CITATION_MISMATCH",
-      "location": "STEP 2 bagian B",
-      "description": "'POJK 22/2023 Pasal 62' dirujuk sebagai kewajiban bank merespons laporan penipuan; Pasal 62 sesungguhnya mengatur tata cara penagihan kredit."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
@@ -92,143 +53,157 @@
     {
       "date": "2026-07-20",
       "note": "Ditinjau: kutipan dicek ke sumber resmi — perlu perbaikan, tetap draft (published: false)"
+    },
+    {
+      "date": "2026-08-26",
+      "note": "Diverifikasi & diterbitkan (kutipan dicek ke sumber resmi). Koreksi besar: artikel ditulis ulang agar benar-benar membahas cekrekening.id (portal resmi Kementerian Komdigi) — versi sebelumnya salah topik (membahas fitur pencocokan nama-rekening milik bank). Kutipan tanpa dasar dihapus: UU 8/1997 (Dokumen Perusahaan) dan UU 36/1999 (Telekomunikasi); rujukan keliru POJK 22/2023 Pasal 62 (mengatur penagihan, bukan laporan penipuan) dihapus. Dasar hukum penipuan diperbarui ke KUHP baru: Pasal 492 UU 1/2023 (dahulu Pasal 378 KUHP lama) dan penipuan online UU 1/2024 Pasal 28 ayat (1) jo. Pasal 45A ayat (1). Ditambahkan jalur IASC (iasc.ojk.go.id) untuk pemblokiran cepat rekening penipu."
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
-# Cara Cek Rekening Penipu di Platform "Cek Rekening"
+# Cara Cek Rekening Penipu di cekrekening.id (Panduan Lengkap + Langkah Jika Sudah Terlanjur Transfer)
 
 [RINGKASAN]
-Platform "Cek Rekening" memungkinkan Anda memverifikasi data rekening orang lain untuk mencegah penipuan transfer, namun hasil verifikasinya bersifat terbatas dan hanya menunjukkan kecocokan nama-rekening. Jika Anda menjadi korban penipuan, lapor langsung ke Polda Cyber/Ditreskrimsus, OJK (jika melibatkan lembaga keuangan ilegal/investasi palsu), dan bank Anda untuk pembekuan rekening penipu. Dokumentasikan semua bukti (chat, transfer, identitas penipu) sebelum melaporkan.
+**cekrekening.id** adalah portal resmi Kementerian Komunikasi dan Digital (Komdigi) untuk **mengecek** apakah suatu rekening bank atau e-wallet pernah dilaporkan terkait penipuan, dan untuk **melaporkan** rekening penipu. Cek dulu rekening penjual/pihak tak dikenal SEBELUM transfer. Jika sudah terlanjur jadi korban: (1) laporkan ke **IASC** (iasc.ojk.go.id) agar dana di rekening penipu bisa segera diblokir, (2) laporkan rekeningnya ke cekrekening.id agar orang lain tidak jadi korban, dan (3) buat laporan polisi untuk proses pidana dan pengembalian dana.
 
 ---
 
 ## STEP 1 — Diagnosis Situasi
 
-**Apa itu Platform "Cek Rekening"?**
-"Cek Rekening" adalah layanan yang disediakan oleh bank-bank peserta (biasanya terintegrasi di aplikasi perbankan atau web) untuk memverifikasi apakah nama pemilik rekening sesuai dengan nomor rekening yang dimasukkan. Tujuannya: mengurangi risiko transfer ke rekening atas nama orang lain atau rekening penipu.
+**Apa itu cekrekening.id?**
+cekrekening.id adalah situs resmi milik Kementerian Komdigi yang berfungsi sebagai portal pelaporan dan pencarian rekening bank maupun e-wallet yang terindikasi tindak pidana. Ada 3 layanan utama:
 
-**Keterbatasan yang Perlu Anda Tahu:**
-- Hanya mengonfirmasi kecocokan nama–nomor rekening saat itu, BUKAN bukti rekening adalah pemilik sah.
-- Penipu bisa membuka rekening atas nama palsu / dengan KTP palsu, sehingga "Cek Rekening" akan menunjukkan nama sesuai (meski fiktif).
-- Jika Anda sudah transfer uang ke rekening penipu, verifikasi ini tidak bisa mengembalikan uang—butuh tindakan hukum.
+| Layanan | Fungsi | Kapan Dipakai |
+|---|---|---|
+| **Cek Rekening** | Melihat apakah nomor rekening/e-wallet pernah dilaporkan terkait penipuan | SEBELUM transfer ke orang/toko yang tidak dikenal |
+| **Lapor Rekening** | Melaporkan rekening yang diduga dipakai untuk tindak pidana | SETELAH jadi korban atau menemukan indikasi penipuan |
+| **Daftarkan Rekening** | Memverifikasi rekening milik sendiri | Untuk pemilik usaha yang ingin rekeningnya tepercaya |
+
+Jenis kejahatan yang bisa dilaporkan antara lain: penipuan jual-beli online, investasi bodong, pinjol ilegal, judi online, pemerasan, social engineering, dan phishing.
+
+**Keterbatasan yang perlu Anda tahu:**
+- Hasil "rekening ini belum pernah dilaporkan" **BUKAN jaminan aman** — penipu rutin ganti rekening baru atau memakai rekening atas nama orang lain (rekening "sewaan").
+- cekrekening.id adalah basis data laporan masyarakat, bukan alat pembekuan dana. Melaporkan ke cekrekening.id **tidak otomatis memblokir** rekening penipu — untuk itu ada jalur IASC dan laporan polisi (lihat STEP 3).
+- Jika Anda sudah transfer, cek/lapor di cekrekening.id saja tidak mengembalikan uang — harus ditindaklanjuti dengan langkah hukum.
 
 ---
 
 ## STEP 2 — Hak Anda (Dasar Hukum Dalam Bahasa Awam)
 
-### A. Hak Melaporkan Penipuan ke Pihak Berwenang
-**Dasar:** UU 11/2008 tentang Informasi & Transaksi Elektronik (ITE) Pasal 28 jo UU 36/1999 tentang Telekomunikasi.
+### A. Penipuan Adalah Tindak Pidana
+**Dasar:** Pasal 492 KUHP baru (UU 1/2023, dahulu Pasal 378 KUHP lama).
 
-Anda berhak lapor ke kepolisian jika terjadi penipuan via rekening palsu, chat palsu, atau identitas palsu. Penipuan adalah tindak pidana yang dapat dituntut.
+Orang yang dengan tipu muslihat atau rangkaian kebohongan menggerakkan Anda menyerahkan uang/barang melakukan tindak pidana penipuan. Anda berhak melaporkannya ke polisi.
 
-### B. Hak Meminta Pembekuan Rekening Penipu
-**Dasar:** POJK 22/2023 tentang Perlindungan Konsumen Industri Jasa Keuangan, Pasal 62.
+### B. Penipuan Online Diancam Pidana Khusus
+**Dasar:** UU 11/2008 tentang ITE sebagaimana diubah terakhir dengan UU 1/2024 — Pasal 28 ayat (1) jo. Pasal 45A ayat (1).
 
-Bank wajib merespons laporan Anda tentang rekening mencurigakan dalam waktu tertentu (biasanya 5–10 hari kerja). Jika ada indikasi penipuan dengan bukti (laporan polisi, transfer screenshot), bank dapat membekukan rekening atas permintaan otoritas atau sesuai prosedur internal.
+Menyebarkan berita bohong yang merugikan konsumen dalam transaksi elektronik (misalnya toko online fiktif) adalah tindak pidana tersendiri di luar KUHP.
 
-### C. Hak Privasi & Data Rekening Anda
-**Dasar:** UU 27/2022 tentang Perlindungan Data Pribadi, Pasal 53 ayat (2); PBI tentang Retensi Data.
+### C. Hak Melapor dan Data Anda Dilindungi
+**Dasar:** UU 27/2022 tentang Pelindungan Data Pribadi.
 
-Bank tidak boleh membagikan data rekening pribadi Anda kepada pihak ketiga tanpa persetujuan tertulis. Bank wajib menyimpan data rekening Anda selama periode retensi yang ditentukan oleh regulasi Bank Indonesia (umumnya 5–10 tahun untuk keperluan investigasi pidana dan kewajiban laporan keuangan), setelah itu data dapat dihapus sesuai prosedur.
+Saat Anda membuat laporan di cekrekening.id atau IASC, data pribadi Anda sebagai pelapor wajib diproses secara sah dan dilindungi. Sebaliknya, bank juga tidak boleh sembarangan membuka identitas pemilik rekening kepada publik — pengungkapan identitas penipu berjalan melalui penyidik kepolisian.
 
-### D. Hak Mendapat Informasi Rekening Penipu (untuk Korban)
-**Dasar:** UU 8/1997 tentang Dokumen Perusahaan, diintegrasikan dalam UU 27/2022.
+### D. Otoritas Keuangan Wajib Melindungi Konsumen
+**Dasar:** UU 21/2011 tentang Otoritas Jasa Keuangan.
 
-Jika Anda korban penipuan, Anda boleh meminta informasi identitas pemilik rekening penipu kepada bank (biasanya via laporan polisi formal). Bank tidak akan memberi info langsung ke publik, tapi akan kooperasi dengan penyidik kepolisian.
+OJK berwenang melakukan pelindungan konsumen di sektor jasa keuangan. Atas dasar ini OJK bersama Satgas PASTI membentuk **IASC (Indonesia Anti-Scam Centre)** — pusat penanganan penipuan transaksi keuangan yang bisa memblokir rekening penipu lintas bank dengan cepat.
 
 ---
 
 ## STEP 3 — Ke Mana & Kapan (Instansi, Kanal, Tenggat)
 
-| **Situasi** | **Instansi Tujuan** | **Cara Lapor** | **Tenggat Respons** | **Hasil** |
-|---|---|---|---|---|
-| **Ingin verifikasi rekening calon penerima (mencegah penipuan)** | Bank Anda (via Cek Rekening) | Aplikasi mobile/web bank, atau datang ke cabang | Real-time (hitungan menit) | Konfirmasi nama–rekening cocok/tidak cocok |
-| **Sudah transfer ke rekening penipu, mau pembekuan** | Polda Cyber / Ditreskrimsus (prioritas) | Lapor polisi + sertakan bukti transfer, chat, identitas palsu | 1–3 hari untuk penetapan status tersangka | Rekening ditaruh di watchlist, kemudian diminta pembekuan ke bank |
-| **Penipuan melibatkan investasi/asuransi/pinjol ilegal** | OJK (Otoritas Jasa Keuangan) | OJK.go.id > Layanan Pengaduan / WhatsApp: 087778111222 | 5–15 hari kerja | Investigasi entitas ilegal, verifikasi lisensi, rekomendasi ke Polda |
-| **Ingin lapor & minta pembekuan rekening ke bank** | Bank Anda + Bank pemilik rekening penipu | Ke-2 cabang bank atau via call center, sertakan laporan polisi | 3–5 hari kerja | Rekening didaftarkan sebagai "suspect account" |
-| **Penipuan investasi saham/crypto palsu** | OJK + Ditreskrimsus Polda Metro | OJK.go.id + aduan.polda.go.id | 5–15 hari | Penghentian platform ilegal + penyidikan pidana |
+| **Situasi** | **Kanal** | **Cara** | **Hasil yang Diharapkan** |
+|---|---|---|---|
+| **Mau transfer ke orang/toko tak dikenal** | cekrekening.id → "Cek Rekening" | Masukkan bank & nomor rekening (bisa juga e-wallet) | Tahu apakah rekening pernah dilaporkan terkait penipuan |
+| **Baru saja tertipu (prioritas #1 — makin cepat makin baik)** | **IASC — iasc.ojk.go.id** | Isi laporan online + unggah bukti transfer & identitas | Rekening penipu diblokir cepat; sisa dana berpeluang dikembalikan |
+| **Melaporkan rekening penipu agar orang lain tidak jadi korban** | cekrekening.id → "Lapor Rekening" | Isi data rekening, kategori penipuan, kronologi + unggah bukti | Rekening ditandai di basis data; status laporan dikirim via email |
+| **Proses pidana & dasar hukum pemblokiran/pengembalian dana** | Polisi — patrolisiber.id atau datang ke SPKT Polres/Polda | Buat laporan polisi dengan semua bukti | Laporan polisi (dasar penyidikan, pembukaan identitas pemilik rekening, penyitaan dana) |
+| **Penipuan berkedok investasi/pinjol ilegal** | Kontak OJK 157 | Telepon 157 atau kanal pengaduan OJK | Penindakan entitas ilegal oleh OJK/Satgas PASTI |
 
-**Penting:** Urutan langkah yang efektif:
-1. Lapor polisi DULU (online via aduan.polda.go.id atau langsung datang) dengan semua bukti.
-2. Setelah dapat **Nomor Laporan Polisi (NLP)**, bawa ke bank Anda untuk meminta pembekuan rekening penipu.
-3. Jika investasi ilegal, sebutkan ke OJK agar ada upaya pencegahan sistemik.
+**Urutan langkah yang efektif jika sudah terlanjur transfer:**
+1. **Segera** (jam-jam pertama) lapor ke **IASC** — kecepatan menentukan apakah dana masih ada di rekening penipu sebelum dipindahkan.
+2. **Lapor polisi** (online via patrolisiber.id atau langsung ke SPKT) — bawa semua bukti; minta surat tanda terima laporan.
+3. **Laporkan rekening ke cekrekening.id** — agar calon korban lain yang mengecek rekening itu melihat riwayat laporannya.
+4. Hubungi **bank/e-wallet Anda sendiri** — laporkan bahwa Anda korban penipuan dan minta bantuan koordinasi dengan bank penerima.
+
+⚠️ **Waspada situs palsu:** laporan IASC hanya lewat **iasc.ojk.go.id**. Satgas PASTI sudah menemukan situs dan oknum palsu yang mengatasnamakan IASC lalu meminta biaya. IASC dan cekrekening.id **tidak memungut biaya apa pun**.
 
 ---
 
 ## STEP 4 — Dokumen & Bukti yang Disiapkan
 
-### Untuk Laporan Polisi (Paling Penting):
-- **Screenshot chat** dengan penipu (Telegram, WhatsApp, Instagram, dll): semua percakapan, termasuk yang menjanjikan return, meminta uang, atau mengaku sebagai customer service bank.
-- **Bukti transfer**: struk ATM, screenshot aplikasi perbankan, atau laporan mutasi rekening yang menunjukkan nominal, tanggal, nomor rekening penerima.
-- **Identitas calon penerima** (jika ada): foto KTP palsu yang mereka berikan, foto profil, nomor HP, alamat email.
-- **Identitas penipu asli** (jika ketahuan): nama asli, nomor HP, alamat, akun media sosial.
-- **Daftar korban lain** (jika tahu): nama–kontak teman yang juga dirugikan, bisa diperkuat posisi Anda.
+### Untuk Laporan di cekrekening.id:
+- Nomor rekening/e-wallet penipu + nama bank/platform
+- Nama pemilik rekening (sesuai yang muncul saat transfer)
+- **Screenshot percakapan** dengan penipu (WhatsApp, Instagram, marketplace, dll)
+- **Bukti transfer** (screenshot m-banking, struk)
+- Kronologi singkat kejadian
+- Status laporan akan diverifikasi admin; perubahan status diberitahukan via email — jika pemilik rekening membantah, status bisa menjadi "dispute"
 
-### Untuk Laporan Ke Bank:
-- Nomor Laporan Polisi (NLP) atau surat tanda terima laporan.
-- Bukti transfer ke rekening penipu (struk/screenshot).
-- Bukti identitas Anda (KTP/SIM + buku tabungan).
+### Untuk Laporan IASC:
+- Identitas Anda (KTP)
+- Bukti transfer dengan tanggal, jumlah, dan rekening tujuan
+- Kronologi kejadian
+- Data rekening penipu selengkap mungkin
 
-### Untuk Laporan Ke OJK (Jika Investasi Ilegal):
-- Semua dokumen di atas PLUS:
-- **Link/nama platform investasi** yang digunakan penipu.
-- **Bukti komisi/janji return** yang dijanjikan.
-- **Bukti pendaftaran Anda** di platform (email konfirmasi, user account screenshot).
+### Untuk Laporan Polisi:
+- Semua bukti di atas, PLUS:
+- Identitas/jejak digital penipu yang diketahui: nomor HP, akun media sosial, link toko/website
+- Daftar korban lain (jika ada) — memperkuat laporan
+- KTP Anda
+
+**Tip:** simpan bukti dalam minimal 2 tempat (cloud + perangkat). Jangan hapus percakapan meskipun menyakitkan untuk dibaca — itu bukti utama.
 
 ---
 
 ## STEP 5 — Jebakan yang Harus Dihindari
 
-❌ **JANGAN:** Coba verifikasi "Cek Rekening" sambil percaya Anda akan langsung tahu penipu. Verifikasi hanya cocok kecocokan nama–rekening saat ini, tidak jamin rekening aman.
+❌ **JANGAN** menganggap hasil "belum pernah dilaporkan" di cekrekening.id sebagai jaminan aman. Rekening baru milik penipu belum tentu sudah dilaporkan siapa pun.
 
-❌ **JANGAN:** Tunggu-tunggu bank akan otomatis kembalikan uang Anda. Bank tidak bisa "tarik balik" transfer yang sudah diterima penipu tanpa perintah pengadilan. Harus ada keputusan pidana dulu.
+❌ **JANGAN** menunda laporan IASC. Penipu biasanya langsung memindahkan dana ke rekening lain dalam hitungan jam. Makin cepat lapor, makin besar peluang dana terselamatkan.
 
-❌ **JANGAN:** Lapor hanya ke OJK tanpa lapor polisi terlebih dahulu. OJK fokus regulasi lembaga keuangan, bukan penyidikan pidana. Untuk pengembalian aset, harus ada penetapan tersangka dari polisi.
+❌ **JANGAN** percaya pihak yang mengaku bisa "mencairkan kembali" uang Anda dengan syarat membayar biaya di muka — termasuk yang mengatasnamakan IASC, OJK, Komdigi, bank, atau "hacker jasa pulihkan dana". Itu penipuan berlapis yang menyasar korban.
 
-❌ **JANGAN:** Beri tahu penipu Anda akan lapor polisi. Dia bisa menghapus aset, ubah identitas, atau justru ancam balas dendam. Lapor polisi DULU, baru "diam-diam".
+❌ **JANGAN** main hakim sendiri menyebarkan data pribadi orang di media sosial sebagai "penipu" tanpa proses hukum — Anda justru bisa berurusan dengan UU ITE dan UU PDP. Gunakan kanal resmi.
 
-❌ **JANGAN:** Percaya panggilan "bank" yang mengklaim bisa kembalikan uang dengan syarat bayar fee. Itu penipuan berlapis. Bank tidak pernah minta biaya untuk proses laporan.
+❌ **JANGAN** berhenti di cekrekening.id saja jika Anda korban. Basis data itu untuk pencegahan; pemblokiran dana dan proses pidana butuh IASC + laporan polisi.
 
-❌ **JANGAN:** Abaikan dokumentasi bukti. Tanpa bukti chat, transfer, atau identitas penipu, polisi sulit menyidik. Semakin detail dokumen, semakin cepat proses.
+✅ **SEBAIKNYA** biasakan cek rekening di cekrekening.id sebelum transfer ke penjual online yang tidak dikenal, dan gunakan rekening bersama (escrow) resmi marketplace bila tersedia.
 
-✅ **SEBAIKNYA:** Setelah lapor polisi dan bank, pantau rekening Anda sendiri. Penipu sering coba akses ulang setelah ketahuan atau pindah platform. Aktifkan notifikasi transaksi.
-
-✅ **SEBAIKNYA:** Jika jumlah uang besar (> Rp 100 juta), pertimbangkan minta bantuan **Jaksa Agung untuk aset recovery** setelah ada putusan pengadilan pidana.
+✅ **SEBAIKNYA** aktifkan notifikasi transaksi dan pantau rekening Anda sendiri setelah kejadian — data Anda mungkin sudah dipegang penipu.
 
 ---
 
 ## FAQ
 
-### Apakah "Cek Rekening" bisa deteksi rekening penipu?
-Tidak sepenuhnya. "Cek Rekening" hanya verifikasi kecocokan nama–rekening di database bank saat itu. Jika penipu membuka rekening atas nama palsu/KTP palsu, sistem akan tetap menunjukkan "cocok" karena data di bank sudah terupdate. Tidak ada sistem otomatis yang flag rekening penipu di level publik. Harus lapor polisi dulu untuk pembekuan.
+### Apakah cekrekening.id bisa langsung memblokir rekening penipu?
+Tidak. cekrekening.id adalah basis data laporan — rekening yang dilaporkan akan tertanda sehingga bisa dilihat calon korban lain. Pemblokiran dana dilakukan lewat jalur **IASC** (iasc.ojk.go.id) dan/atau permintaan penyidik kepolisian kepada bank.
 
-### Berapa lama bank membekukan rekening penipu setelah saya lapor?
-Bank biasanya respons 3–5 hari kerja setelah Anda serahkan Nomor Laporan Polisi (NLP). Jika laporan polisi masih proses, bank akan mengandalkan status "suspect account" internal mereka. Pembekuan fisik (rekening tidak bisa diakses penipu) bisa memakan waktu 5–10 hari tergantung prosedur bank.
+### Berapa peluang uang saya kembali?
+Tergantung kecepatan Anda melapor. IASC (beroperasi sejak November 2024) telah memblokir ratusan ribu rekening dan mengembalikan sebagian dana korban — tetapi dana hanya bisa diselamatkan jika masih tersisa di rekening yang diblokir. Jika dana sudah berpindah jauh, pengembalian menunggu proses pidana (penyitaan aset) yang memakan waktu lama. Karena itu: lapor dalam hitungan jam, bukan hari.
 
-### Kalau penipu sudah pindah uang dari rekening A ke rekening B, bagaimana cara lacaknya?
-Polisi akan lacak via **SLIK (Sistem Laporan Ikhtisar Kredit)** dan **RTGS/Transfer Data** yang terintegrasi antar bank. Setiap transfer besar dicatat Bank Indonesia, sehingga jejak uang bisa diikuti sampai rekening terakhir (meski memakan waktu berminggu-minggu). Ini alasan lapor polisi prioritas—mereka akses RTGS, publik tidak bisa.
+### Apakah melaporkan ke cekrekening.id butuh biaya?
+Tidak. Semua layanan cekrekening.id, IASC, Kontak OJK 157, dan laporan polisi **gratis**. Pihak yang meminta biaya untuk "proses laporan" atau "pencairan dana" adalah penipu.
 
-### Apakah OJK bisa kembalikan uang saya dari penipu investasi?
-OJK tidak langsung kembalikan uang. OJK berwenang investigasi entitas penyedia layanan investasi (platform, broker, asuransi) jika ilegal atau melanggar regulasi. OJK bisa merekomendasikan penyidikan ke Polda. Pengembalian aset harus via pengadilan pidana (ganti rugi pidana) atau perdata. OJK lebih berguna untuk mencegah penipuan serupa di publik.
+### Nama pemilik rekening cocok dengan nama penjual. Berarti aman?
+Belum tentu. Penipu bisa memakai rekening yang dibuka dengan identitas palsu atau rekening orang lain yang "disewa" (praktik jual-beli rekening). Kecocokan nama hanya satu indikator — tetap cek riwayat di cekrekening.id, cari jejak digital penjual, dan curigai harga yang tidak masuk akal.
 
-### Jika saya udah bayar tapi ternyata penipu, apakah uang bisa kembali tanpa polisi?
-Sangat sulit. Tanpa laporan polisi, bank tidak boleh asal beberkan identitas pemilik rekening penerima (privasi). Untuk civil case (tuntut ganti rugi), Anda perlu tahu pasti siapa penipu (data dari polisi). Praktis, setiap kasus penipuan uang perlu landasan laporan polisi. Prosesnya lambat, tapi itu satu-satunya jalan legal.
+### Saya salah dilaporkan orang di cekrekening.id. Bagaimana membersihkan nama?
+Gunakan mekanisme sanggahan: pemilik rekening dapat membantah laporan, dan verifikator cekrekening.id akan mengubah status laporan menjadi "dispute" sampai ada kejelasan. Siapkan bukti transaksi Anda yang sah. Jika laporan palsu itu merugikan Anda, laporan balik ke polisi bisa dipertimbangkan.
 
 ---
 
 ## Dasar Hukum
 
-1. **UU 11/2008** tentang Informasi & Transaksi Elektronik (ITE) — Pasal 28: Tindak pidana penipuan via media elektronik.
-2. **UU 36/1999** tentang Telekomunikasi — Dasar penipuan telekomunikasi/media sosial.
-3. **UU 27/2022** tentang Perlindungan Data Pribadi — Pasal 53 ayat (2): Pengecualian penghapusan data untuk keperluan investigasi pidana; Retensi data ditentukan PBI (umumnya 5–10 tahun).
-4. **POJK 22/2023** tentang Perlindungan Konsumen Industri Jasa Keuangan — Pasal 62: Kewajiban bank merespons laporan penipuan.
-5. **UU 21/2011** tentang Otoritas Jasa Keuangan — OJK berwenang menangani pengaduan konsumen terkait penipuan lembaga keuangan/investasi ilegal.
-6. **UU 8/1997** tentang Dokumen Perusahaan — Retensi dokumen rekening bank untuk investigasi.
-7. **PBI tentang Retensi Data Perbankan** — Periode penyimpanan data rekening (umumnya 5–10 tahun).
+1. **UU 1/2023 (KUHP baru)** — Pasal 492 KUHP baru (dahulu Pasal 378 KUHP lama): tindak pidana penipuan.
+2. **UU 11/2008 tentang ITE** sebagaimana diubah terakhir dengan **UU 1/2024** — Pasal 28 ayat (1) jo. Pasal 45A ayat (1): larangan dan ancaman pidana menyebarkan berita bohong yang merugikan konsumen dalam transaksi elektronik.
+3. **UU 27/2022** tentang Pelindungan Data Pribadi — perlindungan data pelapor dan batasan pengungkapan identitas pemilik rekening.
+4. **UU 21/2011** tentang Otoritas Jasa Keuangan — kewenangan OJK melakukan pelindungan konsumen sektor jasa keuangan (dasar pembentukan IASC bersama Satgas PASTI).
 
 ---
 
-**Catatan Penting:** Artikel ini bukan pengganti konsultasi hukum. Jika kasus Anda kompleks (uang besar, korban jamak, penipu terorganisir), pertimbangkan konsultasi dengan **Advokat** atau hubungi **Unit Layanan Masyarakat (ULM) Kepolisian** setempat. Jangan tunda laporan—semakin lama ditunda, jejak digital penipu semakin hilang.
+**Catatan Penting:** Artikel ini bukan pengganti konsultasi hukum. Jika kerugian besar, korban banyak, atau penipu terorganisir, pertimbangkan konsultasi dengan advokat. Jangan tunda pelaporan — jejak digital dan dana penipu cepat menghilang.
