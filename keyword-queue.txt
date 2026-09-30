@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-pulsa tersedot konten premium cara lapor | pulsa-tersedot-konten-premium | pinjol
-bagasi pesawat hilang atau rusak ganti rugi | bagasi-pesawat-hilang-ganti-rugi | pinjol
-kendaraan hilang di parkiran tanggung jawab pengelola | kendaraan-hilang-di-parkiran | pinjol
-robot trading ilegal cara uang kembali | robot-trading-ilegal-uang-kembali | pinjol
 BPR dilikuidasi cara klaim dana ke LPS | bpr-dilikuidasi-klaim-lps | pinjol
 syarat tabungan dijamin LPS | penjaminan-lps-syarat-tabungan | pinjol
 koperasi simpan pinjam gagal bayar dana anggota | koperasi-gagal-bayar-dana-anggota | pinjol
