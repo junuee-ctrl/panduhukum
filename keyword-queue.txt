@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-diusir dari kontrakan sebelum masa sewa habis | diusir-dari-kontrakan-hak-penyewa | pinjol
-biaya admin bank naik tanpa pemberitahuan | biaya-admin-bank-tanpa-pemberitahuan | pinjol
-dana nasabah dibobol orang dalam bank | dana-nasabah-dibobol-orang-dalam | pinjol
-akun marketplace dibekukan saldo tertahan | akun-marketplace-dibekukan-saldo | pinjol
 penjual online dirugikan pembeli nakal | penjual-online-dirugikan-pembeli | pinjol
 barang rusak saat pengiriman siapa tanggung jawab | barang-rusak-saat-pengiriman-klaim | pinjol
 garansi resmi vs garansi distributor | garansi-resmi-vs-distributor | pinjol
