@@ -1,7 +1,3 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-rekber rekening bersama aman atau tidak | rekber-aman-cara-cek | pinjol
-BPJS Kesehatan ditolak rumah sakit hak pasien | bpjs-kesehatan-ditolak-rumah-sakit | pinjol
-data pribadi bocor hak menuntut UU PDP | data-pribadi-bocor-hak-uu-pdp | pinjol
-garansi resmi vs garansi distributor | garansi-resmi-vs-distributor | pinjol
 berhenti langganan internet kena denda | berhenti-langganan-internet-denda | pinjol
