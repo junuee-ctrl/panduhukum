@@ -1,3 +1,49 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
 berhenti langganan internet kena denda | berhenti-langganan-internet-denda | pinjol
+dc pinjol mengancam lapor polisi | dc-pinjol-mengancam-lapor-polisi | pinjol
+pinjol legal boleh telepon kantor | pinjol-telepon-kantor-boleh-tidak | pinjol
+jam penagihan pinjol yang diperbolehkan | jam-penagihan-pinjol-diperbolehkan | pinjol
+denda keterlambatan pinjol maksimal | denda-keterlambatan-pinjol-maksimal | pinjol
+cara lunasi pinjol tanpa denda | lunasi-pinjol-tanpa-denda | pinjol
+pinjol ilegal tidak usah dibayar benarkah | pinjol-ilegal-tidak-dibayar-benarkah | pinjol
+spaylater telat bayar 3 bulan | spaylater-telat-3-bulan | pinjol
+gopaylater telat bayar akibat | gopaylater-telat-bayar-akibat | pinjol
+cara cek limit dan tagihan paylater semua aplikasi | cek-tagihan-paylater-semua-aplikasi | pinjol
+syarat pinjaman kur bank | syarat-pinjaman-kur-bank | pinjol
+kur ditolak karena slik | kur-ditolak-karena-slik | pinjol
+slik kol 2 masih bisa kredit | slik-kol-2-masih-bisa-kredit | pinjol
+cara hapus data slik yang salah | koreksi-data-slik-salah | pinjol
+pinjaman online atas nama orang tua yang meninggal | pinjol-atas-nama-orang-meninggal | pinjol
+pinjol cair tanpa persetujuan | pinjol-cair-tanpa-persetujuan | pinjol
+nomor hp dipakai daftar pinjol orang lain | nomor-hp-dipakai-daftar-pinjol | pinjol
+bunga kartu kredit maksimal bank indonesia | bunga-kartu-kredit-maksimal-bi | pinjol
+kartu kredit ditagih padahal sudah ditutup | kartu-kredit-sudah-ditutup-masih-ditagih | pinjol
+iuran tahunan kartu kredit bisa dibatalkan | batalkan-iuran-tahunan-kartu-kredit | pinjol
+transaksi qris salah nominal uang kembali | qris-salah-nominal-uang-kembali | pinjol
+uang hilang dari rekening tanpa transaksi | uang-hilang-dari-rekening | pinjol
+akun bank digital dibobol | akun-bank-digital-dibobol | pinjol
+modus kurir paket apk undangan | modus-apk-undangan-kurir | pinjol
+penipuan mengatasnamakan bea cukai paket | penipuan-bea-cukai-paket | pinjol
+penipuan jasa titip online | penipuan-jasa-titip-online | pinjol
+penipuan tiket konser online | penipuan-tiket-konser-online | pinjol
+penipuan sewa villa online | penipuan-sewa-villa-online | pinjol
+penipuan jual beli hp bekas cod | penipuan-hp-bekas-cod | pinjol
+penipuan trading saham bodong grup whatsapp | penipuan-saham-grup-whatsapp | pinjol
+penipuan like dan subscribe dibayar | penipuan-like-subscribe-dibayar | pinjol
+uang kembali dari investasi bodong lewat pengadilan | ganti-rugi-investasi-bodong-pengadilan | pinjol
+asuransi kendaraan klaim ditolak | klaim-asuransi-kendaraan-ditolak | pinjol
+asuransi kesehatan klaim ditolak pre existing | klaim-asuransi-kesehatan-ditolak | pinjol
+refund ojek online dan taksi online | refund-ojol-taksi-online | pinjol
+barang elektronik rusak dalam garansi ditolak service center | garansi-ditolak-service-center | pinjol
+beli rumah subsidi bermasalah | rumah-subsidi-bermasalah-hak | pinjol
+apartemen belum serah terima developer | apartemen-belum-serah-terima | pinjol
+iuran ipl apartemen tidak wajar | iuran-ipl-apartemen-tidak-wajar | pinjol
+tagihan listrik token tidak masuk | token-listrik-tidak-masuk | pinjol
+internet indihome mati kompensasi | kompensasi-internet-mati | pinjol
+kursus atau bootcamp online tidak sesuai refund | refund-kursus-online-tidak-sesuai | pinjol
+gym membership tidak bisa berhenti | berhenti-membership-gym | pinjol
+dealer mobil tidak kirim unit setelah dp | dealer-mobil-tidak-kirim-unit | pinjol
+servis mobil di bengkel resmi mahal tidak wajar | biaya-servis-tidak-wajar | pinjol
+utang piutang dengan keluarga tanpa bukti | utang-keluarga-tanpa-bukti | pinjol
+gaji dipotong untuk bayar utang kantor | gaji-dipotong-bayar-utang | pinjol
