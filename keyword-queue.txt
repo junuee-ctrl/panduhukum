@@ -1,7 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-slik kol 2 masih bisa kredit | slik-kol-2-masih-bisa-kredit | pinjol
-cara hapus data slik yang salah | koreksi-data-slik-salah | pinjol
 pinjaman online atas nama orang tua yang meninggal | pinjol-atas-nama-orang-meninggal | pinjol
 pinjol cair tanpa persetujuan | pinjol-cair-tanpa-persetujuan | pinjol
 nomor hp dipakai daftar pinjol orang lain | nomor-hp-dipakai-daftar-pinjol | pinjol
