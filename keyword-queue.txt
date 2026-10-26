@@ -9,3 +9,50 @@ gaji dipotong untuk bayar utang kantor | gaji-dipotong-bayar-utang | pinjol
 cara cek limit dan tagihan paylater semua aplikasi | cek-tagihan-paylater-semua-aplikasi | pinjol
 barang elektronik rusak dalam garansi ditolak service center | garansi-ditolak-service-center | pinjol
 internet indihome mati kompensasi | kompensasi-internet-mati | pinjol
+limit kartu kredit dinaikkan tanpa persetujuan | limit-kartu-kredit-naik-tanpa-izin | pinjol
+bunga efektif vs bunga flat kredit cara hitung | bunga-efektif-vs-flat | pinjol
+biaya provisi dan administrasi kredit bank wajar | biaya-provisi-kredit-bank | pinjol
+asuransi jiwa kredit kpr wajib atau tidak | asuransi-jiwa-kredit-kpr-wajib | pinjol
+pinjol syariah legal ojk akad dan denda | pinjol-syariah-akad-hukum | pinjol
+jasa bersihkan bi checking penipuan | jasa-bersihkan-bi-checking-penipuan | pinjol
+joki pinjol pinjam akun untuk orang lain risiko | joki-pinjol-risiko-hukum | pinjol
+galbay pinjol saat kerja di luar negeri | galbay-pinjol-pekerja-migran | pinjol
+pinjol untuk bayar ukt mahasiswa | pinjol-bayar-ukt-mahasiswa | pinjol
+paylater ditolak padahal tidak punya utang | paylater-ditolak-tanpa-utang | pinjol
+ganti nomor hp apakah utang pinjol hilang | ganti-nomor-hp-utang-pinjol | pinjol
+akun e-wallet dibekukan transaksi mencurigakan | ewallet-dibekukan-transaksi-mencurigakan | pinjol
+modus salah kirim saldo minta dikembalikan | modus-salah-kirim-saldo-minta-kembali | pinjol
+penipuan surat tilang etle palsu lewat whatsapp | penipuan-surat-tilang-etle-palsu | pinjol
+penipuan mengatasnamakan bpjs | penipuan-mengatasnamakan-bpjs | pinjol
+penipuan mengatasnamakan pajak coretax | penipuan-mengatasnamakan-pajak | pinjol
+penipuan mengatasnamakan petugas pln | penipuan-mengatasnamakan-pln | pinjol
+penipuan deepfake video call minta uang | penipuan-deepfake-video-call | pinjol
+pinjaman koperasi online ilegal berkedok ksp | pinjaman-koperasi-online-ilegal | pinjol
+bunga kredit bank naik sepihak | bunga-kredit-naik-sepihak | pinjol
+membatalkan akad kredit bank setelah tanda tangan | batal-akad-kredit-bank | pinjol
+syarat hapus tagih kredit umkm | hapus-tagih-kredit-umkm | pinjol
+pinjol produktif untuk modal usaha umkm aman | pinjol-produktif-umkm-aman | pinjol
+aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
+cara lapor pinjol ke afpi | lapor-afpi-pinjol | pinjol
+paylater sudah refund masih ditagih | paylater-sudah-refund-masih-ditagih | pinjol
+denda telat bayar kartu kredit maksimal | denda-telat-kartu-kredit | pinjol
+bayar minimum payment kartu kredit akibatnya | minimum-payment-kartu-kredit | pinjol
+rekening dormant diblokir dana hilang | rekening-dormant-dana-hilang | pinjol
+cara cairkan rekening orang meninggal ahli waris | cairkan-rekening-orang-meninggal | pinjol
+penipuan jual beli akun game | penipuan-jual-beli-akun-game | pinjol
+pinjol tanpa bi checking cair cepat aman atau tidak | pinjol-tanpa-bi-checking-aman | pinjol
+berapa lama status slik berubah setelah lunas | status-slik-setelah-lunas | pinjol
+lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
+utang kedaluwarsa berapa tahun tidak bisa ditagih | daluwarsa-utang-berapa-tahun | pinjol
+home credit telat bayar akibatnya | home-credit-telat-bayar | pinjol
+adakami telat bayar akibatnya | adakami-telat-bayar | pinjol
+easycash telat bayar akibatnya | easycash-telat-bayar | pinjol
+atome paylater telat bayar | atome-telat-bayar | pinjol
+kredit pintar telat bayar akibatnya | kredit-pintar-telat-bayar | pinjol
+traveloka paylater telat bayar | traveloka-paylater-telat-bayar | pinjol
+indodana telat bayar akibatnya | indodana-telat-bayar | pinjol
+julo telat bayar akibatnya | julo-telat-bayar | pinjol
+cara membalas chat debt collector agar aman | cara-membalas-chat-debt-collector | pinjol
+rekam percakapan debt collector sebagai bukti | rekam-percakapan-dc-sebagai-bukti | pinjol
+debt collector sita barang di rumah boleh tidak | dc-sita-barang-di-rumah | pinjol
+bank potong saldo rekening otomatis untuk bayar kredit | autodebet-rekening-bayar-kredit | pinjol
