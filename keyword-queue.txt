@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-barang elektronik rusak dalam garansi ditolak service center | garansi-ditolak-service-center | pinjol
-internet indihome mati kompensasi | kompensasi-internet-mati | pinjol
-limit kartu kredit dinaikkan tanpa persetujuan | limit-kartu-kredit-naik-tanpa-izin | pinjol
-bunga efektif vs bunga flat kredit cara hitung | bunga-efektif-vs-flat | pinjol
 biaya provisi dan administrasi kredit bank wajar | biaya-provisi-kredit-bank | pinjol
 asuransi jiwa kredit kpr wajib atau tidak | asuransi-jiwa-kredit-kpr-wajib | pinjol
 pinjol syariah legal ojk akad dan denda | pinjol-syariah-akad-hukum | pinjol
