@@ -7,252 +7,213 @@
   "citations": [
     {
       "ref": "UU 8/1999",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-10-13"
-    },
-    {
-      "ref": "UU 27/2022",
-      "pasal": null,
-      "verified": true,
-      "status": "FOUND",
-      "verified_at": "2026-10-13"
-    },
-    {
-      "ref": "UU 19/2016",
-      "pasal": null,
-      "verified": false,
-      "status": "UNVERIFIABLE",
-      "verified_at": "2026-10-13"
-    },
-    {
-      "ref": "UU 28/2014",
-      "pasal": null,
-      "verified": false,
-      "status": "UNVERIFIABLE",
-      "verified_at": "2026-10-13"
-    },
-    {
-      "ref": "UU 8/1999",
       "pasal": "Pasal 4",
       "verified": true,
       "status": "FOUND",
-      "verified_at": "2026-10-13"
+      "verified_at": "2026-11-01"
+    },
+    {
+      "ref": "UU 8/1999",
+      "pasal": "Pasal 7",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-01"
+    },
+    {
+      "ref": "UU 1/2023 (KUHP baru)",
+      "pasal": "Pasal 492",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-01"
+    },
+    {
+      "ref": "UU 1/2023 (KUHP baru)",
+      "pasal": "Pasal 486",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-01"
+    },
+    {
+      "ref": "UU 1/2024 (Perubahan Kedua UU ITE)",
+      "pasal": "Pasal 28 ayat (1) jo. Pasal 45A ayat (1)",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-01"
+    },
+    {
+      "ref": "KUHPerdata",
+      "pasal": "Pasal 1320",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-01"
+    },
+    {
+      "ref": "KUHPerdata",
+      "pasal": "Pasal 1365",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-01"
     }
   ],
   "queue": "yellow",
-  "review_flags": [
-    {
-      "severity": "WARN",
-      "type": "REVIEW_UNAVAILABLE",
-      "location": "-",
-      "description": "Tinjauan AI tidak tersedia (JSONDecodeError); perlu tinjauan manusia sebelum publikasi."
-    }
-  ],
+  "review_flags": [],
   "reviewer": null,
   "reviewed_at": null,
   "changelog": [
     {
       "date": "2026-10-13",
       "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    },
+    {
+      "date": "2026-11-01",
+      "note": "Diverifikasi & diterbitkan (kutipan dicek ke sumber resmi), ditulis ulang: dihapus kutipan keliru UU 19/2016 Pasal 27 ayat (3) & Pasal 30 ayat (2) (bukan tentang akses rekening/data), UU 28/2014 Hak Cipta (tidak mengatur rekaman percakapan), UU 27/2022 Pasal 5 & 'Pasal 32 pelanggaran PDP' (tidak sesuai), KUHPerdata Pasal 1233 dan UUPK Pasal 23 & 26; penggelapan diganti Pasal 486 KUHP baru (dahulu Pasal 372 KUHP lama), penipuan Pasal 492 KUHP baru (dahulu Pasal 378 KUHP lama) dan Pasal 28 ayat (1) jo. 45A ayat (1) UU 1/2024; dihapus klaim tak berdasar (tenggat 7/30 hari, biaya escrow 0,5–2%, 'escrow berlisensi OJK', bank mitra marketplace, OJK mendenda rekber, BPKN sebagai kanal laporan pidana, wajib meterai); ditambah kanal resmi cekrekening.id, IASC (iasc.ojk.go.id), patrolisiber.id; bagian akhir yang terpotong dilengkapi."
     }
   ],
-  "published": false
+  "published": true
 }
 ---
 
-# Rekber (Rekening Bersama) Aman atau Tidak? Panduan Hukum Konsumen Indonesia
+# Rekber (Rekening Bersama) Aman atau Tidak? Cara Cek Sebelum Transfer & Langkah Hukum Jika Tertipu
 
-[RINGKASAN] Rekber bukan instrumen resmi perbankan, melainkan praktik perorangan yang tidak diatur dalam regulasi keuangan formal—sehingga risikonya ditanggung sepenuhnya oleh pengguna. Jika terjadi perselisihan atau penipuan, konsumen sulit mendapat perlindungan hukum karena rekber tidak melibatkan lembaga resmi. Solusi aman adalah menggunakan layanan escrow resmi dari bank atau platform e-commerce bersertifikat.
-
----
-
-## STEP 1 🔍 Diagnosis Situasi
-
-**Apa itu Rekber?**
-Rekber (rekening bersama) adalah praktik di mana dua pihak (pembeli–penjual, atau pihak ke-3) menggunakan satu rekening bank milik orang lain sebagai perantara untuk menyimpan uang sementara. Pengguna mempercayai "pihak ke-3" (biasanya sebutan "jasa rekber") untuk menahan uang pembeli hingga barang tiba dan puas, baru uang dilepas ke penjual.
-
-**Masalahnya:**
-- Rekber adalah praktik **informal**, bukan layanan resmi bank atau lembaga keuangan.
-- Tidak ada akad baku, tidak terdaftar di OJK (Otoritas Jasa Keuangan).
-- Siapa pun bisa menawarkan jasa rekber tanpa lisensi—termasuk calon penipu.
-- Jika terjadi sengketa (uang hilang, tidak dikembalikan, barang tidak dikirim), **pembeli kesulitan menuntut** karena rekber bukan lembaga resmi.
+[RINGKASAN]
+Rekber (rekening bersama) adalah jasa perantara pembayaran: pembeli menitipkan uang ke pihak ketiga, lalu uang baru diteruskan ke penjual setelah barang diterima. Rekber yang dijalankan perorangan atau komunitas **tidak otomatis aman** — keamanannya bergantung sepenuhnya pada kejujuran pengelolanya, dan modus penipuan yang paling sering justru **rekber palsu** yang disodorkan oleh penjual sendiri. **Penting: pilih rekber sendiri (bukan yang direkomendasikan penjual), cek nomor rekeningnya di cekrekening.id, pastikan kontak admin lewat kanal resminya, dan bila sudah tertipu segera lapor ke bank, IASC (iasc.ojk.go.id), dan polisi.**
 
 ---
 
-## STEP 2 📋 Hak Anda (Dasar Hukum)
+## STEP 1 ⚡ Diagnosis Situasi
 
-**1. Hak Perlindungan Konsumen (UU 8/1999)**
+**Bagaimana rekber bekerja:**
+1. Pembeli dan penjual sepakat memakai jasa rekber.
+2. Pembeli mentransfer harga barang (biasanya ditambah biaya jasa) ke rekening rekber.
+3. Admin rekber mengonfirmasi dana masuk, lalu penjual mengirim barang.
+4. Setelah pembeli menyatakan barang diterima sesuai, admin meneruskan dana ke penjual.
 
-Setiap konsumen berhak mendapatkan perlindungan terhadap transaksi yang merugikan:
-- Pasal 4 UU 8/1999: Hak untuk keamanan, kenyamanan, dan jaminan atas kualitas barang/jasa.
-- Pasal 7: Pelaku usaha wajib memberikan informasi jelas tentang syarat-syarat transaksi.
+Rekber banyak dipakai untuk transaksi di luar marketplace: jual beli akun game, gadget bekas, tiket, atau barang dari grup media sosial.
 
-**Masalah:** Rekber bukan "pelaku usaha resmi" dalam pengertian UU ini—sehingga perlindungan ini lemah jika dilaporkan ke BPKN (Badan Perlindungan Konsumen Nasional).
+**Kenali situasi Anda:**
+- **Belum transfer** → fokus pada cara cek di STEP 3 dan jebakan di STEP 5.
+- **Sudah transfer, admin rekber menghilang** → kemungkinan rekber palsu (penipuan) atau admin menahan uang yang dititipkan (penggelapan). Langsung ke STEP 3.
+- **Barang tidak sesuai, tapi rekber sudah meneruskan dana ke penjual** → sengketa Anda terutama dengan penjual; untuk modus penipuan jual beli umum, lihat juga panduan *penipuan jual beli online & refund*.
 
----
-
-**2. Hak Atas Data Pribadi (UU 27/2022)**
-
-Ketika Anda mempercayai rekber dengan data bank pribadi (username, PIN, kartu identitas), data Anda harus dilindungi:
-- Pasal 5 UU 27/2022: Pengendali data harus memastikan keamanan data pribadi Anda.
-
-**Risiko:** Banyak rekber tidak memiliki sistem keamanan standar industri. Jika data Anda bocor atau disalahgunakan, pertanggungjawaban rekber sangat terbatas.
-
----
-
-**3. Hak dalam Transaksi Online (UU 19/2016 tentang ITE)**
-
-Jika rekber berbisnis online atau transaksi dilakukan via platform digital:
-- Pasal 27(3): Dilarang mengakses komputer/sistem orang lain tanpa izin.
-- Pasal 30(2): Dilarang menggunakan data orang lain untuk keuntungan pribadi.
-
-**Perlindungan:** Jika rekber menyalahgunakan akses ke rekening Anda (transfer mandiri tanpa izin), ini adalah **tindak pidana**. Namun pembuktiannya sangat sulit jika tidak ada bukti digital yang jelas.
+**Tanda-tanda rekber palsu:**
+- Nama rekber disarankan (atau dipaksakan) oleh **penjual**, dan tautan/nomor admin dikirim oleh penjual.
+- Akun admin baru, nomor WhatsApp berbeda dari yang tercantum di kanal resmi rekber tersebut, atau nama pemilik rekening tidak cocok dengan nama rekber.
+- Ada "konfirmasi dana masuk" berupa tangkapan layar, padahal belum ada pengecekan nyata.
+- Diminta transfer tambahan dengan alasan "biaya verifikasi", "pajak", atau "dana tertahan sistem".
 
 ---
 
-**4. Perjanjian Utang-Piutang (Hukum Perdata)**
+## STEP 2 ⚖️ Hak Anda (Dasar Hukum)
 
-Transaksi rekber seharusnya didukung oleh **perjanjian tertulis** yang jelas:
-- KUH Perdata Pasal 1233: Suatu perikatan lahir dari suatu perjanjian atau dari undang-undang.
-- Tanpa akad tertulis, sangat sulit membuktikan siapa yang bertanggung jawab jika uang hilang.
+**1. Kesepakatan dengan rekber adalah perjanjian yang mengikat**
+- Perjanjian penitipan dana dengan rekber sah bila memenuhi syarat Pasal 1320 KUHPerdata (sepakat, cakap, hal tertentu, sebab yang halal) — meski hanya lewat chat. Isi chat (berapa uang yang dititip, kapan diteruskan, kapan dikembalikan) menjadi bukti utama isi kesepakatan itu.
+
+**2. Hak sebagai konsumen jasa**
+- Bila rekber menawarkan jasanya kepada umum dengan imbalan biaya, Anda dapat memakai hak konsumen dalam UU 8/1999 tentang Perlindungan Konsumen: antara lain hak atas keamanan dan hak atas informasi yang benar, jelas, dan jujur (Pasal 4), serta kewajiban pelaku usaha memberi informasi yang benar, jelas, dan jujur (Pasal 7). Dalam praktik, hak ini paling berguna bila pengelola rekber jelas identitasnya.
+
+**3. Perbuatan pelaku bisa dipidana**
+- **Rekber palsu sejak awal → penipuan:** Pasal 492 KUHP baru (UU 1/2023; dahulu Pasal 378 KUHP lama) — memakai nama palsu, tipu muslihat, atau rangkaian kebohongan untuk menggerakkan orang menyerahkan uang.
+- **Penipuan lewat sarana elektronik:** Pasal 28 ayat (1) jo. Pasal 45A ayat (1) UU 1/2024 tentang Perubahan Kedua UU ITE — menyebarkan informasi bohong atau menyesatkan yang menimbulkan kerugian materiel konsumen dalam transaksi elektronik; ancaman pidananya paling lama 6 tahun dan/atau denda paling banyak Rp1 miliar.
+- **Admin rekber asli tapi tidak meneruskan/mengembalikan uang → penggelapan:** Pasal 486 KUHP baru (UU 1/2023; dahulu Pasal 372 KUHP lama) — menguasai secara melawan hukum barang milik orang lain yang ada dalam kekuasaannya bukan karena kejahatan.
+
+**4. Hak menuntut ganti rugi**
+- Pihak yang dirugikan dapat menggugat atas perbuatan melawan hukum (Pasal 1365 KUHPerdata). Realistisnya, gugatan ini baru efektif bila identitas pelaku sudah diketahui, misalnya lewat proses pidana.
 
 ---
 
-## STEP 3 ➡️ Ke Mana & Kapan (Jika Terjadi Masalah)
+## STEP 3 🎯 Ke Mana & Kapan (Instansi, Kanal, Tenggat)
 
-| **Skenario** | **Instansi Tujuan** | **Waktu Laporan** | **Harapan Realistis** |
+**A. Sebelum transfer — cara cek rekber:**
+
+| **Yang dicek** | **Caranya** | **Tanda bahaya** |
+|---|---|---|
+| Nomor rekening rekber | Cek di **cekrekening.id** (layanan Komdigi) | Rekening pernah dilaporkan terkait penipuan |
+| Siapa yang memilih rekber | Anda sendiri yang memilih rekber, bukan penjual | Penjual menolak semua rekber selain pilihannya |
+| Kontak admin | Hubungi admin lewat nomor/akun yang tercantum di kanal resmi rekber, bukan dari tautan yang dikirim penjual | Nomor admin berbeda, akun baru, atau nama tidak sesuai |
+| Nama pemilik rekening | Cocokkan nama penerima saat transfer dengan nama rekber/admin | Nama penerima perorangan yang tidak dikenal |
+| Alternatif | Bila barang tersedia di marketplace, pakai sistem pembayaran resmi marketplace | — |
+
+Catatan: hasil "tidak ada laporan" di cekrekening.id **bukan jaminan** rekening itu aman — bisa saja rekening baru yang belum dilaporkan.
+
+**B. Sesudah tertipu:**
+
+| **Langkah** | **Ke mana** | **Kapan** | **Catatan** |
 |---|---|---|---|
-| **Rekber tidak mengembalikan uang (dugaan penggelapan)** | Polda (Polisi Daerah) – Laporan Polisi (LP) untuk tindak pidana penggelapan (Pasal 372 KUHP) | Segera setelah 7 hari tidak ada kabar (lebih cepat lebih baik) | Rendah. Polisi sering golongan "tidak dapat ditindak lanjuti" karena sulit dibuktikan secara pidana; lebih mudah jika ada rekaman percakapan yang jelas. |
-| **Uang hilang karena akun rekber diretas/dicuri** | Polda (Pasal 30 UU 19/2016 = cyber crime) + Laporan bank (debet fraud) | Segera (< 24 jam) | Sedang. Bank akan investigasi transaksi mencurigakan; polisi bisa tindak pelaku hacking. |
-| **Sengketa kepemilikan uang (pembeli vs penjual vs rekber)** | Pengadilan Negeri (gugatan perdata ganti rugi) | Kapan saja (tidak ada tenggat, tapi semakin cepat semakin baik) | Rendah-Sedang. Proses bisa 1–3 tahun. Hakim akan mempertanyakan legalitas akad rekber. |
-| **Rekber memakai data pribadi Anda tanpa izin** | Polda (Pasal 32 UU 27/2022 = pelanggaran PDP) + BPKN (laporan administratif) | Dalam 30 hari sejak mengetahui pelanggaran | Sedang. OJK bisa menjatuhkan denda administratif jika rekber terbukti adalah penyedia layanan finansial. |
-| **Rekber adalah agen/representative yang terdaftar resmi** | Langsung ke perusahaan induk rekber (jika ada) + OJK jika ada lisensi keuangan | Segera (biasanya ada SLA 5–7 hari di TOS) | Tinggi. Jika terdaftar, ada mekanisme complaint resmi dan mediasi. |
+| Lapor bank pengirim | Call center resmi bank Anda | Secepatnya | Minta penanganan atas rekening penerima dan catat nomor tiket laporan. |
+| Lapor IASC | **iasc.ojk.go.id** (Indonesia Anti-Scam Centre, OJK) | Secepatnya | Kanal resmi pelaporan penipuan transaksi keuangan; dapat berujung pemblokiran rekening pelaku. Laporan hanya lewat situs resmi tersebut. |
+| Laporkan rekening | **cekrekening.id** | Setelah bukti lengkap | Agar orang lain tidak tertipu rekening yang sama. |
+| Laporan polisi | Polres/Polda terdekat atau kanal aduan siber Polri (**patrolisiber.id**) | Secepatnya | Bawa bukti di STEP 4 dan minta tanda bukti laporan. |
+| Tanya/aduan sektor jasa keuangan | Kontak OJK **157** | Bila perlu | Untuk pertanyaan seputar rekening dan lembaga jasa keuangan. |
+
+**Soal waktu:** tidak ada tenggat hukum yang baku untuk melapor, tetapi makin cepat makin besar peluang dana di rekening pelaku belum dipindahkan.
 
 ---
 
-## STEP 4 📄 Dokumen & Bukti yang Disiapkan
+## STEP 4 📋 Dokumen & Bukti yang Disiapkan
 
-Jika Anda akan lapor/tuntut, siapkan:
+**Wajib:**
+1. **KTP** Anda.
+2. **Bukti transfer**: nama bank, nomor rekening tujuan, nama pemilik rekening, jumlah, tanggal dan jam, nomor referensi.
+3. **Tangkapan layar chat** dengan admin rekber dan penjual (utuh, tidak diedit, terlihat tanggal/jam dan nomor/akun lawan bicara).
+4. **Kronologi tertulis**: dari mana Anda mengenal penjual dan rekber, siapa yang mengusulkan rekber, apa yang dijanjikan, kapan kontak terputus.
 
-1. **Bukti Perjanjian**
-   - Chat/email dengan rekber (screenshot lengkap dengan waktu).
-   - Foto/dokumentasi akad tertulis (jika ada).
-   - Screenshot di platform e-commerce (jika transaksi berlangsung di marketplace).
-
-2. **Bukti Transfer Dana**
-   - Screenshot atau cetak buku tabungan: tanggal, jumlah, penerima.
-   - Nomor referensi transaksi bank.
-   - Bukti slip/resi dari ATM atau mobile banking.
-
-3. **Komunikasi Transaksi**
-   - Semua chat/email antara Anda, rekber, dan penjual.
-   - Screenshots percakapan di WhatsApp, Telegram, atau platform lain (jangan diedit, pastikan timestamp jelas).
-   - Rekaman panggilan (jika ada, sesuai UU 28/2014 tentang Hak Cipta → izin satu pihak sudah cukup).
-
-4. **Identitas Rekber**
-   - Nama lengkap, nomor KTP, nomor rekening bank mereka.
-   - Foto profil, riwayat rating (jika dari platform).
-   - Alamat (jika diketahui).
-
-5. **Bukti Barang/Layanan**
-   - Deskripsi barang yang dijanjikan.
-   - Foto/video barang (sebelum transfer).
-   - Bukti pengiriman (jika sudah dikirim, atau bukti barang belum tiba).
-
-6. **Surat Pernyataan**
-   - Tulis kronologi kejadian dengan detail tanggal, waktu, jumlah.
-   - Buat surat pernyataan bermaterai Rp 10.000 jika akan ke polisi/pengadilan.
+**Pendukung:**
+5. Tautan dan tangkapan layar profil akun admin/penjual, unggahan iklan barang, dan grup tempat transaksi terjadi.
+6. Bukti "konfirmasi dana masuk" atau permintaan transfer tambahan dari pelaku.
+7. Nomor tiket laporan bank dan bukti laporan IASC.
 
 ---
 
 ## STEP 5 ⚠️ Jebakan yang Harus Dihindari
 
-1. **Jangan Percaya Janji "Akan Dikembalikan Minggu Depan"**
-   - Jika rekber sudah tidak merespons > 7 hari, kemungkinan uang sudah digunakan.
-   - Langsung lapor, jangan menunggu atau membayar "biaya administrasi" tambahan.
+**Jebakan 1: Memakai rekber pilihan penjual**
+❌ **JANGAN** menerima tautan grup atau nomor "admin rekber" dari penjual.
+✅ **YANG BENAR:** pilih rekber sendiri dan hubungi admin lewat kanal resmi yang Anda cari sendiri.
 
-2. **Jangan Memberikan PIN/Password Rekening Kepada Rekber**
-   - Ini melanggar kebijakan keamanan bank.
-   - Bank akan menolak klaim fraud jika Anda sendiri memberikan akses.
-   - Lebih aman: gunakan transfer biasa, bukan "akses penuh rekening".
+---
 
-3. **Jangan Mengakses Rekening Rekber Sendiri Tanpa Izin**
-   - Ini **tindak pidana** (Pasal 30 UU 19/2016), meski untuk verifikasi uang Anda.
-   - Jika ada bukti Anda periksa rekening tanpa izin, posisi hukum Anda melemah.
+**Jebakan 2: Percaya tangkapan layar "dana sudah aman di rekber"**
+❌ **JANGAN** menganggap tangkapan layar sebagai bukti — gambar mudah dipalsukan.
+✅ **YANG BENAR:** konfirmasi langsung ke admin rekber yang Anda hubungi sendiri.
 
-4. **Jangan Lapor Hanya ke Platform E-Commerce (Jika Tidak Resmi)**
-   - Jika rekber tidak terdaftar di platform manapun, laporan Anda tidak akan ditanggapi.
-   - Langsung lapor **Polda**, bukan cs marketplace.
+---
 
-5. **Jangan Membayar Biaya "Mediasi" atau "Surat Kuasa" Tambahan**
-   - Ini taktik penipu untuk mengambil sisa uang Anda.
-   - Lapor ke polisi adalah gratis.
+**Jebakan 3: Transfer tambahan untuk "membuka dana tertahan"**
+❌ **JANGAN** membayar biaya verifikasi, pajak, atau denda apa pun agar uang dikembalikan.
+✅ **YANG BENAR:** permintaan uang tambahan adalah tanda kuat penipuan. Hentikan transfer dan segera lapor.
 
-6. **Jangan Melakukan "Balas Dendam" (Ancam, Unggah Data Pribadi Rekber)**
-   - Ini tindak pidana (pencemaran nama baik, ancaman, penyebaran data pribadi).
-   - Posisi Anda bisa berubah dari korban menjadi tersangka.
+---
+
+**Jebakan 4: Memberikan PIN, OTP, atau akses mobile banking**
+❌ **JANGAN** menyerahkan PIN, kode OTP, atau kata sandi dengan alasan "verifikasi rekber".
+✅ **YANG BENAR:** rekber cukup menerima transfer biasa. Siapa pun yang meminta PIN/OTP patut dicurigai.
+
+---
+
+**Jebakan 5: Membalas dengan menyebar data pribadi pelaku**
+❌ **JANGAN** mengunggah KTP, foto, atau alamat pelaku di media sosial atau mengancamnya.
+✅ **YANG BENAR:** serahkan data dan bukti ke polisi dan IASC. Tindakan main hakim sendiri bisa berbalik menjadi masalah hukum bagi Anda.
 
 ---
 
 ## FAQ
 
-### Apakah rekber yang ada di Tokopedia, Shopee, atau Lazada aman?
+### Apakah rekber pasti lebih aman daripada transfer langsung ke penjual?
 
-Jika Anda menggunakan fitur **escrow resmi** dari platform (biasanya tombol "Bayar Nanti" atau "Cicilan"), itu aman karena dikelola langsung oleh tim verifikasi platform + bank partner mereka (BRI, Mandiri, BNI). **Tapi** jika Anda memilih "rekber pihak ke-3" yang terpisah dari platform (user biasa yang menawarkan jasa), risikonya sama seperti di luar marketplace—tidak ada jaminan formal.
+Tidak selalu. Rekber hanya seaman pengelolanya. Rekber yang benar mengurangi risiko penjual kabur, tetapi rekber palsu justru menjadi alat penipuan. Karena itu, langkah cek di STEP 3 tetap perlu dilakukan setiap kali transaksi.
 
----
+### Apa bedanya rekber perorangan dengan sistem pembayaran marketplace?
 
-### Bagaimana cara membuktikan uang saya di rekber jika rekening atas nama mereka?
+Di marketplace, pembayaran diproses lewat sistem platform dan tunduk pada syarat dan ketentuan serta prosedur komplain platform tersebut. Rekber perorangan hanya didasarkan pada kesepakatan dengan pengelolanya, sehingga bila terjadi masalah, jalurnya adalah laporan ke bank, IASC, polisi, atau gugatan. Bila barang yang sama tersedia di marketplace, menggunakan sistem pembayaran resminya umumnya lebih mudah dikomplain.
 
-Ini adalah masalah utama rekber. Pembuktian sangat sulit karena:
-- Bank hanya tahu uang masuk ke rekening rekber (milik pribadi mereka), bukan "untuk kepentingan Anda".
-- Tanpa akad tertulis yang jelas, hakim akan ragukan apakah itu pinjaman, jaminan, atau apa.
-- **Satu-satunya bukti kuat:** chat/email yang sangat detail ("Saya transfer Rp 5 juta untuk rekber pembelian barang X, dengan catatan uang akan dikembalikan setelah barang tiba").
+### Admin rekber asli tapi uang tidak diteruskan dan tidak dikembalikan. Ini penipuan atau penggelapan?
 
-Solusi: gunakan **layanan escrow resmi** (lihat di bawah).
+Bila sejak awal pelaku memang berniat menipu (misalnya rekber palsu), unsurnya mengarah ke penipuan (Pasal 492 KUHP baru). Bila uang diterima secara sah sebagai titipan lalu ditahan atau dipakai sendiri, unsurnya mengarah ke penggelapan (Pasal 486 KUHP baru). Penentuan pasalnya adalah wewenang penyidik; tugas Anda menyajikan kronologi dan bukti selengkap mungkin.
 
----
+### Apakah uang saya pasti kembali setelah melapor?
 
-### Apa bedanya rekber dengan escrow resmi dari bank?
+Tidak ada jaminan. Peluangnya lebih besar bila laporan dibuat cepat, sebelum dana dipindahkan dari rekening pelaku. Pengembalian dana bergantung pada hasil penelusuran dan proses hukum.
 
-| Aspek | Rekber Informal | Escrow Resmi (Bank/Platform) |
-|---|---|---|
-| **Diatur hukum?** | Tidak | Ya (POJK, UU Perbankan) |
-| **Punya lisensi?** | Tidak | Ya, dari OJK |
-| **Perlindungan dana?** | Tidak; uang bisa diambil rekber | Ya; dana terpisah, tidak bisa diambil arbitrary |
-| **Jika sengketa?** | Polisi, pengadilan (sulit) | Ada mediasi resmi, faster resolution |
-| **Biaya?** | Biasanya gratis atau markup kecil | Ada biaya admin (0,5–2% dari jumlah) |
+### Hasil cek di cekrekening.id bersih. Berarti aman?
 
-**Contoh escrow resmi di Indonesia:**
-- Bank BCA, BRI, Mandiri (layanan Cash Management / Escrow).
-- Platform: Tokopedia, Shopee, Lazada (fitur pembayaran resmi).
-- Jasa fintech: doku, Xendit (payment gateway + escrow).
-
----
-
-### Jika saya sudah transfer ke rekber dan mereka tidak respons, langkah pertama apa?
-
-1. **Hari 1–3:** Ulangi chat/telepon. Mungkin mereka sedang offline.
-2. **Hari 4–7:** Jika tidak ada respons, screenshot semua bukti komunikasi. Hubungi bank Anda, laporkan sebagai "transaksi mencurigakan" atau "fraud attempt" (jika Anda merasa dirugikan).
-3. **Hari 8+:** Lapor ke polda setempat dengan membawa semua dokumen di Step 4. Minta nomor LP (Laporan Polisi).
-4. **Bersamaan:** Laporkan ke BPKN jika ada unsur perlindungan konsumen (mereka beli barang tapi uang tidak sampai).
-
----
-
-### Bagaimana jika saya menggunakan rekber karena platform marketplace tidak bisa transaksi (blokir)?
-
-**Jangan gunakan rekber eksternal** sebagai solusi. Alasan Anda di-blokir biasanya karena:
-- Akun baru / belum terverifikasi (solusi: verifikasi akun Anda).
-- Aktivitas mencurigakan terdeteksi (solusi: hubungi cs marketplace untuk clear list).
-- Limit transaksi belum cukup (solusi: tunggu, atau naik tier membership).
-
-Jika Anda paksa menggunakan rekber eksternal, Anda secara sadar melepas perlindungan platform. **Risiko 100% ditanggung Anda.**
-
----
-
-## Dasar Hukum
-
-1. **UU 8/1999** tentang Perlindungan Konsumen (Pasal 4, 7, 23, 26).
-2. **UU 19/2016** tentang
+Belum tentu. Basis data itu berisi rekening yang **sudah** dilaporkan. Rekening baru milik pelaku bisa saja belum tercatat, jadi tetap terapkan semua langkah cek lainnya.
