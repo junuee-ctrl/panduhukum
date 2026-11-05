@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-bunga kredit bank naik sepihak | bunga-kredit-naik-sepihak | pinjol
-membatalkan akad kredit bank setelah tanda tangan | batal-akad-kredit-bank | pinjol
-syarat hapus tagih kredit umkm | hapus-tagih-kredit-umkm | pinjol
-pinjol produktif untuk modal usaha umkm aman | pinjol-produktif-umkm-aman | pinjol
 aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
 cara lapor pinjol ke afpi | lapor-afpi-pinjol | pinjol
 paylater sudah refund masih ditagih | paylater-sudah-refund-masih-ditagih | pinjol
