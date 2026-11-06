@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
-cara lapor pinjol ke afpi | lapor-afpi-pinjol | pinjol
-paylater sudah refund masih ditagih | paylater-sudah-refund-masih-ditagih | pinjol
-denda telat bayar kartu kredit maksimal | denda-telat-kartu-kredit | pinjol
 bayar minimum payment kartu kredit akibatnya | minimum-payment-kartu-kredit | pinjol
 rekening dormant diblokir dana hilang | rekening-dormant-dana-hilang | pinjol
 cara cairkan rekening orang meninggal ahli waris | cairkan-rekening-orang-meninggal | pinjol
@@ -27,3 +23,4 @@ bank potong saldo rekening otomatis untuk bayar kredit | autodebet-rekening-baya
 gym membership tidak bisa berhenti | berhenti-membership-gym | pinjol
 penipuan mengatasnamakan pajak coretax | penipuan-mengatasnamakan-pajak | pinjol
 penipuan mengatasnamakan petugas pln | penipuan-mengatasnamakan-pln | pinjol
+aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
