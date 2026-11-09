@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
-utang kedaluwarsa berapa tahun tidak bisa ditagih | daluwarsa-utang-berapa-tahun | pinjol
-home credit telat bayar akibatnya | home-credit-telat-bayar | pinjol
-adakami telat bayar akibatnya | adakami-telat-bayar | pinjol
 easycash telat bayar akibatnya | easycash-telat-bayar | pinjol
 atome paylater telat bayar | atome-telat-bayar | pinjol
 kredit pintar telat bayar akibatnya | kredit-pintar-telat-bayar | pinjol
@@ -18,3 +14,4 @@ gym membership tidak bisa berhenti | berhenti-membership-gym | pinjol
 penipuan mengatasnamakan pajak coretax | penipuan-mengatasnamakan-pajak | pinjol
 penipuan mengatasnamakan petugas pln | penipuan-mengatasnamakan-pln | pinjol
 aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
+lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
