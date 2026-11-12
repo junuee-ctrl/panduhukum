@@ -1,0 +1,236 @@
+---
+{
+  "slug": "autodebet-rekening-bayar-kredit",
+  "pillar": "pinjol",
+  "type": "action_plan",
+  "target_keyword": "bank potong saldo rekening otomatis untuk bayar kredit",
+  "citations": [
+    {
+      "ref": "UU 8/1999",
+      "pasal": "Pasal 4",
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-12"
+    },
+    {
+      "ref": "UU 8/1999",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-12"
+    },
+    {
+      "ref": "UU 10/1998",
+      "pasal": null,
+      "verified": false,
+      "status": "UNVERIFIABLE",
+      "verified_at": "2026-11-12"
+    },
+    {
+      "ref": "POJK 22/2023",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-12"
+    },
+    {
+      "ref": "SEOJK 19/2023",
+      "pasal": null,
+      "verified": true,
+      "status": "FOUND",
+      "verified_at": "2026-11-12"
+    }
+  ],
+  "queue": "yellow",
+  "review_flags": [
+    {
+      "severity": "WARN",
+      "type": "OVERGENERALIZATION",
+      "location": "STEP 2 - 'Bank tidak boleh membiarkan rekening Anda jadi negatif karena automatic debit. Jika saldo kurang, bank harus memberitahu Anda lebih dulu.'",
+      "description": "Pernyataan terlalu absolut. Praktik perbankan Indonesia menunjukkan bahwa automatic debit tetap diproses meski saldo kurang, dan nasabah akan dikenakan biaya overdraft atau bunting (minus). Peraturan (POJK 22/2023, UU 10/1998) tidak secara eksplisit melarang rekening jadi negatif akibat automatic debit—hanya mengatur transparansi dan perlindungan konsumen. Artikel seharusnya menyatakan: 'Sebaiknya bank memberitahu atau menolak potongan jika saldo kurang, tetapi jika terjadi minus, Anda berhak menggugat kompensasi atas kerugian (biaya overdraft/bunting) dan menuntut bank menghapus biaya tersebut sebagai kompensasi.' Ini lebih akurat dengan praktik dan hukum."
+    },
+    {
+      "severity": "WARN",
+      "type": "MISSING_EXCEPTION",
+      "location": "STEP 2 - Tabel 'Potongan sesuai jumlah' - 'Jumlah yang dipotong harus persis sesuai cicilan yang disepakati—tidak boleh ditambah bunga, denda, atau biaya tanpa pemberitahuan terlebih dahulu.'",
+      "description": "Frasa 'tidak boleh ditambah...tanpa pemberitahuan' berimplikasi bahwa DENGAN pemberitahuan, penambahan diperbolehkan. Namun artikel tidak menjelaskan: (1) kapan pemberitahuan itu harus diberikan (sebelum potongan atau retroaktif?), (2) apakah pemberitahuan via SMS 1 jam sebelum potongan cukup, atau harus 5-7 hari sebelumnya, (3) apakah nasabah punya hak menolak perubahan syarat atau harus menerima begitu saja. Seharusnya tambahkan: 'Perubahan syarat cicilan hanya berlaku jika Anda memberi persetujuan tertulis (bukan SMS) minimal 7 hari sebelum potongan pertama dengan syarat baru. Jika hanya pemberitahuan sepihak tanpa persetujuan, Anda berhak mengajukan keberatan.'"
+    },
+    {
+      "severity": "WARN",
+      "type": "MISAPPLICATION",
+      "location": "STEP 3 - 'Tenggat Waktu' - 'Maksimal 30 hari sejak insiden'",
+      "description": "Frasa '30 hari sejak insiden' kurang presisi dan bisa disalahinterpretasi. Sesuai POJK 22/2023, yang dimaksud adalah 30 hari sejak keluhan PERTAMA diajukan ke bank (bukan sejak 'insiden' terjadi). Jika seorang nasabah menemukan potongan salah pada Hari 15, tetapi baru lapor ke bank pada Hari 30, maka kacaunya waktu hitung dimulai Hari 30, bukan Hari 15. Artikel seharusnya memperjelas: 'Keluhan harus diajukan dalam 30 hari SEJAK nasabah menyadari potongan yang salah. Hitungan formal 30 hari dimulai dari tanggal keluhan pertama diterima bank (bukan tanggal insiden terjadi).'"
+    },
+    {
+      "severity": "WARN",
+      "type": "OVERGENERALIZATION",
+      "location": "FAQ - 'Apakah bank berhak potong saldo rekening saya tanpa persetujuan setiap kali?' - 'Bank hanya boleh potong otomatis SATU KALI ketika Anda menandatangani perjanjian kredit. Persetujuan itu berlaku selamanya untuk setiap cicilan—bank tidak perlu minta izin setiap bulan.'",
+      "description": "Pernyataan 'persetujuan berlaku selamanya' terlalu luas. Praktiknya, jika syarat kredit berubah (suku bunga naik, tenor diperpanjang, restrukturisasi), bank harus meminta persetujuan baru atau minimal notifikasi yang bisa ditolak nasabah. Seharusnya: 'Persetujuan awal berlaku untuk setiap cicilan SELAMA syarat kredit tidak berubah. Jika ada perubahan besar (suku bunga, tenor, jumlah cicilan), bank wajib meminta persetujuan baru atau setidaknya memberikan notifikasi yang cukup waktu (5-7 hari) bagi Anda untuk menolak.'"
+    },
+    {
+      "severity": "WARN",
+      "type": "MISSING_EXCEPTION",
+      "location": "STEP 5 - 'JANGAN Lakukan Ini' - Point 1 - 'Jangan langsung tidak membayar cicilan sebagai protes'",
+      "description": "Saran ini benar, tetapi tidak menyebutkan pengecualian penting: jika potongan otomatis terbukti ILEGAL (tanpa persetujuan sama sekali, bukan automatic debit tapi kesalahan sistem), nasabah boleh menahan pembayaran sebagai set-off sambil menggugat. Seharusnya ditambahkan: 'NAMUN, jika potongan dilakukan TANPA persetujuan sama sekali (bukan automatic debit yang disepakati, tapi kesalahan/penipuan), Anda bisa mengajukan set-off: tahan pembayaran sampai dana salah potong dikembalikan dengan bunga, sambil terus gugat bank. Namun langkah ini riskan—konsultasikan dengan advokat terlebih dahulu.'"
+    },
+    {
+      "severity": "WARN",
+      "type": "STALE_RULE",
+      "location": "Dasar Hukum - 'POJK 22/2023' dan referensi lainnya tanpa tanggal pengecekan",
+      "description": "Artikel merujuk POJK 22/2023 sebagai aturan berlaku. Namun tidak disebutkan kapan artikel ditulis atau kapan aturan ini diverifikasi terakhir. Sejak POJK bisa diamendemen, seharusnya ditambahkan disclaimer: 'Informasi ini berlaku sesuai POJK 22/2023 (per [bulan/tahun]). Pastikan verifikasi ke website OJK resmi atau konsultasikan advokat untuk kasus spesifik Anda, karena peraturan mungkin sudah berubah.' Ini penting mengingat dinamika regulasi OJK yang cepat."
+    }
+  ],
+  "reviewer": null,
+  "reviewed_at": null,
+  "changelog": [
+    {
+      "date": "2026-11-12",
+      "note": "Draft otomatis ??gate 1쨌2 (yellow)"
+    }
+  ],
+  "published": false
+}
+---
+
+# Bank Potong Saldo Rekening Otomatis untuk Bayar Kredit: Apa Hak Anda?
+
+[RINGKASAN]
+Bank berhak melakukan potongan saldo otomatis (automatic debit) untuk cicilan kredit yang sudah Anda setujui dalam perjanjian. Namun, potongan tidak boleh melebihi jumlah yang disepakati, dilakukan tanpa persetujuan, atau menguras rekening hingga minus. Jika terjadi penyimpangan, Anda berhak menggugat melalui OJK atau pengadilan.
+
+---
+
+## STEP 1 🔍 Diagnosis Situasi
+
+Anda menemukan saldo rekening berkurang tiba-tiba karena bank melakukan potongan otomatis untuk cicilan kredit. Pertanyaan Anda:
+- **Apakah bank boleh potong saldo tanpa konfirmasi setiap bulan?**
+- **Bagaimana jika jumlah potongan salah atau berlebihan?**
+- **Bagaimana jika saldo tidak cukup dan jadi minus?**
+
+Situasi ini sangat umum karena hampir semua bank menggunakan sistem **automatic debit** untuk kredit. Tetapi ada batasan hukum yang penting Anda ketahui.
+
+---
+
+## STEP 2 ✅ Hak Anda (Dasar Hukum Ringkas)
+
+### **Hak Utama Anda:**
+
+| **Hak** | **Penjelasan** |
+|--------|--------------|
+| **Persetujuan eksplisit** | Bank hanya boleh potong otomatis jika Anda sudah menandatangani perjanjian kredit yang jelas menyebutkan mekanisme potongan (POJK 22/2023 tentang Perlindungan Konsumen Sektor Jasa Keuangan). |
+| **Potongan sesuai jumlah** | Jumlah yang dipotong harus persis sesuai cicilan yang disepakati—tidak boleh ditambah bunga, denda, atau biaya tanpa pemberitahuan terlebih dahulu. |
+| **Rekening tidak boleh minus** | Bank tidak boleh membiarkan rekening Anda jadi negatif karena automatic debit. Jika saldo kurang, bank harus memberitahu Anda lebih dulu. |
+| **Hak informasi** | Anda berhak menerima notifikasi (SMS, email, atau app) setiap kali ada potongan, serta laporan rinci cicilan setiap bulan. |
+| **Hak mengajukan keberatan** | Jika potongan tidak sesuai atau dilakukan tanpa persetujuan, Anda bisa langsung meminta bank membatalkan dan mengembalikan dana (UU 8/1999 tentang Perlindungan Konsumen, Pasal 4). |
+
+### **Dasar Hukum Singkat (Bahasa Awam):**
+- **POJK 22/2023**: Bank wajib memberikan transparansi penuh, tidak boleh mengambil biaya tersembunyi, dan harus memberitahu setiap transaksi.
+- **UU 8/1999 (Perlindungan Konsumen)**: Anda (konsumen kredit) berhak mendapat informasi jelas dan akurat tentang syarat cicilan sebelum menandatangani.
+- **Perjanjian Kredit (Surat Perjanjian)**: Inilah kontrak yang mengikat. Jika ada potongan yang tidak sesuai poin-poin dalam surat, itu pelanggaran.
+
+---
+
+## STEP 3 🚩 Ke Mana & Kapan (Instansi, Kanal, Tenggat)
+
+| **Jenis Masalah** | **Langkah Pertama** | **Ke Mana** | **Tenggat Waktu** |
+|------------------|-------------------|-----------|------------------|
+| **Potongan salah jumlah / tidak sesuai perjanjian** | Hubungi customer service bank via telepon/email, minta penjelasan tertulis | **Customer Service Bank** (kantor cabang atau call center) | **Segera (H+1 potongan)** |
+| **Bank tidak merespons 5-7 hari kerja** | Ajukan keluhan tertulis ke bagian Compliance/Perlindungan Konsumen bank | **Divisi Perlindungan Konsumen Bank** (datang langsung + surat tertulis) | **Dalam 5 hari kerja** |
+| **Bank tetap tidak merespons (14 hari)** | Ajukan aduan resmi ke OJK | **OJK (Otoritas Jasa Keuangan) - Portal Lapor OJK** | **Dalam 14 hari sejak keluhan pertama** |
+| **Potongan tanpa persetujuan / rekening jadi minus** | Sebaiknya ambil langkah 3 lebih cepat (hari yang sama) | **OJK + siapkan gugatan ke Pengadilan Negeri** | **Maksimal 30 hari sejak insiden** |
+
+### **Link & Nomor Penting:**
+- **OJK Online**: https://lapor.ojk.go.id (upload bukti: screenshot, surat perjanjian, ekstrak rekening)
+- **Ombudsman Lembaga Keuangan**: https://www.ombudsman.go.id (alternatif gratis)
+- **Call Center OJK**: 157 (dari telepon genggam) / 1500155
+
+---
+
+## STEP 4 📋 Dokumen & Bukti yang Disiapkan
+
+**Sangat Penting: Kumpulkan bukti SEBELUM ajukan keluhan!**
+
+| **Dokumen** | **Untuk Apa** | **Cara Dapatkan** |
+|-----------|-------------|-----------------|
+| **Surat Perjanjian Kredit (asli atau fotokopi)** | Buktikan syarat potongan yang disepakati | Minta dari bank (bagian kredit) atau lihat di app/portal online |
+| **Ekstrak Rekening (3 bulan terakhir)** | Tunjukkan pola potongan dan besarannya | Download dari app bank atau cetak dari ATM/teller |
+| **Bukti Komunikasi dengan Bank** | Tunjukkan bahwa Anda sudah protes via email/call center | Simpan screenshot chat, nomor referensi call center, konfirmasi email |
+| **Perhitungan Detail Cicilan** | Bandingkan cicilan yang seharusnya vs yang dipotong | Hitung sendiri dari perjanjian atau minta simulasi dari bank |
+| **Screenshot/Print App/SMS Notifikasi** | Buktikan bank tidak memberitahu (atau notifikasinya gagal) | Ambil screenshot dari app atau print SMS |
+| **Kartu Identitas & Rekening** | Identitas pribadi | Fotokopi KTP + buku tabungan atau kartu debit |
+
+**Cara Dokumentasi Terbaik:**
+1. Cetak atau screenshot setiap bukti (tanggal harus jelas).
+2. Masukkan dalam 1 folder/map (beri label tanggal).
+3. Siapkan juga file digital (PDF/JPG) untuk upload ke OJK online.
+
+---
+
+## STEP 5 ⚠️ Jebakan yang Harus Dihindari
+
+### **JANGAN Lakukan Ini:**
+
+1. **❌ Jangan langsung tidak membayar cicilan sebagai protes**
+   - Alih-alih menyelesaikan masalah, Anda malah melanggar perjanjian dan nilai kredit turun.
+   - **Solusi yang tepat**: Lakukan protes terlebih dahulu sambil terus membayar (atau kirim bukti setoran manual).
+
+2. **❌ Jangan percaya janji customer service via telepon tanpa bukti tertulis**
+   - "Kami akan kembalikan dana besok" tanpa email konfirmasi = tidak mengikat.
+   - **Solusi yang tepat**: Selalu minta konfirmasi email atau surat resmi dari bank sebelum dianggap selesai.
+
+3. **❌ Jangan tutup rekening sebelum masalah selesai**
+   - Bank bisa mengatakan "Anda yang potong, bukan kami" dan menolak tanggung jawab.
+   - **Solusi yang tepat**: Pertahankan rekening sebagai bukti, buat rekening baru jika perlu, tapi jangan tutup yang lama sampai 6 bulan setelah resolusi.
+
+4. **❌ Jangan percaya "penghapusan kredit ilegal" atau cara cepat**
+   - Ada oknum yang menjanjikan hapus kredit dengan cara ilegal (manipulasi data, suap). Ini penipuan + membuat Anda jadi tersangka.
+   - **Solusi yang tepat**: Hanya gunakan jalur OJK, pengadilan, atau restrukturisasi kredit resmi.
+
+5. **❌ Jangan lewatkan tenggat waktu keluhan (30 hari sejak insiden)**
+   - Setelah 30 hari, klaim bisa ditolak karena "sudah terlambat".
+   - **Solusi yang tepat**: Ajukan keluhan dalam 3-7 hari setelah menemukan potongan yang salah.
+
+6. **❌ Jangan abaikan surat resmi dari bank**
+   - Jika bank kirim surat somasi, itu tanda serius. Balas dengan bukti Anda sudah protes lebih dulu.
+   - **Solusi yang tepat**: Simpan semua surat, scan, dan lampirkan ke OJK/pengadilan.
+
+---
+
+## FAQ
+
+### **Apakah bank berhak potong saldo rekening saya tanpa persetujuan setiap kali?**
+Bank hanya boleh potong otomatis SATU KALI ketika Anda menandatangani perjanjian kredit. Persetujuan itu berlaku selamanya untuk setiap cicilan—bank tidak perlu minta izin setiap bulan. TETAPI jumlahnya harus tetap sesuai kesepakatan. Jika ada perubahan syarat (bunga naik, tambahan denda), bank wajib memberitahu Anda terlebih dahulu.
+
+### **Bagaimana jika bank potong jumlah lebih besar dari cicilan yang dijanjikan?**
+Segera hubungi bank dan minta penjelasan tertulis mengapa ada selisih. Biasanya penyebabnya: (1) ada denda keterlambatan bulan sebelumnya, (2) asuransi kredit, atau (3) biaya administrasi. Jika alasannya tidak masuk akal atau tidak ada di perjanjian, ajukan keberatan ke OJK dan minta pengembalian dana. Bank wajib mengembalikan dalam 3-5 hari kerja.
+
+### **Apakah boleh saldo rekening saya jadi minus karena automatic debit?**
+**Tidak boleh.** Bank bertanggung jawab memastikan saldo cukup sebelum melakukan potongan. Jika saldo kurang, seharusnya bank: (1) menolak potongan dan memberitahu Anda, atau (2) memberikan grace period (tangguhan) sambil tetap terhitung cicilan. Jika saldo jadi minus dan menghasilkan biaya overdraft, minta bank menghapus biaya overdraft itu sebagai kompensasi kesalahan sistem mereka.
+
+### **Berapa lama bank harus merespons keluhan saya tentang potongan salah?**
+Menurut POJK 22/2023, bank wajib memberikan respons awal dalam **5 hari kerja**. Jika masalahnya rumit, mereka bisa memperpanjang hingga **30 hari kerja** (harus ada surat penjelasan alasan perpanjangan). Jika sudah lewat 30 hari dan belum ada respons, Anda berhak ajukan keluhan ke OJK.
+
+### **Apakah bisa saya minta automatic debit dibatalkan?**
+Ya, Anda berhak mencabut persetujuan automatic debit kapan saja dengan mengajukan permohonan tertulis ke bank (bagian kredit). TETAPI kewajiban membayar cicilan tetap ada—Anda harus membayar manual (transfer, setor tunai) sesuai jadwal. Jika Anda membayar terlambat, denda tetap berjalan. Jadi batalkan automatic debit hanya jika ada alasan serius (misalnya ganti rekening).
+
+---
+
+## Dasar Hukum
+
+1. **POJK 22/2023** – Peraturan Otoritas Jasa Keuangan tentang Perlindungan Konsumen di Sektor Jasa Keuangan (transparansi, informasi, pengeluhan).
+2. **UU 8/1999** – Undang-Undang Perlindungan Konsumen (hak konsumen, informasi akurat, penyelesaian keluhan).
+3. **UU 10/1998** – Undang-Undang Perbankan (hak nasabah, keamanan transaksi, kerahasiaan rekening).
+4. **Surat Perjanjian Kredit** – Kontrak antara Anda dan bank (dokumen paling mengikat untuk kasus Anda).
+5. **SEOJK 19/2023** – Surat Edaran OJK tentang Penentuan Bunga dan Denda Jasa Keuangan (pembatasan denda).
+
+---
+
+### **Kesimpulan & Langkah Berikutnya**
+
+Potongan otomatis adalah mekanisme normal, **tetapi tidak boleh semena-mena**. Jika Anda menemukan potongan yang salah:
+
+1. ✅ **Hari 1-2**: Hubungi bank (call center + email tertulis).
+2. ✅ **Hari 3-7**: Jika tidak ada respons jelas, ajukan keluhan ke divisi Perlindungan Konsumen bank.
+3. ✅ **Hari 8-14**: Jika bank masih menolak, lapor ke OJK melalui portal https://lapor.ojk.go.id.
+4. ✅ **Jika OJK tidak membantu dalam 30 hari**: Pertimbangkan gugatan ke Pengadilan Negeri (dengan bantuan advokat).
+
+**Poin Penting**: Tetap bayar cicilan pokok Anda sambil berjuang mendapat keadilan. Jangan menggunakan "potongan salah" sebagai alasan tidak bayar—itu malah merugikan Anda sendiri.
