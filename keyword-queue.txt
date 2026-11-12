@@ -7,3 +7,48 @@ penipuan mengatasnamakan pajak coretax | penipuan-mengatasnamakan-pajak | pinjol
 penipuan mengatasnamakan petugas pln | penipuan-mengatasnamakan-pln | pinjol
 aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
 lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
+spinjam telat bayar akibatnya | spinjam-telat-bayar | pinjol
+rupiah cepat telat bayar akibatnya | rupiah-cepat-telat-bayar | pinjol
+gopay pinjam telat bayar akibatnya | gopay-pinjam-telat-bayar | pinjol
+limit paylater turun tiba-tiba kenapa | limit-paylater-turun-tiba-tiba | pinjol
+dana pinjol cair lebih kecil dipotong biaya admin | biaya-admin-pinjol-dipotong-di-awal | pinjol
+pinjol izin dicabut ojk utang masih wajib bayar | pinjol-izin-dicabut-utang | pinjol
+lender p2p lending gagal bayar dana kembali | lender-p2p-gagal-bayar | pinjol
+kta bank macet akibatnya | kta-macet-akibat | pinjol
+cara lapor laps sjk sengketa jasa keuangan | cara-lapor-laps-sjk | pinjol
+batas waktu bank menanggapi pengaduan nasabah | batas-waktu-pengaduan-bank | pinjol
+bunga koperasi simpan pinjam maksimal | bunga-koperasi-simpan-pinjam | pinjol
+barang gadai pegadaian dilelang cara cegah | lelang-gadai-pegadaian | pinjol
+gadai hp online risiko hukum | gadai-hp-online-risiko | pinjol
+cicilan 0 persen kartu kredit biaya tersembunyi | cicilan-nol-persen-biaya | pinjol
+kartu kredit tambahan siapa yang bayar tagihan | kartu-kredit-tambahan-tanggung-jawab | pinjol
+cara menutup rekening bank yang tidak dipakai | cara-tutup-rekening-bank | pinjol
+jual rekening bank bisa dipidana | jual-rekening-bisa-dipidana | pinjol
+dp motor hangus batal kredit | dp-motor-hangus-batal-kredit | pinjol
+pelunasan dipercepat kredit motor denda | pelunasan-dipercepat-kredit-motor | pinjol
+penipuan mengatasnamakan ojk | penipuan-mengatasnamakan-ojk | pinjol
+penipuan telepon anak ditangkap polisi | penipuan-telepon-anak-ditangkap-polisi | pinjol
+penipuan donasi online palsu | penipuan-donasi-online-palsu | pinjol
+penipuan sewa kos online transfer dp | penipuan-sewa-kos-online | pinjol
+penipuan beasiswa palsu minta biaya | penipuan-beasiswa-palsu | pinjol
+cara cek broker forex ilegal bappebti | broker-forex-ilegal-cek | pinjol
+klaim asuransi perjalanan ditolak | klaim-asuransi-perjalanan-ditolak | pinjol
+polis asuransi lapse karena telat bayar premi | polis-asuransi-lapse | pinjol
+tebus polis asuransi nilai tunai kecil | tebus-polis-asuransi-nilai-tunai | pinjol
+free look period asuransi cara batal polis | free-look-period-asuransi | pinjol
+perusahaan asuransi gagal bayar klaim nasabah | perusahaan-asuransi-gagal-bayar | pinjol
+klaim jht bpjs ketenagakerjaan ditolak | klaim-jht-ditolak | pinjol
+barang palsu dari marketplace hak konsumen | barang-palsu-marketplace-hak | pinjol
+pesanan online dibatalkan sepihak oleh penjual | pesanan-dibatalkan-sepihak-penjual | pinjol
+biaya layanan tersembunyi di aplikasi saat bayar | biaya-layanan-tersembunyi-aplikasi | pinjol
+harga di kasir beda dengan label rak | harga-kasir-beda-label | pinjol
+uang kembalian diganti permen hak konsumen | kembalian-diganti-permen | pinjol
+poin reward hangus hak konsumen | poin-reward-hangus | pinjol
+overbooking pesawat hak penumpang | overbooking-pesawat-hak | pinjol
+kereta api terlambat kompensasi penumpang | kompensasi-kereta-api-terlambat | pinjol
+laundry merusak pakaian ganti rugi | laundry-merusak-pakaian | pinjol
+kontraktor renovasi rumah kabur bawa uang | kontraktor-renovasi-kabur | pinjol
+wedding organizer wanprestasi uang kembali | wedding-organizer-wanprestasi | pinjol
+saldo e-toll terpotong ganda cara klaim | saldo-etoll-terpotong-ganda | pinjol
+tagihan kartu pascabayar membengkak | tagihan-pascabayar-membengkak | pinjol
+internet lambat tidak sesuai paket hak konsumen | internet-lambat-tidak-sesuai-paket | pinjol
