@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-penipuan mengatasnamakan petugas pln | penipuan-mengatasnamakan-pln | pinjol
-aplikasi pinjol minta akses kontak dan galeri | izin-akses-kontak-aplikasi-pinjol | pinjol
-lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
-spinjam telat bayar akibatnya | spinjam-telat-bayar | pinjol
 rupiah cepat telat bayar akibatnya | rupiah-cepat-telat-bayar | pinjol
 gopay pinjam telat bayar akibatnya | gopay-pinjam-telat-bayar | pinjol
 limit paylater turun tiba-tiba kenapa | limit-paylater-turun-tiba-tiba | pinjol
@@ -48,3 +44,4 @@ wedding organizer wanprestasi uang kembali | wedding-organizer-wanprestasi | pin
 saldo e-toll terpotong ganda cara klaim | saldo-etoll-terpotong-ganda | pinjol
 tagihan kartu pascabayar membengkak | tagihan-pascabayar-membengkak | pinjol
 internet lambat tidak sesuai paket hak konsumen | internet-lambat-tidak-sesuai-paket | pinjol
+lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
