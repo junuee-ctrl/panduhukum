@@ -1,8 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-rupiah cepat telat bayar akibatnya | rupiah-cepat-telat-bayar | pinjol
-gopay pinjam telat bayar akibatnya | gopay-pinjam-telat-bayar | pinjol
-limit paylater turun tiba-tiba kenapa | limit-paylater-turun-tiba-tiba | pinjol
 dana pinjol cair lebih kecil dipotong biaya admin | biaya-admin-pinjol-dipotong-di-awal | pinjol
 pinjol izin dicabut ojk utang masih wajib bayar | pinjol-izin-dicabut-utang | pinjol
 lender p2p lending gagal bayar dana kembali | lender-p2p-gagal-bayar | pinjol
