@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-cara lapor laps sjk sengketa jasa keuangan | cara-lapor-laps-sjk | pinjol
-batas waktu bank menanggapi pengaduan nasabah | batas-waktu-pengaduan-bank | pinjol
-bunga koperasi simpan pinjam maksimal | bunga-koperasi-simpan-pinjam | pinjol
-barang gadai pegadaian dilelang cara cegah | lelang-gadai-pegadaian | pinjol
 gadai hp online risiko hukum | gadai-hp-online-risiko | pinjol
 cicilan 0 persen kartu kredit biaya tersembunyi | cicilan-nol-persen-biaya | pinjol
 kartu kredit tambahan siapa yang bayar tagihan | kartu-kredit-tambahan-tanggung-jawab | pinjol
