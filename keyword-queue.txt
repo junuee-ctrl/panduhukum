@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-penipuan sewa kos online transfer dp | penipuan-sewa-kos-online | pinjol
-penipuan beasiswa palsu minta biaya | penipuan-beasiswa-palsu | pinjol
-cara cek broker forex ilegal bappebti | broker-forex-ilegal-cek | pinjol
-klaim asuransi perjalanan ditolak | klaim-asuransi-perjalanan-ditolak | pinjol
 polis asuransi lapse karena telat bayar premi | polis-asuransi-lapse | pinjol
 tebus polis asuransi nilai tunai kecil | tebus-polis-asuransi-nilai-tunai | pinjol
 free look period asuransi cara batal polis | free-look-period-asuransi | pinjol
