@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-polis asuransi lapse karena telat bayar premi | polis-asuransi-lapse | pinjol
-tebus polis asuransi nilai tunai kecil | tebus-polis-asuransi-nilai-tunai | pinjol
-free look period asuransi cara batal polis | free-look-period-asuransi | pinjol
-perusahaan asuransi gagal bayar klaim nasabah | perusahaan-asuransi-gagal-bayar | pinjol
 klaim jht bpjs ketenagakerjaan ditolak | klaim-jht-ditolak | pinjol
 barang palsu dari marketplace hak konsumen | barang-palsu-marketplace-hak | pinjol
 pesanan online dibatalkan sepihak oleh penjual | pesanan-dibatalkan-sepihak-penjual | pinjol
@@ -21,3 +17,4 @@ tagihan kartu pascabayar membengkak | tagihan-pascabayar-membengkak | pinjol
 internet lambat tidak sesuai paket hak konsumen | internet-lambat-tidak-sesuai-paket | pinjol
 lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
 lender p2p lending gagal bayar dana kembali | lender-p2p-gagal-bayar | pinjol
+tebus polis asuransi nilai tunai kecil | tebus-polis-asuransi-nilai-tunai | pinjol
