@@ -1,9 +1,5 @@
 # 형식: keyword | slug | pillar   (검색 수요·문제의도 높은 순 — 상단 우선)
 # 정확 검색량은 키워드툴 필요; 아래는 의도/수요 기반 큐레이션. 이미 있는 slug는 파이프라인이 건너뜀.
-kontraktor renovasi rumah kabur bawa uang | kontraktor-renovasi-kabur | pinjol
-wedding organizer wanprestasi uang kembali | wedding-organizer-wanprestasi | pinjol
-saldo e-toll terpotong ganda cara klaim | saldo-etoll-terpotong-ganda | pinjol
-tagihan kartu pascabayar membengkak | tagihan-pascabayar-membengkak | pinjol
 internet lambat tidak sesuai paket hak konsumen | internet-lambat-tidak-sesuai-paket | pinjol
 lamaran kerja ditolak karena slik ojk | lamaran-kerja-ditolak-karena-slik | pinjol
 lender p2p lending gagal bayar dana kembali | lender-p2p-gagal-bayar | pinjol
